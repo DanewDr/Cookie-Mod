@@ -53,7 +53,7 @@ namespace CookieMod.NPCs
         public override void NPCLoot()  //Npc drop
         {
             {
-                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("Cookie"), 2); //Item spawn
+                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("DoughBall"), 2); //Item spawn
             }
 
         }
