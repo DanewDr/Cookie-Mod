@@ -1,0 +1,16 @@
+CookieMod v0.1.2
+
+*NOTE* This mod is still a work in progress and is currently in-complete.
+Currently this mod adds several weapons, a set of tools, an armour set (with helmet varients for each class), two bosses (one for curruption and one for Crimson) a special crafting staion, a new torch, a new block and a few other things I can't be botherd to type :P
+
+Version History:
+v0.1.2: 100/500 Dowload Special!
+	Added a work-in-progress biome
+	Cookie Addict now spawns in the new biome
+	Added cookie trees (currently only grow at world gen) 
+v0.1.1: Updated to tmodloader v0.9.1
+	Blood Cookie and Corrupt Cookie masks are now obtainable
+	Added to the mod Browser
+v0.1.0: Initial pre-release, includes two bosses and most of the plain cookie items
+
+I hope you enjoy the mod and yes, it is inspired by Happy Days
