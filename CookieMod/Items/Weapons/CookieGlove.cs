@@ -15,7 +15,7 @@ namespace CookieMod.Items.Weapons
 			item.noMelee = true;
 			item.width = 34;
 			item.height = 22;
-			item.toolTip = "Throws hard cookies.";
+			item.toolTip = "Throws cookies.";
 			item.rare = 2;
 			item.useTime = 25;
 			item.useAnimation = 10;
