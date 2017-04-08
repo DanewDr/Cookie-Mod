@@ -26,7 +26,7 @@ namespace CookieMod.Items.Weapons
 			item.autoReuse = false;
 			item.shoot = mod.ProjectileType ("ThrowingCookie");
 			item.shootSpeed = 6f;
-			item.useAmmo = mod.ItemType("HardCookie");	//Restrict the type of ammo the weapon can use, so that the weapon cannot use other ammos
+			item.useAmmo = mod.ItemType("Cookie");	//Restrict the type of ammo the weapon can use, so that the weapon cannot use other ammos
 			item.noUseGraphic = true;
 		}
 
