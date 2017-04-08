@@ -31,7 +31,7 @@ namespace CookieMod.Items.Weapons
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.IronBar, 7);
+			recipe.AddRecipeGroup(CraftGroup.IronBar, 7);
 			recipe.AddIngredient(null, "Popsicle", 12);
 			recipe.AddTile(null, "MilkTank");
 			recipe.SetResult(this);
