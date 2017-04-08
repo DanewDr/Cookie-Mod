@@ -29,8 +29,8 @@ namespace CookieMod.Items
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.Acorn, 6);
-			recipe.AddTile(TileID.Furnaces);
+            recipe.AddIngredient(null, "DoughBall", 6);
+	    recipe.AddTile(TileID.Furnaces);
             recipe.SetResult(this);
             recipe.AddRecipe();
         }
