@@ -30,7 +30,7 @@ namespace CookieMod.Items
         {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(null, "Cookie", 1);
-			recipe.AddTile(TileID.Honey);
+	    recipe.needsHoney = true;
             recipe.SetResult(this);
             recipe.AddRecipe();
         }
