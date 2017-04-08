@@ -33,7 +33,7 @@ namespace CookieMod.Items.Weapons
             item.maxStack = 999;       //this is the max stack of this item
             item.consumable = true;  //this make the item consumable when used
             item.noUseGraphic = true;
-                       
+            item.ammo = mod.ItemType("Cookie");
         }
         public override void AddRecipes()  //How to craft this item
         {
