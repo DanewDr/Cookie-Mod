@@ -16,16 +16,7 @@ namespace CookieMod.Items
             item.value = 100;
             item.rare = 1;
             item.maxStack = 999;
-            ItemID.Sets.ItemNoGravity[item.type] = false;  //this make that the item will float in air
-        }
- 
-       
- 
-        public override Color? GetAlpha(Color lightColor)
-        {
-            return Color.White;
-        }
- 
+	}   
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
