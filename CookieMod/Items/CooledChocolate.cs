@@ -11,8 +11,16 @@ namespace CookieMod.Items
         public override void SetDefaults()
         {
             item.name = "Chocolate";
-			      item.maxStack = 99;
-			      item.toolTip = "The smell is so delightful.";
-			      item.rare = 3;
+	    item.maxStack = 99;
+	    item.toolTip = "The smell is so delightful.";
+	    item.rare = 3;
         }
+	public override void AddRecipes()
+	{
+		ModRecipe recipe = new ModRecipe(mod);
+		recipe.AddIngredient(null, "MoltenChocolate");
+		recipe.AddTile(null, "MilkTank");
+		recipe.SetResult(this);
+		recipe.AddRecipe();
+	}
     }
