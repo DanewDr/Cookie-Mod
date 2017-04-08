@@ -10,7 +10,7 @@ namespace CookieMod.Items
         public override void SetDefaults()
         {
             item.name = "Molten Chocolate";
-			item.maxStack = 99;
+			item.maxStack = 999;
 			item.toolTip = "It burns with the heat of Hell.";
 			item.rare = 3;
         }
