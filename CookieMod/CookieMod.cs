@@ -36,7 +36,7 @@ namespace CookieMod
         }
         public override void AddRecipes()
         {
-            recipe = new ModRecipe(this);
+            ModRecipe recipe = new ModRecipe(this);
             recipe.AddIngredient(null, "Cookie");
             recipe.SetResult(null, "CookieDust", 3);
             recipe.AddTile(TileID.MythrilAnvil);
