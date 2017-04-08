@@ -10,15 +10,16 @@ namespace CookieMod.Items.Weapons
 		public override void SetDefaults()
 		{
 			item.name = "Sugar Shark Launcher";
-			item.damage = 27;
+			item.damage = 31;
 			item.ranged = true;
 			item.noMelee = true;
 			item.width = 34;
 			item.height = 22;
-			item.toolTip = "Fires a sugar shark!";
+			item.toolTip = "Rapidly fires mini sugar sharks.";
+			item.toolTip2 = "Uses sugar shark fins as ammo";
 			item.rare = 2;
-			item.useTime = 20;
-			item.useAnimation = 20;
+			item.useTime = 9;
+			item.useAnimation = 9;
 			item.useStyle = 5;
 			item.noMelee = true;
 			item.knockBack = 4f;
