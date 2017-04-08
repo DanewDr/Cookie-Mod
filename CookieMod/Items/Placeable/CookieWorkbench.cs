@@ -7,7 +7,7 @@ namespace CookieMod.Items.Placeable
 	{
 		public override void SetDefaults()
 		{
-			item.name = "Cookie Workbench";
+			item.name = "Cookie Factory";
 			item.width = 28;
 			item.height = 14;
 			item.maxStack = 99;
@@ -25,9 +25,15 @@ namespace CookieMod.Items.Placeable
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(null, "Cookie", 10);
+			recipe.AddIngredient(ItemID.IronBar, 4);
+			recipe.AddIngredient(ItemID.DemonitBar, 1);
+			recipe.AddIngredient(null, "Dough", 2);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}
+        	public override DrawAnimation GetAnimation()
+        		{
+            			return new DrawAnimationVertical(15, 3);   //3 is the sprite frame, change of how many frames your sprite have
+        		}		
 	}
 }
