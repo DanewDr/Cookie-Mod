@@ -31,7 +31,7 @@ namespace CookieMod.Items
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(null, "Cookie", 1);
 			recipe.AddIngredient(null, "GingerRoot", 3);
-			recipe.AddTile(null, "CookieWorchbench");
+			recipe.AddTile(null, "CookieWorkbench");
             recipe.SetResult(this);
             recipe.AddRecipe();
         }
