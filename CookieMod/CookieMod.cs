@@ -27,12 +27,12 @@ namespace CookieMod
         }
 	public override void AddRecipeGroups()
         {
-		RecipeGroup group = new RecipeGroup(() => Lang.misc[37] + "CorruptBar", new int[] //Souls is the name of the RecipeGroup
+		RecipeGroup group = new RecipeGroup(() => Lang.misc[37] + "Corruption Bar", new int[] //Souls is the name of the RecipeGroup
 		{
 			ItemID.DemoniteBar,
 			ItemID.CrimtaneBar,
 		});
-            RecipeGroup.RegisterGroup("Souls", group);
+            RecipeGroup.RegisterGroup("CorruptBar", group);
         }
         public override void AddRecipes()
         {
