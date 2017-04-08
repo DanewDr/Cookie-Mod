@@ -8,7 +8,7 @@ namespace CookieMod.Items.Placeable
 	{
 		public override void SetDefaults()
 		{
-			item.name = "Chrunchwood";
+			item.name = "Crunchwood";
 			item.width = 12;
 			item.height = 12;
 			item.maxStack = 999;
