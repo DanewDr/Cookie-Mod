@@ -9,7 +9,7 @@ namespace CookieMod.Items.Weapons
 	{
 		public override void SetDefaults()
 		{
-			item.name = "Sugar Shark Launcher";
+			item.name = "Sugarshark";
 			item.damage = 31;
 			item.ranged = true;
 			item.noMelee = true;
