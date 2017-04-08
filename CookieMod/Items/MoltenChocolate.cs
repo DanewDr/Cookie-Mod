@@ -5,12 +5,14 @@ using Terraria.ModLoader;
 
 namespace CookieMod.Items
 {
-    public class ChocolateBottle : ModItem
+    public class MoltenChocolate : ModItem
     {
         public override void SetDefaults()
         {
-            item.CloneDefaults(ItemID.HealingPotion);
-            item.name = "Chocolate Milk";
+            item.name = "Molten Chocolate";
+			item.maxStack = 99;
+			item.toolTip = "It burns with the heat of Hell.";
+			item.rare = 3;
         }
     }
 }
