@@ -87,13 +87,6 @@ namespace CookieMod
             recipe.SetResult(null, "CookieGlove");
             recipe.AddTile(null, "CookieWorkbench");
             recipe.AddRecipe();
-            recipe.AddRecipe();
-            recipe = new ModRecipe(this);
-            recipe.AddIngredient(ItemID.DirtBlock);
-            recipe.AddIngredient(null, "SugarDust", 3);
-            recipe.AddIngredient(null, "CookieCrumbs", 5);
-            recipe.SetResult(null, "ChocoDirt");
-            recipe.AddRecipe();
             recipe = new ModRecipe(this);
             recipe.AddIngredient(ItemID.IronBar, 9);
             recipe.AddIngredient(ItemID.EmptyBucket, 1);
