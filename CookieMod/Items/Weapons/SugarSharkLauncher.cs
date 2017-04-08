@@ -29,7 +29,10 @@ namespace CookieMod.Items.Weapons
 			item.shootSpeed = 13f;
 			item.useAmmo = mod.ItemType("SugarSharkFin");
 		}
-
+		public override bool ConsumeAmmo(Player player)
+		{
+			return Main.rand.NextFloat() > .50f;
+		}
 
 	}
 }
