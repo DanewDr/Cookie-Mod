@@ -10,7 +10,7 @@ namespace CookieMod.Items.Weapons
     {
         public override void SetDefaults()
         {
-            item.name = "Staff of the Baker";          
+            item.name = "Vanilla Staff";          
             item.damage = 98;                        
             item.magic = true;                     //this make the item do magic 
             item.width = 24;
@@ -59,11 +59,11 @@ namespace CookieMod.Items.Weapons
 			}
 			else
 			{
-				item.useTime = 14;
-				item.useAnimation = 14;
-				item.damage = 70;
+				item.useTime = 18;
+				item.useAnimation = 18;
+				item.damage = 76;
 				item.shoot = mod.ProjectileType ("SugarBeam");
-				item.mana = 7;
+				item.mana = 9;
 			}
 			return base.CanUseItem(player);
 		}
