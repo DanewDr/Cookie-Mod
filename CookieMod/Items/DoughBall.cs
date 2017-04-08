@@ -17,5 +17,12 @@ namespace CookieMod.Items
             item.rare = 1;
             item.maxStack = 999;
         }
+     }
+    public override void AddRecipes()
+  		{
+       ModRecipe recipe = new ModRecipe(mod);
+       recipe.AddIngredient(null, "CookieDirt", 1);
+       recipe.SetResult(this, 2);
+       recipe.AddRecipe();
     }
 }
