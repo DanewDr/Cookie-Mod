@@ -24,10 +24,15 @@ namespace CookieMod
                 AutoloadSounds = true,
 				AutoloadBackgrounds = true
             };
-        }
-		public override void AddRecipeGroups()
+        };
+	public override void AddRecipeGroups()
         {
-
+		RecipeGroup group = new RecipeGroup(() => Lang.misc[37] + "CorruptBar", new int[] //Souls is the name of the RecipeGroup
+		{
+			ItemID.DemoniteBar,
+			ItemID.CrimtaneBar,
+		});
+            RecipeGroup.RegisterGroup("Souls", group);
         }
         public override void AddRecipes()
         {
