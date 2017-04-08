@@ -26,7 +26,7 @@ namespace CookieMod.Items.Placeable
 		{
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(ItemID.IronBar, 4);
-			recipe.AddIngredient(ItemID.DemonitBar, 1);
+			recipe.AddRecipeGroup("CorruptBar", 6);
 			recipe.AddIngredient(null, "Dough", 2);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
