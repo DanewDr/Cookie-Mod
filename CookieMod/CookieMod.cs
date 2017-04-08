@@ -187,8 +187,9 @@ namespace CookieMod
             recipe.AddTile(null, "CookieWorkbench");
             recipe.AddRecipe();
             recipe = new ModRecipe(this);
-            recipe.AddIngredient(ItemID.SharkFin, 15);
+            recipe.AddIngredient(ItemID.SharkFin, 5);
             recipe.AddIngredient(null, "SugarCube", 25);
+	    recipe.AddIngredient(ItemID.Megashark);
             recipe.SetResult(null, "SugarSharkLauncher");
             recipe.AddIngredient(ItemID.Bone, 3);
             recipe.AddTile(null, "CookieWorkbench");
