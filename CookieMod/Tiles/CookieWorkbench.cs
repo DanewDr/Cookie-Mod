@@ -15,11 +15,11 @@ namespace CookieMod.Tiles
 			Main.tileNoAttach[Type] = true;
 			Main.tileTable[Type] = true;
 			Main.tileLavaDeath[Type] = true;
-			TileObjectData.newTile.CopyFrom(TileObjectData.Style2x1);
+			TileObjectData.newTile.CopyFrom(TileObjectData.Style3x3);
 			TileObjectData.newTile.CoordinateHeights = new int[]{ 18 };
 			TileObjectData.addTile(Type);
 			AddToArray(ref TileID.Sets.RoomNeeds.CountsAsTable);
-			AddMapEntry(new Color(172, 119, 14), "Cookie Workbench");
+			AddMapEntry(new Color(250, 250, 250), "Cookie Factory");
 			dustType = -1;
 			disableSmartCursor = true;
 			adjTiles = new int[]{ TileID.WorkBenches };
@@ -34,5 +34,18 @@ namespace CookieMod.Tiles
 		{
 			Item.NewItem(i * 16, j * 16, 32, 16, mod.ItemType("CookieWorkbench"));
 		}
+ 		public override void AnimateTile(ref int frame, ref int frameCounter)
+        	{
+            		frameCounter++;
+           		if (frameCounter > 20)  //this is the frames speed, the bigger is the value the slower are the frames
+            		{
+                		frameCounter = 0;
+                		frame++;
+                		if (frame > 2)   //this is where you add how may frames your spritesheet has but -1, so if it has 4 frames you put 3 etc.
+                		{
+                    			frame = 0;
+                		}
+            		}
+        	}		
 	}
 }
