@@ -24,3 +24,4 @@ namespace CookieMod.Items
 		recipe.AddRecipe();
 	}
     }
+}
