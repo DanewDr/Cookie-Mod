@@ -30,10 +30,6 @@ namespace CookieMod.Items.Placeable
 			recipe.AddIngredient(null, "Dough", 2);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
-		}
-        	public override DrawAnimation GetAnimation()
-        		{
-            			return new DrawAnimationVertical(15, 3);   //3 is the sprite frame, change of how many frames your sprite have
-        		}		
+		}	
 	}
 }
