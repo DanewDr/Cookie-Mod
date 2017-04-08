@@ -9,10 +9,10 @@ namespace CookieMod.Items
     {
         public override void SetDefaults()
         {
-            item.name = "Dough";
+            item.name = "Dough Ball";
             item.width = 20;
             item.height = 20;
-            item.toolTip = "I wouldn't eat it right now.";
+            item.toolTip = "Used to craft cookies";
             item.value = 100;
             item.rare = 1;
             item.maxStack = 999;
