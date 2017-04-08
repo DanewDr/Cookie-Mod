@@ -26,7 +26,7 @@ namespace CookieMod.Items.Weapons
 			item.value = Item.sellPrice(0, 10, 0, 0);
 			item.autoReuse = true;
 			item.shoot = mod.ProjectileType ("SugarShark");
-			item.shootSpeed = 6f;
+			item.shootSpeed = 13f;
 			item.useAmmo = mod.ItemType("SugarSharkFin");
 		}
 
