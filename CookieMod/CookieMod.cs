@@ -24,7 +24,7 @@ namespace CookieMod
                 AutoloadSounds = true,
 				AutoloadBackgrounds = true
             };
-        };
+        }
 	public override void AddRecipeGroups()
         {
 		RecipeGroup group = new RecipeGroup(() => Lang.misc[37] + "CorruptBar", new int[] //Souls is the name of the RecipeGroup
