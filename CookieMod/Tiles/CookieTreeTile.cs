@@ -14,7 +14,7 @@ namespace CookieMod.Tiles
         }
         public override int DropWood()
         {
-            return mod.ItemType("Cookie");     //this is what the tree will drop
+            return mod.ItemType("CrunchWood");     //this is what the tree will drop
         }
  
         public override Texture2D GetTexture()
