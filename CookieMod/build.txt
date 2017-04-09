@@ -1,4 +1,4 @@
-author = Danew Dr
+author = Danew Dr and CookieBiscuit
 version = 0.2.0
 displayName = Cookie Mod
 homepage = http://forums.terraria.org/index.php?threads/cookie-mod.49824/
