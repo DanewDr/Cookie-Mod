@@ -39,7 +39,7 @@ namespace CookieMod.Items     //We need this to basically indicate the folder wh
         {                                        //this is how to craft this item
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(ItemID.CobaltShield, 1);      //this is how to add an ingredient from Terraria,  so for crafting this item you need 1 Cobalt Shield      
-            recipe.AddIngredient(ItemID.LifeCrystal, 4);       //and 4 lifecristals
+            recipe.AddIngredient(null, "GingerCookie", 4);       //and 4 lifecristals
             recipe.AddTile(TileID.Anvils);  //this is where craft the item ,WorkBenches = all WorkBenches    Anvils = all anvils , MythrilAnvil = Mythril Anvil and Orichalcum Anvil, Furnaces = all furnaces , DemonAltar = Demon Altar and Crimson Altar , TinkerersWorkbench = Tinkerer's Workbench
             recipe.SetResult(this);
             recipe.AddRecipe();
