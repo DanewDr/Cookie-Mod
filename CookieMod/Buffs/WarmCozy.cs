@@ -15,13 +15,10 @@ namespace CookieMod.Buffs
         }
         public override void Update(Player player, ref int buffIndex)
         {                                             //
-            player.AddBuff(mod.BuffType("Calcium"), 1); //this is an example of how to add your own buff
-            player.statDefense += 5;  //
-      			player.meleeDamage = 0.5f;
-				    player.thrownDamage = 0.5f;
-				    player.rangedDamage = 0.5f;
-				    player.magicDamage = 0.5f;
-				    player.minionDamage = 0.5f;
+            player.AddBuff(mod.BuffType("WarmCozy"), 1); //this is an example of how to add your own buff
+            player.statDefense += 6;  //
+      	    player.meleeDamage -= 10;
+	    player.meleeSpeed -= 10;
         }
     }
 }
