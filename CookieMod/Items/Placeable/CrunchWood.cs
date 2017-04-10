@@ -4,7 +4,7 @@ using Terraria.ModLoader;
 
 namespace CookieMod.Items.Placeable
 {
-	public class ChrunchWood : ModItem
+	public class CrunchWood : ModItem
 	{
 		public override void SetDefaults()
 		{
