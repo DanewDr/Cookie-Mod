@@ -3,9 +3,9 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ExampleMod.Items.Weapons
+namespace CookieMod.Items.Weapons
 {
-	public class ExampleDualUseWeapon : ModItem
+	public class OvenGlove : ModItem
 	{
 		public override void SetDefaults()
 		{
