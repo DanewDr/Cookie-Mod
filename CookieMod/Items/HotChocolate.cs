@@ -27,7 +27,6 @@ namespace CookieMod.Items
         item.holdStyle = 1;
         item.ammo = 353;
         item.notAmmo = true;
-	item.shoot = mod.ProjectileType ("HotChocolate");
         }
 	public override void HoldStyle(Player player)
 	{
