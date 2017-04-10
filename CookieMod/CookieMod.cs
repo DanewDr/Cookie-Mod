@@ -87,7 +87,6 @@ namespace CookieMod
             recipe.SetResult(null, "SugarWater");
             recipe.AddRecipe();
             recipe = new ModRecipe(this);
-            recipe.AddIngredient(ItemID.Silk, 15);
             recipe.AddIngredient(null, "Cookie", 20);
             recipe.SetResult(null, "CookieGlove");
             recipe.AddTile(null, "CookieWorkbench");
