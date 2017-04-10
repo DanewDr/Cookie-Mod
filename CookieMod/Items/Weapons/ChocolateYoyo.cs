@@ -12,8 +12,8 @@ namespace CookieMod.Items.Weapons
 		{
 			item.name = "Chocolate Yoyo";
 			item.useStyle = 5;
-			item.width = 24;
-			item.height = 24;
+			item.width = 30;
+			item.height = 26;
 			item.noUseGraphic = true;
 			item.UseSound = SoundID.Item1;
 			item.melee = true;
@@ -23,9 +23,8 @@ namespace CookieMod.Items.Weapons
 			item.useAnimation = 25;
 			item.useTime = 25;
 			item.shootSpeed = 16f;
-
 			item.knockBack = 2.5f;
-			item.damage = 9;
+			item.damage = 27;
 			item.value = Item.sellPrice(0, 0, 1, 0);
 			item.rare = 0;
 
@@ -39,6 +38,7 @@ namespace CookieMod.Items.Weapons
 		{
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(null, "ChocolateCookie", 10);
+			recipe.AddTile(null, "CookieWorkbench");
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}
