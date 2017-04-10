@@ -40,7 +40,7 @@ namespace CookieMod.Items
             recipe.AddIngredient(ItemID.Mug, 3);
 	    recipe.AddIngredient(null, "Milk");
 	    recipe.AddIngredient(null, "MoltenChocolate");
-	    recipe.AddTile(TileID.Furnaces);
+	    recipe.AddTile(TileID.Workbenches);
             recipe.SetResult(this, 3);
             recipe.AddRecipe();
         }
