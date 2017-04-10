@@ -19,7 +19,7 @@ namespace CookieMod.Items.Placeable
 			item.useStyle = 1;
 			item.consumable = true;
 			item.value = 500;
-			item.createTile = mod.TileType(CrunchWoodDresser");
+			item.createTile = mod.TileType("CrunchWoodDresser");
 		}
 
 		public override void AddRecipes()
