@@ -22,8 +22,8 @@ namespace CookieMod.NPCs
             npc.knockBackResist = 0.5f;
             npc.aiStyle = 1;
             Main.npcFrameCount[npc.type] = 1; 
-            aiType = NPCID.Slime;  //npc behavior
-            animationType = NPCID.Slime;
+            aiType = NPCID.GreenSlime;  //npc behavior
+            animationType = NPCID.GreenSlime;
 			npc.noGravity = true;
         }
 
