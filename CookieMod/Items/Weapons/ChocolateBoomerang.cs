@@ -13,8 +13,8 @@ namespace CookieMod.Items.Weapons
             item.name = "Chocolate Boomerang";
             item.damage = 32;            
             item.melee = true;
-            item.width = 30;
-            item.height = 30;
+            item.width = 18;
+            item.height = 32;
             item.useTime = 14;
             item.useAnimation = 25;
             item.noUseGraphic = true;
@@ -41,7 +41,8 @@ namespace CookieMod.Items.Weapons
         public override void AddRecipes()
         {
                 ModRecipe recipe = new ModRecipe(mod);
-                recipe.AddIngredient(ItemID.DirtBlock, 1);
+                recipe.AddIngredient(null, "ChocolateCookie", 12);
+                recipe.AddTile(null, "CookieWorkbench");
                 recipe.SetResult(this);
                 recipe.AddRecipe();
         }
