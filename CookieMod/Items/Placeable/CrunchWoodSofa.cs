@@ -1,7 +1,7 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ExampleMod.Items.Placeable
+namespace CookieMod.Items.Placeable
 {
 	public class CrunchWoodSofa : ModItem
 	{
