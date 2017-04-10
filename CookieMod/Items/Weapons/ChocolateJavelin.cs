@@ -16,15 +16,15 @@ namespace CookieMod.Items.Weapons
 			item.name = "Chocolate Javelin";
 			item.shoot = mod.ProjectileType<Projectiles.ChocolateJavelinProjectile>(); // Notice a newer way to get projectile types, much cleaner than using strings!
 			item.shootSpeed = 10f;
-			item.damage = 45;
+			item.damage = 26;
 			item.knockBack = 5f;
 			item.thrown = true;
 			item.useStyle = 1;
 			item.UseSound = SoundID.Item1;
 			item.useAnimation = 25;
 			item.useTime = 25;
-			item.width = 30;
-			item.height = 30;
+			item.width = 42;
+			item.height = 42;
 			item.maxStack = 999;
 			item.consumable = true;
 			item.noUseGraphic = true;
@@ -33,5 +33,13 @@ namespace CookieMod.Items.Weapons
 			item.value = Item.sellPrice(0, 0, 5, 0);
 			item.rare = 5;
 		}
+		public override void AddRecipes()
+        	{
+            	ModRecipe recipe = new ModRecipe(mod);
+            	recipe.AddIngredient(null, "ChocolateCookie", 1);
+		recipe.AddTile(null, "CookieWorkbench");   
+            	recipe.SetResult(this, 20);
+            	recipe.AddRecipe();
+        	}
 	}
 }
