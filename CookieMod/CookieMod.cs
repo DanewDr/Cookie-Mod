@@ -78,7 +78,7 @@ namespace CookieMod
             recipe.AddRecipe();
             recipe = new ModRecipe(this);
             recipe.AddIngredient(ItemID.Bottle);
-            recipe.SetResult(null, "MilkBottle");
+            recipe.SetResult(null, "Milk");
             recipe.AddTile(null, "MilkTank");
             recipe.AddRecipe();
             recipe = new ModRecipe(this);
