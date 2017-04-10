@@ -8,7 +8,7 @@ namespace CookieMod.Items
 	{
 		public override void SetDefaults()
 		{
-			item.name = "Crystalized Sugar";
+			item.name = "Rock Candy";
 			item.width = 16;
 			item.height = 16;
 			item.maxStack = 99;
