@@ -8,11 +8,11 @@ namespace CookieMod.Items.Weapons
         public override void SetDefaults()
         {
             item.name = "Chocolate Gun";  //Gun name  
-            item.damage = 20;  //gun damage
+            item.damage = 12;  //gun damage
             item.ranged = true;   //its a gun so set this to true
-            item.width = 38;     //gun image width
-            item.height = 18;   //gun image  height
-            item.useTime = 5;  //how fast 
+            item.width = 40;     //gun image width
+            item.height = 16;   //gun image  height
+            item.useTime = 10;  //how fast 
             item.useAnimation = 20;
             item.useStyle = 5;    //
             item.noMelee = true; //so the item's animation doesn't do damage
