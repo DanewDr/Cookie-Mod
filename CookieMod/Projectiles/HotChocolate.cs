@@ -4,7 +4,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria;
  
-namespace CookieMod.Items
+namespace CookieMod.Projectiles
 {
     public class HotChocolate : ModItem
     {
