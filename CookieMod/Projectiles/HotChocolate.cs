@@ -6,7 +6,7 @@ using Terraria;
  
 namespace CookieMod.Projectiles
 {
-    public class HotChocolate : ModItem
+    public class HotChocolate : ModProjectile
     {
         public override void SetDefaults()
         {
