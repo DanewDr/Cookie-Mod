@@ -10,15 +10,15 @@ namespace CookieMod.Items
     {
         public override void SetDefaults()
         {
-        this.name = "Hot Chocolate";
-        this.width = 14;
-        this.height = 14;
-        this.aiStyle = 68;
-        this.friendly = true;
-        this.penetrate = 1;
-        this.alpha = (int) byte.MaxValue;
-        this.thrown = true;
-        this.noEnchantments = true;
+        projectile.name = "Hot Chocolate";
+        projectile.width = 14;
+        projectile.height = 14;
+        projectile.aiStyle = 68;
+        projectile.friendly = true;
+        projectile.penetrate = 1;
+        projectile.alpha = (int) byte.MaxValue;
+        projectile.thrown = true;
+        projectile.noEnchantments = true;
 	}
     }
 }
