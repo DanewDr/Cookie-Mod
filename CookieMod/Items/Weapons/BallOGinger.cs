@@ -14,11 +14,11 @@ namespace CookieMod.Items.Weapons
         {
             item.name = "Ball O' Ginger";
             item.width = 30;
-            item.height = 10;
+            item.height = 32;
             item.toolTip = "Shoots a ball of ginger (on a chain)";
             item.value = 2000;
             item.rare = 2;
-			item.noMelee = true; // Makes sure that the animation when using the item doesn't hurt NPCs.
+	    item.noMelee = true; // Makes sure that the animation when using the item doesn't hurt NPCs.
             item.useStyle = 5; // Set the correct useStyle.
             item.useAnimation = 40; // Determines how long the animation lasts. 
             item.useTime = 44; // Determines how fast you can use this weapon (a lower value results in a faster use time).
