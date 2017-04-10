@@ -20,7 +20,7 @@ namespace CookieMod.Items
         item.maxStack = 99;
         item.width = 10;
         item.height = 10;
-        item.buffType = 25;
+        item.buffType = mod.BuffType("WarmCozy");
         item.buffTime = 7200;
 	item.consumable = true;
         item.value = 100;
