@@ -17,7 +17,7 @@ namespace CookieMod.Items
         item.useTurn = true;
         item.useAnimation = 17;
         item.useTime = 17;
-        item.maxStack = 99;
+        item.maxStack = 30;
         item.width = 10;
         item.height = 10;
         item.buffType = mod.BuffType("WarmCozy");
