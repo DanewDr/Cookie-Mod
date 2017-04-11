@@ -20,6 +20,7 @@ namespace CookieMod.Items
       item.rare = 1;
       item.autoReuse = false;
       item.mana = 20;
+      item.healLife = 25;
     }
     public override bool CanUseItem(Player player)
     {
