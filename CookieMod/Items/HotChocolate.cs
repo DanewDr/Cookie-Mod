@@ -25,7 +25,7 @@ namespace CookieMod.Items
 	item.consumable = true;
         item.value = 100;
         item.holdStyle = 1;
-        item.ammo = 353;
+	item.ammo = item.type;
         item.notAmmo = true;
         }
 	public override void HoldStyle(Player player)
