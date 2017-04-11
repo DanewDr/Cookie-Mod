@@ -29,7 +29,7 @@ namespace CookieMod.Items.Armor
 		{
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(null, "CrunchWood", 25);
-			recipe.AddTile(TileID.Workbenches);
+			recipe.AddTile(TileID.WorkBenches);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}
