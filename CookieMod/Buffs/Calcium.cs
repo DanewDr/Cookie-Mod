@@ -11,7 +11,7 @@ namespace CookieMod.Buffs
         {
             Main.buffNoTimeDisplay[Type] = false;
             Main.buffName[this.Type] = "Calcium";
-            Main.buffTip[this.Type] = "The Calcium from the milk increases your defence by 10!";
+            Main.buffTip[this.Type] = "Your bones defense feels like they have been increased by 10";
         }
         public override void Update(Player player, ref int buffIndex)
         {                                             //
