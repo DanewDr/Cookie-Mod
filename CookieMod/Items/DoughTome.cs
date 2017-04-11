@@ -19,6 +19,7 @@ namespace CookieMod.Items
       item.noMelee = true;
       item.rare = 1;
       item.autoReuse = false;
+      item.mana = 20;
     }
     public override bool CanUseItem(Player player)
     {
