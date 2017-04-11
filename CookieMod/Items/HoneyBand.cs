@@ -21,13 +21,8 @@ namespace CookieMod.Items
 
 		public override void UpdateAccessory(Player player, bool hideVisual)
 		{
-			player.statDefense = 0;
-			player.meleeDamage = 0.1f;
-			player.thrownDamage = 0.1f;
-			player.rangedDamage = 0.1f;
-			player.magicDamage = 0.1f;
-			player.minionDamage = 0.1f;
-			player.lifeRegen = -120;
+			player.buffType = mod.BuffType("Honeyed");
+			player.buffType = BuffID.Honey;
 		}
 
 		public override void AddRecipes()
