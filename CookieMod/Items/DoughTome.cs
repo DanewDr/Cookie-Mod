@@ -26,7 +26,7 @@ namespace CookieMod.Items
     {
       if (player.FindBuffIndex(21) == -1)
       {
-        player.AddBuff(BuffID.21), 360);
+        player.AddBuff(BuffID.21), 3600);
       }
       return base.CanUseItem(player);
     }
