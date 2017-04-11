@@ -12,6 +12,7 @@ namespace CookieMod.Buffs
             Main.buffNoTimeDisplay[Type] = true;
             Main.buffName[this.Type] = "Honied";
             Main.buffTip[this.Type] = "Decreases movementspeed";
+            Main.debuff[Type] = true;
         }
         public override void Update(Player player, ref int buffIndex)
         {                                             //
