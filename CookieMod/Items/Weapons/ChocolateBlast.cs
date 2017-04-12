@@ -26,7 +26,7 @@ namespace CookieMod.Items.Weapons
             item.mana = 6;             //mana use
             item.UseSound = SoundID.Item21;            //this is the 
             item.autoReuse = true;
-            item.shoot = mod.ProjectileType ("Cookie");  //this make the item shoot 
+            item.shoot = mod.ProjectileType ("GiantCookie");  //this make the item shoot 
             item.shootSpeed = 8f;    //projectile speed when shoot
         }      
     }
