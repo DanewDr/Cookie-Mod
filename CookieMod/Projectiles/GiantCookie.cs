@@ -7,7 +7,7 @@ using Terraria.ModLoader;
  
 namespace CookieMod.Projectiles
 {
-    public class Cookie : ModProjectile
+    public class GiantCookie : ModProjectile
     {
         public override void SetDefaults()
         {
