@@ -26,7 +26,7 @@ namespace CookieMod.Items.Weapons
 			item.autoReuse = true;
 			item.shoot = 166;
 			item.shootSpeed = 4f;
-			item.useAmmo = AmmoID.Snowball;	//Restrict the type of ammo the weapon can use, so that the weapon cannot use other ammos
+			item.useAmmo = mod.ItemType("SoftSugarball");	//Restrict the type of ammo the weapon can use, so that the weapon cannot use other ammos
 		}
 
 
