@@ -11,12 +11,13 @@ namespace CookieMod.Items.Weapons
         public override void SetDefaults()
         {
             item.name = "Honey Staff";
-            item.damage = 21;
+            item.damage = 4;
             item.summon = true;
             item.mana = 10;
             item.width = 26;
             item.height = 28;
-            item.toolTip = "Summons a honey imp to shoot honey at your foes";
+            item.toolTip = "Summons a honey imp to spray honey at your foes";
+	    item.toolTip2 = "Honey sprayed slows your enemies"
             item.useTime = 34;
             item.useAnimation = 26;
             item.useStyle = 1;
@@ -28,14 +29,14 @@ namespace CookieMod.Items.Weapons
             item.shoot = mod.ProjectileType("HoneyImp");
             item.shootSpeed = 10f;
             item.buffTime = 3600;
-			item.buffType = mod.BuffType("HoneyImp");
+	    item.buffType = mod.BuffType("HoneyImp");
         }
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(null, "HoneyCookie", 10);
             recipe.SetResult(this);
-			recipe.AddTile(null, "CookieWorkbench"); 
+	    recipe.AddTile(null, "CookieWorkbench"); 
             recipe.AddRecipe();
         }
     }
