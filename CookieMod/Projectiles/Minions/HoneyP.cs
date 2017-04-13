@@ -48,5 +48,9 @@ namespace CookieMod.Projectiles.Minions
             Main.dust[dust].position.Y = projectile.Center.Y + (float)Main.rand.Next(-2, 3);
             Main.dust[dust].noGravity = true;
         }
+      public override void OnHitNPC(NPC target, int damage, float knockback, bool crit)
+	     {
+			        target.AddBuff(mod.BuffType("Honeyed"), 500);
+		    }
     }
 }
