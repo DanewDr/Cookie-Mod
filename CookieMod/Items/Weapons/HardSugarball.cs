@@ -18,7 +18,8 @@ namespace CookieMod.Items.Weapons
 			item.rare = 3;
 			item.consumable = true;
 			item.knockBack = 8f;
-			item.ammo = AmmoID.Snowball;
+			item.ammo = mod.ItemType("SoftSugarball");
+			item.shoot = mod.ProjectileType ("HardSugarball");
 		}
 	}
 }
