@@ -11,7 +11,7 @@ namespace CookieMod.Buffs
         {
             Main.buffNoTimeDisplay[Type] = true;
             Main.buffName[this.Type] = "Honeyed";
-            Main.buffTip[this.Type] = "You are covered in honey.";
+            Main.buffTip[this.Type] = "Your speed is slowed";
             Main.debuff[Type] = true;
         }
         public override void Update(Player player, ref int buffIndex)
