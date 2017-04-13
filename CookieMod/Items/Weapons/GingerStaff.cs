@@ -11,7 +11,7 @@ namespace CookieMod.Items.Weapons
         public override void SetDefaults()
         {
             item.name = "Ginger Staff";
-            item.damage = 21;
+            item.damage = 12;
             item.summon = true;
             item.mana = 10;
             item.width = 26;
@@ -28,14 +28,14 @@ namespace CookieMod.Items.Weapons
             item.shoot = mod.ProjectileType("GingerMinion");
             item.shootSpeed = 10f;
             item.buffTime = 3600;
-			item.buffType = mod.BuffType("GingerMinion");
+	    item.buffType = mod.BuffType("GingerMinion");
         }
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(null, "GingerCookie", 10);
             recipe.SetResult(this);
-			recipe.AddTile(null, "CookieWorkbench"); 
+	    recipe.AddTile(null, "CookieWorkbench"); 
             recipe.AddRecipe();
         }
     }
