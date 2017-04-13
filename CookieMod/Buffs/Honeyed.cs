@@ -10,13 +10,13 @@ namespace CookieMod.Buffs
         public override void SetDefaults()
         {
             Main.buffNoTimeDisplay[Type] = true;
-            Main.buffName[this.Type] = "Honied";
-            Main.buffTip[this.Type] = "Decreases movementspeed";
+            Main.buffName[this.Type] = "Honeyed";
+            Main.buffTip[this.Type] = "You are covered in honey.";
             Main.debuff[Type] = true;
         }
         public override void Update(Player player, ref int buffIndex)
         {                                             //
-            player.AddBuff(mod.BuffType("Honyed"), 1); //this is an example of how to add your own buff
+            player.AddBuff(mod.BuffType("Honeyed"), 1); //this is an example of how to add your own buff
             player.moveSpeed -= 0.50f;;  //
         }
     }
