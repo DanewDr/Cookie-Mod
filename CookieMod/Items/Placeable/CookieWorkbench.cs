@@ -8,8 +8,8 @@ namespace CookieMod.Items.Placeable
 		public override void SetDefaults()
 		{
 			item.name = "Cookie Factory";
-			item.width = 28;
-			item.height = 14;
+			item.width = 22;
+			item.height = 22;
 			item.maxStack = 99;
 			AddTooltip("Used to craft cookie things. Can also be used as a normal Workbench!");
 			item.useTurn = true;
