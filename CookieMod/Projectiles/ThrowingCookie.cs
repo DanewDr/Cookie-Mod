@@ -11,7 +11,7 @@ namespace CookieMod.Projectiles
     {
 		public override void SetDefaults()
 		{
-			projectile.name = "Hard Cookie";
+			projectile.name = "Cookie";
 			aiType = ProjectileID.MiniSharkron;
 			projectile.CloneDefaults(ProjectileID.MiniSharkron);
 			projectile.friendly = true;
