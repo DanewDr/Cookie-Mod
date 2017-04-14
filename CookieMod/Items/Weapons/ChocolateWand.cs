@@ -9,30 +9,30 @@ namespace CookieMod.Items.Weapons
 		public override void SetDefaults()
 		{
 			item.name = "Chocolate Wand";
-			item.damage = 20;
+			item.damage = 2;
 			item.magic = true;
-			item.mana = 12;
+			item.mana = 8;
 			item.width = 40;
 			item.height = 40;
-			item.toolTip = "This is a modded magic weapon.";
-			item.useTime = 25;
-			item.useAnimation = 25;
+			item.toolTip = "A wand forged of topaz and chocolate.";
+			item.useTime = 20;
+			item.useAnimation = 20;
 			item.useStyle = 5;
 			Item.staff[item.type] = true; //this makes the useStyle animate as a staff instead of as a gun
 			item.noMelee = true; //so the item's animation doesn't do damage
-			item.knockBack = 5;
-			item.value = 10000;
+			item.knockBack = 3f;
 			item.rare = 2;
 			item.UseSound = SoundID.Item20;
 			item.autoReuse = true;
 			item.shoot = mod.ProjectileType("ChocolateBall");
-			item.shootSpeed = 16f;
+			item.shootSpeed = 6f;
 		}
 
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(null, "ChocolateCookie", 10);
+			recipe.AddIngredient(ItemID.Topaz);
 			recipe.AddTile(null, "CookieWorkbench");
 			recipe.SetResult(this);
 			recipe.AddRecipe();
