@@ -9,14 +9,14 @@ namespace CookieMod.Items.Weapons
 		public override void SetDefaults()
 		{
 			item.name = "Chocolate Stave";
-			item.damage = 40;
+			item.damage = 36;
 			item.magic = true;
 			item.mana = 13;
 			item.width = 40;
 			item.height = 40;
 			item.toolTip = "100% chocolatey goodness.";
-			item.useTime = 40;
-			item.useAnimation = 40;
+			item.useTime = 33;
+			item.useAnimation = 33;
 			item.useStyle = 5;
 			Item.staff[item.type] = true; //this makes the useStyle animate as a staff instead of as a gun
 			item.noMelee = true; //so the item's animation doesn't do damage
