@@ -9,7 +9,7 @@ namespace CookieMod.Items.Weapons
 		public override void SetDefaults()
 		{
 			item.name = "Chocolate Wand";
-			item.damage = 2;
+			item.damage = 20;
 			item.magic = true;
 			item.mana = 8;
 			item.width = 40;
