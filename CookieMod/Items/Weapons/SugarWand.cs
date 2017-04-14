@@ -11,7 +11,7 @@ namespace CookieMod.Items.Weapons
         public override void SetDefaults()
         {
             item.name = "Sugar Wand";          
-            item.damage = 16;                        
+            item.damage = 11;                        
             item.magic = true;                     //this make the item do magic 
             item.width = 24;
             item.height = 28;
