@@ -33,7 +33,7 @@ namespace CookieMod.Items.Weapons
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(null, "ChocolateWand");
 			recipe.AddIngredient(null, "CookieDust", 25);
-			recipe.AddTile(TileID.MythrilAnvil);
+			recipe.AddTile(null, "CookieWorkbench");
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}
