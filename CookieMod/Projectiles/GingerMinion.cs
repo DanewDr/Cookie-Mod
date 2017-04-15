@@ -5,7 +5,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CookieMod.Projectiles.Minions
+namespace CookieMod.Projectiles
 {
     public class GingerMinion : ModProjectile
     {
