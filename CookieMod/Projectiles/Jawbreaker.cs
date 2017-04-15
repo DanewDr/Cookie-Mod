@@ -18,6 +18,7 @@ namespace CookieMod.Projectiles
             projectile.alpha = 0;
             projectile.extraUpdates = 1;
             aiType = ProjectileID.Bullet;
+            projectile.CloneDefaults(ProjectileID.Bullet);
         }       
     }
 }
