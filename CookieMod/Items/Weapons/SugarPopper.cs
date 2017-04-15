@@ -21,7 +21,7 @@ namespace CookieMod.Items.Weapons
 			item.rare = 3;
 			item.UseSound = SoundID.Item5;
 			item.autoReuse = true;
-			item.shoot = ProjectileID.WoodenArrow;
+			item.shoot = ProjectileID.WoodenArrowFriendly;
 			item.shootSpeed = 5f;
      			item.useAmmo = AmmoID.Arrow;
 		}
@@ -49,7 +49,7 @@ namespace CookieMod.Items.Weapons
 			}
 			else
 			{
-        item.shoot = ProjectileID.WoodenArrow;
+        item.shoot = ProjectileID.WoodenArrowFriendly;
         item.useAmmo = AmmoID.Arrow;
 			}
 			return base.CanUseItem(player);
