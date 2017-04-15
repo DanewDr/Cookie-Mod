@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
@@ -12,8 +12,8 @@ namespace CookieMod.Projectiles
 		public override void SetDefaults()
 		{
 			projectile.name = "Purple Popsicle";
-			aiType = ProjectileID.MiniSharkron;
-			projectile.CloneDefaults(ProjectileID.MiniSharkron);
+			aiType = ProjectileID.MusketBall;
+			projectile.CloneDefaults(ProjectileID.MusketBall);
 			projectile.friendly = true;
 			projectile.tileCollide = true;
 			projectile.ignoreWater = false;
@@ -22,16 +22,5 @@ namespace CookieMod.Projectiles
 			projectile.height = 4;
 			projectile.extraUpdates = 1;
 		}
-        	public override void AI()
-        	{            
-              		projectile.ai[0] += 1f;
-            		if (projectile.ai[0] >= 50f)       //how much time the projectile can travel before landing
-          		{
-               			projectile.velocity.Y = projectile.velocity.Y + 0.05f;    // projectile fall velocity
-                		projectile.velocity.X = projectile.velocity.X * 1f;    // projectile velocity
-            		}
-        	}
-
-
         }
  }
