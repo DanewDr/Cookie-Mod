@@ -21,8 +21,8 @@ namespace CookieMod.Items
 
 		public override void UpdateAccessory(Player player, bool hideVisual)
 		{
-			player.buffType = mod.BuffType("Honeyed");
-			player.buffType = BuffID.Honey;
+			player.lifeRegen += 10;
+			player.moveSpeed -= 0.5f;
 		}
 
 		public override void AddRecipes()
