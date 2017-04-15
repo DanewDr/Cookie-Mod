@@ -17,7 +17,7 @@ namespace CookieMod.Items.Weapons
             item.width = 26;
             item.height = 28;
             item.toolTip = "Summons a honey imp to spray honey at your foes";
-	    item.toolTip2 = "Honey sprayed slows your enemies"
+	    item.toolTip2 = "Honey sprayed slows your enemies";
             item.useTime = 34;
             item.useAnimation = 26;
             item.useStyle = 1;
