@@ -15,7 +15,7 @@ namespace CookieMod.Items
             item.toolTip = "Why you kill bunny?";
             item.value = 10;
             item.rare = 1;
-            item.maxStack = 999
+            item.maxStack = 999;
        }
     }
 }
