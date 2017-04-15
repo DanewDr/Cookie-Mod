@@ -6,7 +6,7 @@ using Terraria.ModLoader;
  
 namespace CookieMod.Items.Weapons
 {
-    public class SugarShot : ModItem
+    public class PopRocker : ModItem
     {
         public override void SetDefaults()
         {
