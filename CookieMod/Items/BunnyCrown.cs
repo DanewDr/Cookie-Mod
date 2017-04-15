@@ -27,7 +27,7 @@ namespace CookieMod.Items
  		public override bool UseItem(Player player)
 		{
 			Main.PlaySound(15, (int)player.position.X, (int)player.position.Y, 0);
-			Main.NewText("<Bunny King> Finally, I shall have my revenge!" (byte)146, (byte)101, (byte)15, false);
+			Main.NewText("<Bunny King> Finally, I shall have my revenge!", 255, 255, 0);
 			NPC.SpawnOnPlayer(player.whoAmI, mod.NPCType("BunnyKing"));
 			return true;
 		}
