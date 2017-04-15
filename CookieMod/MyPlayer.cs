@@ -14,6 +14,7 @@ namespace CookieMod
     {
         private const int saveVersion = 0;
         public bool CookieMinion = false;
+	public bool GingerMinion = false
 	public bool ChocMin;
 	public bool HoneyImp = false;
         public static bool hasProjectile;
@@ -23,6 +24,7 @@ namespace CookieMod
             CookieMinion = false;
 	    ChocMin = false;
 	    HoneyImp = false;
+	    GingerMinion = false;
         }
 		public override void UpdateBiomes()
         {
