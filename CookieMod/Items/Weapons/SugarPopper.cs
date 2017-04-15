@@ -21,7 +21,7 @@ namespace ExampleMod.Items.Weapons
 			item.rare = 3;
 			item.UseSound = SoundID.Item5;
 			item.autoReuse = true;
-			item.shoot = ProjectileID.Arrow;
+			item.shoot = ProjectileID.WoodenArrow;
 			item.shootSpeed = 5f;
      			item.useAmmo = AmmoID.Arrow;
 		}
@@ -50,7 +50,7 @@ namespace ExampleMod.Items.Weapons
 			else
 			{
         item.shoot = ProjectileID.Arrow;
-        item.useAmmo = AmmoID.Arrow;
+        item.useAmmo = AmmoID.WoodenArrow;
 			}
 			return base.CanUseItem(player);
 		}
