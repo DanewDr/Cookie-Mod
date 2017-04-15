@@ -24,6 +24,7 @@ namespace CookieMod.Projectiles
             ProjectileID.Sets.TrailCacheLength[projectile.type] = 5;
             ProjectileID.Sets.TrailingMode[projectile.type] = 0;
             aiType = ProjectileID.Bullet;
+            projectile.CloneDefaults(ProjectileID.Bullet);
         }       
     }
 }
