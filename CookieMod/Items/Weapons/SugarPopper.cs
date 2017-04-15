@@ -23,7 +23,7 @@ namespace ExampleMod.Items.Weapons
 			item.autoReuse = true;
 			item.shoot = ProjectileID.Arrow;
 			item.shootSpeed = 5f;
-      item.useAmmo = AmmoID.Arrow
+     			item.useAmmo = AmmoID.Arrow;
 		}
 
 		public override void AddRecipes()
