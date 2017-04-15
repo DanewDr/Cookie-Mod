@@ -6,7 +6,7 @@ using Terraria.ModLoader;
  
 namespace CookieMod.Items.Weapons
 {
-    public class SugarStaff : ModItem
+    public class VanillaStaff : ModItem
     {
         public override void SetDefaults()
         {
