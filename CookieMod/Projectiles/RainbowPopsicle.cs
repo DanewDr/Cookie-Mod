@@ -12,8 +12,8 @@ namespace CookieMod.Projectiles
 		public override void SetDefaults()
 		{
 			projectile.name = "Rainbow Popsicle";
-			aiType = ProjectileID.MusketBall;
-			projectile.CloneDefaults(ProjectileID.MusketBall);
+			aiType = ProjectileID.Bullet;
+			projectile.CloneDefaults(ProjectileID.Bullet);
 			projectile.friendly = true;
 			projectile.tileCollide = true;
 			projectile.ignoreWater = false;
