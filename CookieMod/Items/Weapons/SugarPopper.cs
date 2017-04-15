@@ -3,9 +3,9 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ExampleMod.Items.Weapons
+namespace CookieMod.Items.Weapons
 {
-	public class ExampleDualUseWeapon : ModItem
+	public class SugarPopper : ModItem
 	{
 		public override void SetDefaults()
 		{
@@ -49,8 +49,8 @@ namespace ExampleMod.Items.Weapons
 			}
 			else
 			{
-        item.shoot = ProjectileID.Arrow;
-        item.useAmmo = AmmoID.WoodenArrow;
+        item.shoot = ProjectileID.WoodenArrow;
+        item.useAmmo = AmmoID.Arrow;
 			}
 			return base.CanUseItem(player);
 		}
