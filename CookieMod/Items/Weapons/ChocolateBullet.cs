@@ -13,7 +13,6 @@ namespace CookieMod.Items.Weapons
 			item.width = 8;
 			item.height = 8;
 			item.maxStack = 999;
-			item.toolTip = "This is a modded bullet ammo.";
 			item.consumable = true;             //You need to set the item consumable so that the ammo would automatically consumed
 			item.knockBack = 1.5f;
 			item.value = 10;
