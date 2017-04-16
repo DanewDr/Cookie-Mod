@@ -24,6 +24,7 @@ namespace CookieMod.Items.Weapons
 			item.shoot = ProjectileID.WoodenArrowFriendly;
 			item.shootSpeed = 5f;
      			item.useAmmo = AmmoID.Arrow;
+			item.channel = true;
 		}
 
 		public override void AddRecipes()
