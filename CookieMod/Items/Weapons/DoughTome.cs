@@ -26,7 +26,7 @@ namespace CookieMod.Items.Weapons
             item.UseSound = SoundID.Item21;            //this is the 
             item.autoReuse = true;
             item.shoot = mod.ProjectileType ("GiantDough");  //this make the item shoot 
-            item.shootSpeed = 5f;    //projectile speed when shoot
+            item.shootSpeed = 7f;    //projectile speed when shoot
         }      
         public override void AddRecipes()
   		  {
