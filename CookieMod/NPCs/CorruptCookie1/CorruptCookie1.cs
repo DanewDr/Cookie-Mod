@@ -15,9 +15,9 @@ namespace CookieMod.NPCs.CorruptCookie1
             npc.name = "Corrupt Cookie";
             npc.displayName = "Corrupt Cookie";
             npc.aiStyle = 5;  //5 is the flying AI
-            npc.lifeMax = 2800;   //boss life
+            npc.lifeMax = 3900;   //boss life
             npc.damage = 20;  //boss damage
-            npc.defense = 12;    //boss defense
+            npc.defense = 16;    //boss defense
             npc.knockBackResist = 0f;
             npc.width = 338;
             npc.height = 170;
