@@ -15,9 +15,9 @@ namespace CookieMod.NPCs.BloodCookie
             npc.name = "Blood Cookie";
             npc.displayName = "Blood Cookie";
             npc.aiStyle = 4;  //5 is the flying AI
-            npc.lifeMax = 2800;   //boss life
-            npc.damage = 20;  //boss damage
-            npc.defense = 12;    //boss defense
+            npc.lifeMax = 4000;   //boss life
+            npc.damage = 40;  //boss damage
+            npc.defense = 20;    //boss defense
             npc.knockBackResist = 0f;
             npc.width = 338;
             npc.height = 170;
