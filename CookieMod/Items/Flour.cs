@@ -6,13 +6,16 @@ namespace CookieMod.Items
 {
 	public class Flour : ModItem
 	{
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Flour");
+			Tooltip.SetDefault("Used for baking");
+		}
 		public override void SetDefaults()
 		{
-			item.name = "Flour";
 			item.width = 12;
 			item.height = 12;
 			item.maxStack = 99;
-			item.toolTip = "Used for baking";
 			item.rare = 2;
 		}
 		public override void AddRecipes()
