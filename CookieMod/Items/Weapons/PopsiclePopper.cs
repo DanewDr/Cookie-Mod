@@ -7,15 +7,18 @@ namespace CookieMod.Items.Weapons
 {
 	public class PopsiclePopper : ModItem
 	{
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Popsicle Popper");
+			Tooltip.SetDefault("Let's blow this popsicle stand");
+		}
 		public override void SetDefaults()
 		{
-			item.name = "Popsicle Popper";
 			item.damage = 12;
 			item.ranged = true;
 			item.noMelee = true;
 			item.width = 40;
 			item.height = 24;
-			item.toolTip = "Let's blow this popsicle stand";
 			item.rare = 2;
 			item.useTime = 20;
 			item.useAnimation = 20;
