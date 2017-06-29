@@ -10,9 +10,13 @@ namespace CookieMod.Items.Weapons   //where is located
 {
     public class GingerBlade : ModItem
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Ginger Blade");
+			Tooltip.SetDefault("");
+		}
         public override void SetDefaults()
         {
-            item.name = "Ginger Blade";     //Sword name
             item.damage = 20;            //Sword damage
             item.melee = true;            //if it's melee
             item.width = 32;              //Sword width
