@@ -8,8 +8,8 @@ namespace CookieMod.Buffs
     {
         public override void SetDefaults()
         {
-            Main.buffName[Type] = "That Thing's Buff";    
-            Main.buffTip[Type] = "That Thing is Shooting at Your enemies!";
+ 			DisplayName.SetDefault("That Thing's Buff");    
+			Description.SetDefault("That Thing is Shooting at Your enemies!");
             Main.buffNoSave[Type] = true;
             Main.buffNoTimeDisplay[Type] = true;
  
