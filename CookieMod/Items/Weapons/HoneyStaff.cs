@@ -8,16 +8,18 @@ namespace CookieMod.Items.Weapons
 {  
     public class HoneyStaff : ModItem
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Honey Staff");
+			Tooltip.SetDefault("Summons a honey imp to spray at your foes\nHoney sprayed slows your enemies");
+		}
         public override void SetDefaults()
         {
-            item.name = "Honey Staff";
             item.damage = 4;
             item.summon = true;
             item.mana = 10;
             item.width = 26;
             item.height = 28;
-            item.toolTip = "Summons a honey imp to spray honey at your foes";
-	    item.toolTip2 = "Honey sprayed slows your enemies";
             item.useTime = 34;
             item.useAnimation = 26;
             item.useStyle = 1;
