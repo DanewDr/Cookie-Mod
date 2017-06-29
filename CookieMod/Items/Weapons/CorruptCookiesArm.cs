@@ -10,14 +10,17 @@ namespace CookieMod.Items.Weapons   //where is located
 {
     public class CorruptCookiesArm : ModItem
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Corrupt Cookie's Arm");
+			Tooltip.SetDefault("Big, but not that heavy!");
+		}
         public override void SetDefaults()
         {
-            item.name = "Corrupt Cookie's Arm";     //Sword name
             item.damage = 30;            //Sword damage
             item.melee = true;            //if it's melee
             item.width = 18;              //Sword width
             item.height = 50;             //Sword height
-            item.toolTip = "Big, but not that heavy!";  //Item Description
             item.useTime = 25;          //how fast 
             item.useAnimation = 25;     
             item.useStyle = 1;        //Style is how this item is used, 1 is the style of the sword
