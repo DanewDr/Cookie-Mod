@@ -9,11 +9,14 @@ namespace CookieMod.Items.Weapons
 {
     public class CookieYoyo : ModItem
     {
-
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Cookie Yoyo");
+			Tooltip.SetDefault("");
+		}
         public override void SetDefaults()
         {
             item.CloneDefaults(ItemID.WoodYoyo);
-            item.name = "Coookie Yoyo";
 			item.value = 1200;
             item.useStyle = 5;
             item.width = 24;
