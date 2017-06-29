@@ -10,8 +10,8 @@ namespace CookieMod.Buffs
         public override void SetDefaults()
         {
             Main.buffNoTimeDisplay[Type] = true;
-            Main.buffName[this.Type] = "Honeyed";
-            Main.buffTip[this.Type] = "Your speed is slowed";
+ 			DisplayName.SetDefault("Honeyed");
+			Description.SetDefault("Your speed is slowed");
             Main.debuff[Type] = true;
         }
         public override void Update(Player player, ref int buffIndex)
