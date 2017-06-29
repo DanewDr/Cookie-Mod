@@ -7,10 +7,13 @@ namespace CookieMod.NPCs
 {
     public class CookieAddict : ModNPC
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Cookie Addict");
+			Main.npcFrameCount[npc.type] = 5; // make sure to set this for your modnpcs.
+		}
         public override void SetDefaults()
         {
-            npc.name = "Cookie Addict";
-            npc.displayName = "Cookie Addict";
             npc.width = 42;
             npc.height = 67;
             npc.damage = 10;
@@ -45,7 +48,7 @@ namespace CookieMod.NPCs
 				Gore.NewGore(npc.position, npc.velocity, mod.GetGoreSlot("Gores/Addict4"), 1f);
             }
         }
-		 public override float CanSpawn(NPCSpawnInfo spawnInfo)
+		 public override float SpawnChance(NPCSpawnInfo spawnInfo)
         {
             return Main.dayTime && Main.tile[(spawnInfo.spawnTileX), (spawnInfo.spawnTileY)].type == mod.TileType("CookieDirtTile") ? 5000f : 0f; //100f is the spown rate so If you want your NPC to be rarer just change that value less the 100f or something.
 			return !Main.dayTime && Main.tile[(spawnInfo.spawnTileX), (spawnInfo.spawnTileY)].type == mod.TileType("CookieDirtTile") ? 10000f : 0f;
