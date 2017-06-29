@@ -11,10 +11,13 @@ namespace CookieMod.Items.Weapons
 {
 	public class HoneySpear : ModItem
 	{
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Honey Spear");
+			Tooltip.SetDefault("Kinda looks like a shovel");
+		}
 		public override void SetDefaults()
 		{
-			item.name = "Honey Spear";
-			item.toolTip = "An example spear";
 			item.damage = 40;
 			item.useStyle = 5;
 			item.useAnimation = 18;
