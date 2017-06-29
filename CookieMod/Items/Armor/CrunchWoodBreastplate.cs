@@ -5,20 +5,18 @@ using Terraria.ModLoader;
 
 namespace CookieMod.Items.Armor
 {
+	[AutoloadEquip(EquipType.Body)]
 	public class CrunchWoodBreastplate : ModItem
 	{
-		public override bool Autoload(ref string name, ref string texture, IList<EquipType> equips)
+		public override void SetStaticDefaults()
 		{
-			equips.Add(EquipType.Body);
-			return true;
+			DisplayName.SetDefault("Crunch Breastplate");
+			Tooltip.SetDefault("");
 		}
-
 		public override void SetDefaults()
 		{
-			item.name = "Crunch Breastplate";
 			item.width = 18;
 			item.height = 18;
-			AddTooltip("");
 			item.value = 4500;
 			item.rare = 2;
 			item.defense = 2;
