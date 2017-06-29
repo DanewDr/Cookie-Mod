@@ -6,15 +6,18 @@ namespace 	CookieMod.Items.Weapons
 {
     public class CookieBullet : ModItem
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Cookie Bullet");
+			Tooltip.SetDefault("You don't even need an arms dealer!");
+		}
         public override void SetDefaults()
         {
-            item.name = "Cookie Bullet"; 
             item.damage = 12;
             item.ranged = true;
             item.width = 8;
             item.height = 8;
             item.maxStack = 999;
-            item.toolTip = "You don't even need an arms dealer!";
             item.consumable = true;
             item.knockBack = 1.5f;
             item.value = 5;
