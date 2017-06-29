@@ -7,14 +7,16 @@ namespace CookieMod.Items.Placeable
 {
 	public class CookieTorch : ModItem
 	{
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Cookie Torch");
+			Tooltip.SetDefault("I think it may be burnt...");
+		}
 		public override void SetDefaults()
 		{
-			item.name = "Cookie Torch";
 			item.width = 10;
 			item.height = 12;
 			item.maxStack = 99;
-			AddTooltip("I think it may be burnt...");
-			AddTooltip2("Works in water!");
 			item.holdStyle = 1;
 			item.noWet = true;
 			item.useTurn = true;
