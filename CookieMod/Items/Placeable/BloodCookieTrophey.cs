@@ -4,9 +4,13 @@ namespace CookieMod.Items.Placeable
 {
 	public class BloodCookieTrophey : ModItem
 	{
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("BloodCookieTrophey");
+			Tooltip.SetDefault("");
+		}
 		public override void SetDefaults()
 		{
-			item.name = "Blood Cookie Trophy";
 			item.width = 32;
 			item.height = 32;
 			item.maxStack = 99;
