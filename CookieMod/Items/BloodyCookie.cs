@@ -8,12 +8,16 @@ namespace CookieMod.Items
 	
     public class BloodyCookie : ModItem
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Bloody Cookie");
+			Tooltip.SetDefault("Summons the Blood Cookie");
+		}
+
         public override void SetDefaults()
         {
-            item.name = "Bloody Cookie";
             item.width = 20;
             item.height = 20;
-            item.toolTip = "Summons the Blood Cookie";
             item.value = 1300;
             item.rare = 1;
             item.maxStack = 20;
