@@ -4,21 +4,18 @@ using Terraria.ModLoader;
 
 namespace CookieMod.Items.Armor
 {
+	[AutoloadEquip(EquipType.Legs)]
 	public class CookieLeggings : ModItem
 	{
-		public override bool Autoload(ref string name, ref string texture, IList<EquipType> equips)
+		public override void SetStaticDefaults()
 		{
-			equips.Add(EquipType.Legs);
-			return true;
+			DisplayName.SetDefault("Cookie Leggings");
+			Tooltip.SetDefault("Run a little faster\n5% increased movement speed");
 		}
-
 		public override void SetDefaults()
 		{
-			item.name = "Cookie Leggings";
 			item.width = 18;
 			item.height = 18;
-			AddTooltip("Run a little faster");
-			AddTooltip2("5% increased movement speed");
 			item.value = 35;
 			item.rare = 2;
 			item.defense = 6;
