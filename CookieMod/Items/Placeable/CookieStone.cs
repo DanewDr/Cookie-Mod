@@ -6,13 +6,16 @@ namespace CookieMod.Items.Placeable
 {
 	public class CookieStone : ModItem
 	{
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Cookie Infused Stone");
+			Tooltip.SetDefault("Smells like cinnamon");
+		}
 		public override void SetDefaults()
 		{
-			item.name = "Cookie Infused Stone";
 			item.width = 12;
 			item.height = 12;
 			item.maxStack = 999;
-			AddTooltip("Smells like cinnamon.");
 			item.rare = 2;
 			item.useTurn = true;
 			item.autoReuse = true;
