@@ -7,10 +7,13 @@ namespace CookieMod.Items.Weapons
 {
 	public class CookieBlaster : ModItem
 	{
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Cookie Blaster");
+			Tooltip.SetDefault("50% not to consume ammo");
+		}
 		public override void SetDefaults()
 		{
-			item.name = "Cookie Blaster";
-			item.toolTip = "50% not to consume ammo";
 			item.damage = 27;
 			item.ranged = true;
 			item.noMelee = true;
