@@ -7,14 +7,17 @@ namespace CookieMod.Items
 {
     public class CookieAxe : ModItem
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Cookie Axe");
+			Tooltip.SetDefault("Not sure how this can chop a tree... or cactus...");
+		}
         public override void SetDefaults()
         {
-            item.name = "Cookie Axe";
             item.damage = 15;
             item.melee = true;
             item.width = 32;
             item.height = 28;
-            item.toolTip = "Not sure how this can chop a tree...or cactus!";
             item.useTime = 25;
             item.useAnimation = 25;
             item.axe = 15;   //axe power
