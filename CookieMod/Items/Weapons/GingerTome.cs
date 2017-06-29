@@ -8,14 +8,17 @@ namespace CookieMod.Items.Weapons
 {
     public class GingerTome : ModItem
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Ginger Tome");
+			Tooltip.SetDefault("Fires a ball of ginger");
+		}
         public override void SetDefaults()
-        {
-            item.name = "Ginger Tome";          
+        {        
             item.damage = 27;                        
             item.magic = true;                     //this make the item do magic damage
             item.width = 24;
             item.height = 28;
-            item.toolTip = "Fires a ball of ginger";
             item.useTime = 16;
             item.useAnimation = 30;
             item.useStyle = 5;        //this is how the item is holded
