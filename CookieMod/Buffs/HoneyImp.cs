@@ -7,8 +7,8 @@ namespace CookieMod.Buffs
 	{
 		public override void SetDefaults()
 		{
-			Main.buffName[Type] = "Honey Imp";
-			Main.buffTip[Type] = "Here to slow your foes";
+ 			DisplayName.SetDefault("Honey Imp");
+			Description.SetDefault("Here to slow your foes");
 			Main.buffNoTimeDisplay[Type] = true;
 			Main.buffNoSave[Type] = true;
 		}
