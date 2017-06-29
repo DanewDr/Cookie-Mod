@@ -1,6 +1,3 @@
-using System;
-using System.IO;
-using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.ID;
@@ -8,12 +5,16 @@ using Terraria.ModLoader;
 
 namespace CookieMod.NPCs.CorruptCookie1
 {
+	[AutoloadBossHead]
     public class CorruptCookie1 : ModNPC
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Corruot Cookie");
+			Main.npcFrameCount[npc.type] = 2; // make sure to set this for your modnpcs.
+		}
         public override void SetDefaults()
         {
-            npc.name = "Corrupt Cookie";
-            npc.displayName = "Corrupt Cookie";
             npc.aiStyle = 5;  //5 is the flying AI
             npc.lifeMax = 3900;   //boss life
             npc.damage = 20;  //boss damage
@@ -38,10 +39,7 @@ namespace CookieMod.NPCs.CorruptCookie1
         }
         
 
-        public override void AutoloadHead(ref string headTexture, ref string bossHeadTexture)
-        {
-            bossHeadTexture = "CookieMod/NPCs/CorruptCookie1/CorruptCookie1_Head_Boss"; //the boss head texture
-        }
+
 	
 		public override void NPCLoot()
 		{
