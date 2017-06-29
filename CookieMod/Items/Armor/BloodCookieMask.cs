@@ -1,19 +1,19 @@
-using System.Collections.Generic;
+using Microsoft.Xna.Framework;
+using Terraria;
 using Terraria.ModLoader;
 
 namespace CookieMod.Items.Armor
 {
+	[AutoloadEquip(EquipType.Head)]
 	public class BloodCookieMask : ModItem
 	{
-		public override bool Autoload(ref string name, ref string texture, IList<EquipType> equips)
+		public override void SetStaticDefaults()
 		{
-			equips.Add(EquipType.Head);
-			return true;
+			DisplayName.SetDefault("Blood Cookie Mask");
+			Tooltip.SetDefault("");
 		}
-
 		public override void SetDefaults()
 		{
-			item.name = "Blood Cookie Mask";
 			item.width = 28;
 			item.height = 20;
 			item.rare = 1;
