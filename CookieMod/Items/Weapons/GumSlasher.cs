@@ -8,14 +8,17 @@ namespace CookieMod.Items.Weapons
 {
     public class GumSlasher : ModItem
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Gum Slasher");
+			Tooltip.SetDefault("Don't chew on it!");
+		}
         public override void SetDefaults()
-        {
-            item.name = "Gum Slasher";          
+        {          
             item.damage = 24;                        
             item.melee = true;                     
             item.width = 38;
             item.height = 38;
-	    item.toolTip = "Don't chew on it!";
             item.useTime = 19;
             item.useAnimation = 19;
             item.useStyle = 1;        
