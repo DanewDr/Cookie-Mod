@@ -8,9 +8,13 @@ namespace CookieMod.Items
 {
     public class HotChocolate : ModItem
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Hot Chocolate");
+			Tooltip.SetDefault("");
+		}
         public override void SetDefaults()
         {
-        item.name = "Hot Chocolate";
 	item.damage = 8;
         item.UseSound = SoundID.Item3;
         item.useStyle = 2;
