@@ -4,9 +4,13 @@ namespace CookieMod.Items.Placeable
 {
 	public class CorruptCookie1Trophy : ModItem
 	{
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Corrupt Cookie Trophy");
+			Tooltip.SetDefault("");
+		}
 		public override void SetDefaults()
 		{
-			item.name = "Corrupt Cookie Trophy";
 			item.width = 30;
 			item.height = 30;
 			item.maxStack = 99;
