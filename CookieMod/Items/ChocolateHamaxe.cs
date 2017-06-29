@@ -7,14 +7,18 @@ namespace CookieMod.Items
 {
 	public class ChocolateHamaxe : ModItem
 	{
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Chocolate Hamaxe");
+			Tooltip.SetDefault("Chocolate cookie one side, pure chocolate the other");
+		}
+
 		public override void SetDefaults()
 		{
-			item.name = "Chocolate Hamaxe";
 			item.damage = 25;
 			item.melee = true;
 			item.width = 68;
 			item.height = 52;
-			item.toolTip = "Chocolate cookie one side, pure chocolate the other";
 			item.useTime = 15;
 			item.useAnimation = 15;
 			item.axe = 15;
