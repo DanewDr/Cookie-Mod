@@ -9,10 +9,13 @@ namespace CookieMod.Projectiles.Minions
 {  
     public class CookieMinion : MinionINFO
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Don't Ask!");     //The English name of the projectile
+		}  
         public override void SetDefaults()
         {
             projectile.netImportant = true;
-            projectile.name = "Don't Ask!";
             projectile.width = 32;
             projectile.height = 32;
             Main.projFrames[projectile.type] = 2;
@@ -64,3 +67,4 @@ namespace CookieMod.Projectiles.Minions
         }
     }
 }
+
