@@ -18,7 +18,6 @@ namespace CookieMod.Items
 			item.value = 10000;
 			item.rare = 2;
 			item.accessory = true;
-			item.defense = 1000;
 			item.lifeRegen = 19;
 		}
 
