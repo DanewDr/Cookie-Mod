@@ -10,14 +10,17 @@ namespace CookieMod.Items.Weapons   //where is located
 {
     public class CookieSword : ModItem
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Cookie Sword");
+			Tooltip.SetDefault("The power of cookies are finally in your hand!");
+		}
         public override void SetDefaults()
         {
-            item.name = "Cookie Sword";     //Sword name
             item.damage = 20;            //Sword damage
             item.melee = true;            //if it's melee
             item.width = 32;              //Sword width
             item.height = 32;             //Sword height
-            item.toolTip = "The power of cookies are finally in your Hand!";  //Item Description
             item.useTime = 25;          //how fast 
             item.useAnimation = 25;     
             item.useStyle = 1;        //Style is how this item is used, 1 is the style of the sword
