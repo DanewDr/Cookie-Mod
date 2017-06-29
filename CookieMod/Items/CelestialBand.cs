@@ -6,13 +6,17 @@ namespace CookieMod.Items
 {
 	public class CelestialBand : ModItem
 	{
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Luminite Band");
+			Tooltip.SetDefault("The power of the gods flows through you");
+		}
+
 		public override void SetDefaults()
 		{
-			item.name = "Luminite Band";
 			item.width = 30;
 			item.height = 20;
 			item.accessory = true;
-			item.toolTip = "The power of the gods flows through you";
 			item.rare = 10;
 			item.defense = 4;
 		}
