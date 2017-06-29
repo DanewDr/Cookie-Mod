@@ -6,9 +6,13 @@ namespace CookieMod.Items
 {
 	public class SugarDust : ModItem
 	{
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Sugar");
+			Tooltip.SetDefault("");
+		}
 		public override void SetDefaults()
 		{
-			item.name = "Sugar";
 			item.width = 16;
 			item.height = 16;
 			item.maxStack = 99;
