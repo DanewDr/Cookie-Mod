@@ -8,12 +8,15 @@ namespace CookieMod.Items
 	
     public class CursedCookie : ModItem
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Edible Cookie");
+			Tooltip.SetDefault("Summons the Corrupt Cookie");
+		}
         public override void SetDefaults()
         {
-            item.name = "Edible Cookie";
             item.width = 20;
             item.height = 20;
-            item.toolTip = "Summons the Corrupt Cookie";
             item.value = 1300;
             item.rare = 1;
             item.maxStack = 20;
