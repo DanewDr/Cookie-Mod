@@ -7,15 +7,18 @@ namespace CookieMod.Items.Weapons
 {
 	public class SugarBlaster : ModItem
 	{
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Sugar Blaster");
+			Tooltip.SetDefault("Fires sugar at your enemies");
+		}
 		public override void SetDefaults()
 		{
-			item.name = "Sugar Blaster";
 			item.damage = 15;
 			item.ranged = true;
 			item.noMelee = true;
 			item.width = 34;
 			item.height = 22;
-			item.toolTip = "Fires sugar at your enemies.";
 			item.rare = 2;
 			item.useTime = 15;
 			item.useAnimation = 15;
