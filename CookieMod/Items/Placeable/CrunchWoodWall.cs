@@ -4,13 +4,16 @@ namespace CookieMod.Items.Placeable
 {
 	public class CrunchWoodWall : ModItem
 	{
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Crunch Wall");
+			Tooltip.SetDefault("");
+		}
 		public override void SetDefaults()
 		{
-			item.name = "Crunch Wall";
 			item.width = 32;
 			item.height = 32;
 			item.maxStack = 999;
-			AddTooltip("");
 			item.useTurn = true;
 			item.autoReuse = true;
 			item.useAnimation = 15;
