@@ -5,13 +5,16 @@ namespace CookieMod.Items.Placeable
 {
 	public class CrunchWoodDresser: ModItem
 	{
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Crunch Dresser");
+			Tooltip.SetDefault("Change clothes and even stor items!");
+		}
 		public override void SetDefaults()
 		{
-			item.name = "Crunch Dresser";
 			item.width = 26;
 			item.height = 22;
 			item.maxStack = 99;
-			AddTooltip("Change your clothes and even store items!");
 			item.useTurn = true;
 			item.autoReuse = true;
 			item.useAnimation = 15;
