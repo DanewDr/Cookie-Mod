@@ -8,14 +8,17 @@ namespace CookieMod.Items.Weapons
 {
     public class PopRocker : ModItem
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Pop Rocker");
+			Tooltip.SetDefault("Fires a rock candy pellet");
+		}
         public override void SetDefaults()
-        {
-            item.name = "Pop Rocker";          
+        {          
             item.damage = 30;                        
             item.magic = true;                     //this make the item do magic 
             item.width = 24;
             item.height = 28;
-            item.toolTip = "Fires a rock candy pellet";
             item.useTime = 25;
             item.useAnimation = 25;
             item.useStyle = 5;        //this is how the item is holded
