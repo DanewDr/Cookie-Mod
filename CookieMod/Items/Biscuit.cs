@@ -1,4 +1,5 @@
-using Terraria;
+using Microsoft.Xna.Framework;
+using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
@@ -6,14 +7,17 @@ namespace CookieMod.Items
 {
 	public class Biscuit : ModItem
 	{
+		public override void SetStaticDefaults()
+		{
+			Tooltip.SetDefault("A bit dry");
+		}
+
 		public override void SetDefaults()
 		{
 			item.CloneDefaults(ItemID.BottledWater);
-			item.name = "Biscuit";
 			item.width = 12;
 			item.height = 12;
 			item.maxStack = 99;
-			item.toolTip = "A bit dry";
 			item.rare = 2;
 		}
 		public override void AddRecipes()
