@@ -5,13 +5,16 @@ namespace CookieMod.Items.Placeable
 {
 	public class CrunchWoodChair : ModItem
 	{
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Crunch Chair");
+			Tooltip.SetDefault("Probably not to comfortable");
+		}
 		public override void SetDefaults()
 		{
-			item.name = "Crunch Chair";
 			item.width = 12;
 			item.height = 30;
 			item.maxStack = 99;
-			AddTooltip("Probably not to comfortable");
 			item.useTurn = true;
 			item.autoReuse = true;
 			item.useAnimation = 15;
