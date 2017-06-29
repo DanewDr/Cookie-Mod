@@ -5,13 +5,16 @@ namespace CookieMod.Items.Placeable
 {
 	public class CookieWorkbench : ModItem
 	{
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Cookie Factory");
+			Tooltip.SetDefault("Used to craft cookie items. Can also be used as a normal workbench");
+		}
 		public override void SetDefaults()
 		{
-			item.name = "Cookie Factory";
 			item.width = 22;
 			item.height = 22;
 			item.maxStack = 99;
-			AddTooltip("Used to craft cookie things. Can also be used as a normal Workbench!");
 			item.useTurn = true;
 			item.autoReuse = true;
 			item.useAnimation = 15;
