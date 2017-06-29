@@ -7,14 +7,17 @@ namespace CookieMod.Items
 {
 	public class HoneyHammer : ModItem
 	{
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Honey Hammer");
+			Tooltip.SetDefault("");
+		}
 		public override void SetDefaults()
 		{
-			item.name = "Honey Hammer";
 			item.damage = 25;
 			item.melee = true;
 			item.width = 40;
 			item.height = 40;
-			item.toolTip = "This is a modded hammer";
 			item.useTime = 15;
 			item.useAnimation = 15;
 			item.hammer = 100;		//How much hammer power the weapon has
