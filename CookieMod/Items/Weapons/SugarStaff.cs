@@ -8,14 +8,17 @@ namespace CookieMod.Items.Weapons
 {
     public class SugarStaff : ModItem
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Sugar Staff");
+			Tooltip.SetDefault("Fires a blast of pure sugar energy!");
+		}
         public override void SetDefaults()
-        {
-            item.name = "Sugar Staff";          
+        {         
             item.damage = 33;                        
             item.magic = true;                     //this make the item do magic 
             item.width = 24;
             item.height = 28;
-            item.toolTip = "Fires a blast of pure sugar energy!";
             item.useTime = 23;
             item.useAnimation = 23;
             item.useStyle = 5;        //this is how the item is holded
