@@ -7,9 +7,12 @@ namespace CookieMod.Items
 {
 	public class ChocolatePickaxe : ModItem
 	{	
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Chocolate Pickaxe");
+		}
 		public override void SetDefaults()
 		{
-			item.name = "Chocolate Pickaxe";
 			item.damage = 9;
 			item.melee = true;
 			item.width = 32;
@@ -28,7 +31,7 @@ namespace CookieMod.Items
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(null, "Cookie", 12);
+			recipe.AddIngredient(null, "ChocolateCookie", 12);
 			recipe.AddTile(null, "CookieWorkbench");
 			recipe.SetResult(this);
 			recipe.AddRecipe();
