@@ -8,9 +8,13 @@ namespace CookieMod.Items.Weapons
 {
     public class GiantPinkPopsicle : ModItem
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Giant Pink Popsickle");
+			Tooltip.SetDefault("");
+		}
         public override void SetDefaults()
-        {
-            item.name = "Giant Pink Popsicle";          
+        {         
             item.damage = 53;                        
             item.melee = true;                     //this make the item do magic 
             item.width = 28;
