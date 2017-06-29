@@ -3,17 +3,16 @@ using Terraria.ModLoader;
 
 namespace CookieMod.Items.Armor
 {
+	[AutoloadEquip(EquipType.Head)]
 	public class CorruptCookieMask : ModItem
 	{
-		public override bool Autoload(ref string name, ref string texture, IList<EquipType> equips)
+		public override void SetStaticDefaults()
 		{
-			equips.Add(EquipType.Head);
-			return true;
+			DisplayName.SetDefault("Corrupt Cookie Mask");
+			Tooltip.SetDefault("");
 		}
-
 		public override void SetDefaults()
 		{
-			item.name = "Corrupt Cookie Mask";
 			item.width = 28;
 			item.height = 20;
 			item.rare = 1;
