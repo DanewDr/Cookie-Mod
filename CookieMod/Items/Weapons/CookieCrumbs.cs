@@ -10,9 +10,13 @@ namespace CookieMod.Items.Weapons
 {
     public class CookieCrumbs : ModItem
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Cookie Crumbs");
+			Tooltip.SetDefault("");
+		}
         public override void SetDefaults()
         {
-            item.name = "Cookie Crumbs";   //this is the item name
             item.damage = 15;           //this is the item damage
             item.thrown = true;             //this make the item do throwing damage
             item.noMelee = true;
