@@ -6,15 +6,18 @@ namespace CookieMod.Items.Weapons
 {
 	public class ChocolateWand : ModItem
 	{
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Chocolate Wand");
+			Tooltip.SetDefault("A wand forged of topaz and chocolate");
+		}
 		public override void SetDefaults()
 		{
-			item.name = "Chocolate Wand";
 			item.damage = 20;
 			item.magic = true;
 			item.mana = 8;
 			item.width = 40;
 			item.height = 40;
-			item.toolTip = "A wand forged of topaz and chocolate.";
 			item.useTime = 20;
 			item.useAnimation = 20;
 			item.useStyle = 5;
