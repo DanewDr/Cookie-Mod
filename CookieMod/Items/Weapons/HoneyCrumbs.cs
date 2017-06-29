@@ -10,10 +10,14 @@ namespace CookieMod.Items.Weapons
 {
 	public class HoneyCrumbs : ModItem
 	{
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Honey Crumbs");
+			Tooltip.SetDefault("");
+		}
 		public override void SetDefaults()
 		{
 			// Alter any of these values as you see fit, but you should probably keep useStyle on 1, as well as the noUseGraphic and noMelee bools
-			item.name = "Honey Crumbs";
 			item.shoot = mod.ProjectileType<Projectiles.HoneyCrumbsProjectile>(); // Notice a newer way to get projectile types, much cleaner than using strings!
 			item.shootSpeed = 10f;
 			item.damage = 45;
