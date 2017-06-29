@@ -8,9 +8,13 @@ namespace CookieMod.Items.Weapons
 {
     public class CookieBoomerang : ModItem
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Cookie Boomerang");
+			Tooltip.SetDefault("");
+		}
         public override void SetDefaults()
         {
-            item.name = "Cookie Boomerang";
             item.damage = 13;            
             item.melee = true;
             item.width = 30;
@@ -41,7 +45,8 @@ namespace CookieMod.Items.Weapons
         public override void AddRecipes()
         {
                 ModRecipe recipe = new ModRecipe(mod);
-                recipe.AddIngredient(ItemID.DirtBlock, 1);
+				recipe.AddIngredient(null, "Cookie", 15);
+				recipe.AddTile(null, "CookieWorkbench");   
                 recipe.SetResult(this);
                 recipe.AddRecipe();
         }
