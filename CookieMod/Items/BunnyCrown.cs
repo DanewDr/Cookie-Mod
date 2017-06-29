@@ -8,12 +8,16 @@ namespace CookieMod.Items
 	
     public class BunnyCrown : ModItem
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Bunny Crown");
+			Tooltip.SetDefault("Summons the Bunny King");
+		}
+
         public override void SetDefaults()
         {
-            item.name = "Bunny Crown";
             item.width = 20;
             item.height = 20;
-            item.toolTip = "Summons the Bunny King";
             item.value = 1300;
             item.rare = 1;
             item.maxStack = 20;
@@ -44,3 +48,4 @@ namespace CookieMod.Items
         }
     }
 }
+
