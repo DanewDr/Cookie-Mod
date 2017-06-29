@@ -6,9 +6,13 @@ namespace CookieMod.Items
 {
     public class DanewsPumpkinPie : ModItem
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Danew's Pumpkin Pie");
+			Tooltip.SetDefault("The pumpkin pie of Danew Dr");
+		}
         public override void SetDefaults()
         {
-            item.name = "Danew's Pumpkin Pie";
             item.UseSound = SoundID.Item3;                 //this is the sound that plays when you use the item
             item.useStyle = 2;                 //this is how the item is holded when used
             item.useTurn = true;
@@ -18,7 +22,6 @@ namespace CookieMod.Items
             item.consumable = false;           //this make that the item is consumable when used
             item.width = 20;
             item.height = 25;
-            item.toolTip = "The pumpkin pie of Danew Dr";
             item.value = 100;                
             item.rare = 1;
             item.buffType = BuffID.WellFed;    //this is where you put your Buff
