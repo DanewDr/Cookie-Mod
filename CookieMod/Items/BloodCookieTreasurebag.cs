@@ -10,14 +10,18 @@ namespace CookieMod.Items
 {
     public class BloodCookieTreasurebag : ModItem
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Blood Cookie Treasurebag");
+			Tooltip.SetDefault("Right click to open");
+		}
+
         public override void SetDefaults()
         {
-            item.name = "Treasure Bag";
             item.maxStack = 999;
             item.consumable = true;
             item.width = 24;
             item.height = 24;
-            item.toolTip = "Right click to open";
             item.rare = 11;
             bossBagNPC = mod.NPCType("BloodCookie");  //add this if the tresure bag is droped from a boss
             item.expert = true;      //add this if it's expert mode only
