@@ -10,11 +10,14 @@ namespace CookieMod.Items.Weapons
 {
 	public class HoneySceptor : ModItem
 	{
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Honey Sceptor");
+			Tooltip.SetDefault("Shoots a beam of honey to slow your foes");
+		}
 		public override void SetDefaults()
 		{
-			item.name = "Honey Sceptor";
 			item.damage = 4;
-			item.toolTip = "Shoots a beam of honey to slow your foes";
 			item.noMelee = true;
 			item.magic = true;
 			item.channel = true;                            //Channel so that you can held the weapon [Important]
