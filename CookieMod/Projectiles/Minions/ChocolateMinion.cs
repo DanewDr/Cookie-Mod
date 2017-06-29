@@ -1,18 +1,17 @@
-using System;
-using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
-using Terraria.ModLoader;
 
 namespace CookieMod.Projectiles.Minions
 {
-    public class ChocolateMinion : ModProjectile
+    public class ChocolateMinion : ChocINFO
     {
-    	
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Chocolate Minion");     //The English name of the projectile
+		}    	
         public override void SetDefaults()
         {
-            projectile.name = "Chocolate Minion";
             projectile.width = 26;
             projectile.height = 26;
             projectile.netImportant = true;
@@ -29,10 +28,18 @@ namespace CookieMod.Projectiles.Minions
             aiType = 266;
             projectile.tileCollide = false;
         }
-        
-        public override void TileCollideStyle(ref int width, ref int height, ref bool fallThrough)
+        public override void CheckActive()
         {
-        	fallThrough = false;
+            Player player = Main.player[projectile.owner];
+            MyPlayer modPlayer = (MyPlayer)player.GetModPlayer(mod, "MyPlayer");
+            if (player.dead)
+            {
+                modPlayer.ChocMin = false;
+            }
+            if (modPlayer.ChocMin)
+            {
+                projectile.timeLeft = 2;
+            }
         }
 
         public override void AI()
