@@ -7,9 +7,13 @@ namespace CookieMod.Items.Weapons
 {
 	public class SugarPopper : ModItem
 	{
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Sugar Popper");
+			Tooltip.SetDefault("");
+		}
 		public override void SetDefaults()
 		{
-			item.name = "Sugar Popper";
 			item.damage = 20;
 			item.melee = true;
 			item.width = 20;
