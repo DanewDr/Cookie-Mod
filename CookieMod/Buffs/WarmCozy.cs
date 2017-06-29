@@ -10,8 +10,8 @@ namespace CookieMod.Buffs
         public override void SetDefaults()
         {
             Main.buffNoTimeDisplay[Type] = false;
-            Main.buffName[this.Type] = "Warm and Cozy";
-            Main.buffTip[this.Type] = "Increased defence but decreased damgae";
+ 			DisplayName.SetDefault("Warm and Cozy");
+			Description.SetDefault("Increased defence but decreased damgae");
         }
         public override void Update(Player player, ref int buffIndex)
         {                                             //
