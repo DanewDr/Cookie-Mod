@@ -6,9 +6,13 @@ namespace CookieMod.Items.Weapons
 {
 	public class RedPopsicle : ModItem
 	{
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Red Popsicle");
+			Tooltip.SetDefault("");
+		}
 		public override void SetDefaults()
 		{
-			item.name = "Red Popsicle";
 			item.width = 12;
 			item.height = 12;
 			item.maxStack = 999;
