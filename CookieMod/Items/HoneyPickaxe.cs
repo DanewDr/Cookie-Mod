@@ -7,14 +7,17 @@ namespace CookieMod.Items
 {
 	public class HoneyPickaxe : ModItem
 	{
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Honey Pickaxe");
+			Tooltip.SetDefault("");
+		}
 		public override void SetDefaults()
 		{
-			item.name = "Honey Pickaxe";
 			item.damage = 20;
 			item.melee = true;
 			item.width = 40;
 			item.height = 40;
-			item.toolTip = "This is a modded pickaxe.";
 			item.useTime = 10;
 			item.useAnimation = 10;
 			item.pick = 220;
