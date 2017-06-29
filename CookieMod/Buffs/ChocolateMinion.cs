@@ -7,8 +7,8 @@ namespace CookieMod.Buffs
 	{
 		public override void SetDefaults()
 		{
-			Main.buffName[Type] = "Chocolate Minion";
-			Main.buffTip[Type] = "Is it just me, or does it look like a slime?";
+ 			DisplayName.SetDefault("Chocolate Minion");
+			Description.SetDefault("Is it just me, or does it look like a slime?");
 			Main.buffNoTimeDisplay[Type] = true;
 			Main.buffNoSave[Type] = true;
 		}
