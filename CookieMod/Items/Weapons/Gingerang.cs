@@ -8,9 +8,13 @@ namespace CookieMod.Items.Weapons
 {
     public class Gingerang : ModItem
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Gingerang");
+			Tooltip.SetDefault("");
+		}
         public override void SetDefaults()
         {
-            item.name = "Gingerang";
             item.damage = 32;            
             item.melee = true;
             item.width = 30;
@@ -41,7 +45,8 @@ namespace CookieMod.Items.Weapons
         public override void AddRecipes()
         {
                 ModRecipe recipe = new ModRecipe(mod);
-                recipe.AddIngredient(ItemID.DirtBlock, 1);
+				recipe.AddIngredient(null, "Cookie", 15);
+				recipe.AddTile(null, "CookieWorkbench");   
                 recipe.SetResult(this);
                 recipe.AddRecipe();
         }
