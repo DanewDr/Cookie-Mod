@@ -6,12 +6,15 @@ namespace CookieMod.Items
 {
 	public class HoneyBand : ModItem
 	{
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Honey Band");
+			Tooltip.SetDefault("Increases life regen but decreases movement speed");
+		}
 		public override void SetDefaults()
 		{
-			item.name = "Honey Band";
 			item.width = 24;
 			item.height = 28;
-			item.toolTip = "Increases life regen but decreases movement speed";
 			item.value = 10000;
 			item.rare = 2;
 			item.accessory = true;
