@@ -8,9 +8,13 @@ namespace CookieMod.Items.Weapons
 {
     public class SugarSword : ModItem
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Sugar Sword");
+			Tooltip.SetDefault("");
+		}
         public override void SetDefaults()
         {
-            item.name = "Sugar Sword";          
             item.damage = 11;                        
             item.melee = true;                     //this make the item do magic 
             item.width = 28;
