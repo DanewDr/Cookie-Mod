@@ -3,17 +3,17 @@ using Terraria.ModLoader;
 
 namespace CookieMod.Items.Placeable
 {
-	public class CrunchWoodDresser: ModItem
+	public class CrunchWoodSofa : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Crunch Dresser");
-			Tooltip.SetDefault("Change clothes and even stor items!");
+			DisplayName.SetDefault("Crunch Sofa");
+			Tooltip.SetDefault("Don't think it will be comfortable to sit on");
 		}
 		public override void SetDefaults()
 		{
-			item.width = 26;
-			item.height = 22;
+			item.width = 12;
+			item.height = 30;
 			item.maxStack = 99;
 			item.useTurn = true;
 			item.autoReuse = true;
@@ -21,14 +21,14 @@ namespace CookieMod.Items.Placeable
 			item.useTime = 10;
 			item.useStyle = 1;
 			item.consumable = true;
-			item.value = 500;
-			item.createTile = mod.TileType("CrunchWoodDresser");
+			item.value = 150;
+			item.createTile = mod.TileType("CrunchWoodSofa");
 		}
 
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.Dresser);
+			recipe.AddIngredient(ItemID.Silk, 2);
 			recipe.AddIngredient(null, "CrunchWood", 10);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
