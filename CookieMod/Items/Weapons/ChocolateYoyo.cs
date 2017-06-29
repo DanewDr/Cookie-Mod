@@ -8,9 +8,13 @@ namespace CookieMod.Items.Weapons
 {
 	public class ChocolateYoyo : ModItem
 	{
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Chocolate Yoyo");
+			Tooltip.SetDefault("");
+		}
 		public override void SetDefaults()
 		{
-			item.name = "Chocolate Yoyo";
 			item.useStyle = 5;
 			item.width = 30;
 			item.height = 26;
