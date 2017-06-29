@@ -7,16 +7,18 @@ namespace CookieMod.Items.Weapons
 {
 	public class SugarSharkLauncher : ModItem
 	{
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Sugarshark");
+			Tooltip.SetDefault("Rapidly fires mini sugar sharks.\nUses sugar shark fins as ammo");
+		}
 		public override void SetDefaults()
 		{
-			item.name = "Sugarshark";
 			item.damage = 31;
 			item.ranged = true;
 			item.noMelee = true;
 			item.width = 34;
 			item.height = 22;
-			item.toolTip = "Rapidly fires mini sugar sharks.";
-			item.toolTip2 = "Uses sugar shark fins as ammo";
 			item.rare = 2;
 			item.useTime = 9;
 			item.useAnimation = 9;
