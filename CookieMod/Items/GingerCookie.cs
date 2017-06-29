@@ -7,12 +7,15 @@ namespace CookieMod.Items
 {
     public class GingerCookie : ModItem
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Ginger Cookie");
+			Tooltip.SetDefault("This makes me feel, Happy!");
+		}
         public override void SetDefaults()
         {
-            item.name = "Ginger Cookie";
             item.width = 20;
             item.height = 20;
-            item.toolTip = "This makes me feel, Happy!";
             item.value = 100;
             item.rare = 1;
             item.maxStack = 999;
