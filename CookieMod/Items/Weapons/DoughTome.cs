@@ -8,14 +8,17 @@ namespace CookieMod.Items.Weapons
 {
     public class DoughTome : ModItem
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Dough Blow");
+			Tooltip.SetDefault("Unleashes a giant ball of dough");
+		}
         public override void SetDefaults()
-        {
-            item.name = "Dough Blow";          
+        {         
             item.damage = 21;                        
             item.magic = true;                     //this make the item do magic 
             item.width = 24;
             item.height = 28;
-            item.toolTip = "Unleashes a giant ball of dough";
             item.useTime = 25;
             item.useAnimation = 25;
             item.useStyle = 5;        //this is how the item is holded
