@@ -5,20 +5,18 @@ using Terraria.ModLoader;
 
 namespace CookieMod.Items.Armor
 {
+	[AutoloadEquip(EquipType.Head)]
 	public class CookieMonster : ModItem
 	{
-		public override bool Autoload(ref string name, ref string texture, IList<EquipType> equips)
+		public override void SetStaticDefaults()
 		{
-			equips.Add(EquipType.Head);
-			return true;
+			DisplayName.SetDefault("Cookie Lover");
+			Tooltip.SetDefault("Nom nom");
 		}
-
 		public override void SetDefaults()
 		{
-			item.name = "Cookie Lover";
 			item.width = 18;
 			item.height = 18;
-			item.toolTip = "Nom nom";
 			item.value = 10000;
 			item.rare = 2;
 			item.defense = 1;
