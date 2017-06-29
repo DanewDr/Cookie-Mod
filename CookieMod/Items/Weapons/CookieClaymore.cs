@@ -8,9 +8,13 @@ namespace CookieMod.Items.Weapons
 {
     public class CookieClaymore : ModItem
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Cookie Claymore");
+			Tooltip.SetDefault("");
+		}
         public override void SetDefaults()
-        {
-            item.name = "Cookie Claymore";          
+        {         
             item.damage = 78;                        
             item.melee = true;                     //this make the item do magic 
             item.width = 28;
