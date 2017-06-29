@@ -10,8 +10,8 @@ namespace CookieMod.Buffs
         public override void SetDefaults()
         {
             Main.buffNoTimeDisplay[Type] = false;
-            Main.buffName[this.Type] = "Calcium";
-            Main.buffTip[this.Type] = "Your bones defense feels like they have been increased by 10";
+ 			DisplayName.SetDefault("Calcium");
+			Description.SetDefault("Your bones defense feels like they have been increased by 10");
         }
         public override void Update(Player player, ref int buffIndex)
         {                                             //
