@@ -8,15 +8,18 @@ namespace CookieMod.Items.Weapons
 {  
     public class MinionS : ModItem
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Cookie Staff");
+			Tooltip.SetDefault("Summons, umm, something, to fight for you!");
+		}
         public override void SetDefaults()
         {
-            item.name = "Cookie Staff";
             item.damage = 14;
             item.summon = true;
             item.mana = 10;
             item.width = 26;
             item.height = 28;
-            item.toolTip = "Summons, umm, something, to fight for you!";
             item.useTime = 26;
             item.useAnimation = 26;
             item.useStyle = 1;
