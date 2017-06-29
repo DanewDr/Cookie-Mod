@@ -6,14 +6,16 @@ namespace CookieMod.Items
 {
 	public class SugarBand : ModItem
 	{
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Sugar Band");
+			Tooltip.SetDefault("8% increased damage and melee speed\n12% increased damage and melee speed");
+		}
 		public override void SetDefaults()
 		{
-			item.name = "Sugar Band";
 			item.width = 16;
 			item.height = 18;
 			item.accessory = true;
-			item.toolTip = "8% increased damage and melee speed";
-			item.toolTip2 = "12% increased movement speed";
 			item.rare = 2;
 		}
 		public override void UpdateAccessory(Player player, bool hideVisual)
