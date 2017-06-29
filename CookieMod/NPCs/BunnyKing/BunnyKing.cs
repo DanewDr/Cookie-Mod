@@ -8,12 +8,16 @@ using Terraria.ModLoader;
 
 namespace CookieMod.NPCs.BunnyKing
 {
-    public class BunnyKing : ModNPC
+    [AutoloadBossHead]
+	public class BunnyKing : ModNPC
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Bunny King");
+			Main.npcFrameCount[npc.type] = 6; // make sure to set this for your modnpcs.
+		}
         public override void SetDefaults()
         {
-            npc.name = "Bunny King";
-            npc.displayName = "BunnyKing";
             npc.aiStyle = 15;  //5 is the flying AI
             npc.lifeMax = 5000;   //boss life
             npc.damage = 20;  //boss damage
@@ -22,7 +26,6 @@ namespace CookieMod.NPCs.BunnyKing
             npc.width = 338;
             npc.height = 170;
             animationType = NPCID.KingSlime;   //this boss will behavior like the DemonEye
-            Main.npcFrameCount[npc.type] = 6;    //boss frame/animation 
             npc.value = Item.buyPrice(0, 5, 0, 0);
             npc.npcSlots = 1f;
             npc.boss = true;
@@ -37,10 +40,7 @@ namespace CookieMod.NPCs.BunnyKing
         }
         
 
-        public override void AutoloadHead(ref string headTexture, ref string bossHeadTexture)
-        {
-            bossHeadTexture = "CookieMod/NPCs/BunnyKing/BunnyKing_Head"; //the boss head texture
-        }
+ 
 		
 		public override void BossLoot(ref string name, ref int potionType)
 		{
