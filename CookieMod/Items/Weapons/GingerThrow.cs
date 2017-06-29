@@ -9,11 +9,14 @@ namespace CookieMod.Items.Weapons
 {
     public class GingerThrow : ModItem
     {
-
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Ginger Throw");
+			Tooltip.SetDefault("");
+		}
         public override void SetDefaults()
         {
             item.CloneDefaults(ItemID.WoodYoyo);
-            item.name = "Ginger Throw";
 			item.value = 1200;
             item.useStyle = 5;
             item.width = 24;
