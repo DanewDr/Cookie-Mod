@@ -1,4 +1,4 @@
-﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.ID;
@@ -8,9 +8,13 @@ namespace CookieMod.Items.Weapons
 {
 	public class CremeYoyo : ModItem
 	{
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Creamir");
+			Tooltip.SetDefault("");
+		}
 		public override void SetDefaults()
 		{
-			item.name = "Creamir";
 			item.useStyle = 5;
 			item.width = 24;
 			item.height = 24;
@@ -32,7 +36,7 @@ namespace CookieMod.Items.Weapons
 		{
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(null, "Flour", 3);
-			recipe.AddIngredient(null, "MilkBottle");
+			recipe.AddIngredient(null, "Milk");
 			recipe.AddIngredient(null, "CookieDust", 9);
 			recipe.AddIngredient(ItemID.WoodYoyo);
 			recipe.AddTile(null, "MilkTank");
