@@ -6,9 +6,12 @@ namespace CookieMod.Items.Placeable
 {
     public class CookieDirt : ModItem
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Cookie Dirt");
+		}
         public override void SetDefaults()
         {
-            item.name = "Cookie Dirt";
             item.width = 16;
             item.height = 16;
             item.maxStack = 999;
