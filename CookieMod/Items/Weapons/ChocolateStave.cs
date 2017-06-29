@@ -6,15 +6,18 @@ namespace CookieMod.Items.Weapons
 {
 	public class ChocolateStave : ModItem
 	{
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Chocolate Stave");
+			Tooltip.SetDefault("100% chocolatey goodness.");
+		}
 		public override void SetDefaults()
 		{
-			item.name = "Chocolate Stave";
 			item.damage = 36;
 			item.magic = true;
 			item.mana = 13;
 			item.width = 40;
 			item.height = 40;
-			item.toolTip = "100% chocolatey goodness.";
 			item.useTime = 33;
 			item.useAnimation = 33;
 			item.useStyle = 5;
