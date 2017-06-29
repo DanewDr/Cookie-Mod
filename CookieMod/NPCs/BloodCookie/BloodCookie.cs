@@ -8,12 +8,16 @@ using Terraria.ModLoader;
 
 namespace CookieMod.NPCs.BloodCookie
 {
+	[AutoloadBossHead]
     public class BloodCookie : ModNPC
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Blood Cookie");
+			Main.npcFrameCount[npc.type] = 4; // make sure to set this for your modnpcs.
+		}
         public override void SetDefaults()
         {
-            npc.name = "Blood Cookie";
-            npc.displayName = "Blood Cookie";
             npc.aiStyle = 4;  //5 is the flying AI
             npc.lifeMax = 4000;   //boss life
             npc.damage = 40;  //boss damage
@@ -22,7 +26,6 @@ namespace CookieMod.NPCs.BloodCookie
             npc.width = 338;
             npc.height = 170;
             animationType = NPCID.Harpy;   //this boss will behavior like the DemonEye
-            Main.npcFrameCount[npc.type] = 4;    //boss frame/animation 
             npc.value = Item.buyPrice(0, 5, 0, 0);
             npc.npcSlots = 1f;
             npc.boss = true;
@@ -38,10 +41,7 @@ namespace CookieMod.NPCs.BloodCookie
         }
         
 
-        public override void AutoloadHead(ref string headTexture, ref string bossHeadTexture)
-        {
-            bossHeadTexture = "CookieMod/NPCs/BloodCookie/BloodCookie_Head_Boss"; //the boss head texture
-        }
+
 	
 		public override void NPCLoot()
 		{
