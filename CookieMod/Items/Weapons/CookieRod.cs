@@ -8,14 +8,17 @@ namespace CookieMod.Items.Weapons
 {
     public class CookieRod : ModItem
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Cookie Rod");
+			Tooltip.SetDefault("Fires a cookie!");
+		}
         public override void SetDefaults()
-        {
-            item.name = "Cookie Rod";          
+        {          
             item.damage = 96;                        
             item.magic = true;                     //this make the item do magic 
             item.width = 24;
             item.height = 28;
-            item.toolTip = "Fires a cookie!";
             item.useTime = 32;
             item.useAnimation = 32;
             item.useStyle = 5;        //this is how the item is holded
