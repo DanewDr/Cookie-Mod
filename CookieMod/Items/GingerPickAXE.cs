@@ -7,14 +7,17 @@ namespace CookieMod.Items
 {
 	public class GingerPickAXE : ModItem
 	{
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Ginger PickAXE");
+			Tooltip.SetDefault("");
+		}
 		public override void SetDefaults()
 		{
-			item.name = "Ginger PickAXE";
 			item.damage = 20;
 			item.melee = true;
 			item.width = 40;
 			item.height = 40;
-			item.toolTip = "This is a modded pickaxe.";
 			item.useTime = 10;
 			item.useAnimation = 10;
 			item.pick = 220;
@@ -44,4 +47,5 @@ namespace CookieMod.Items
 			}
 		}
 	}
+}
 }
