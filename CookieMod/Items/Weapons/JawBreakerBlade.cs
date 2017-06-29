@@ -8,14 +8,17 @@ namespace CookieMod.Items.Weapons
 {
     public class JawBreakerBlade : ModItem
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Jawbreaker Blade");
+			Tooltip.SetDefault("Don't shew on it!");
+		}
         public override void SetDefaults()
-        {
-            item.name = "Jawbreaker Blade";          
+        {         
             item.damage = 38;                        
             item.melee = true;                     
             item.width = 38;
             item.height = 38;
-	    item.toolTip = "Don't chew on it!";
             item.useTime = 31;
             item.useAnimation = 31;
             item.useStyle = 1;        
