@@ -10,9 +10,13 @@ namespace CookieMod.Items.Weapons   //where is located
 {
     public class HoneySword : ModItem
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Honey Sword");
+			Tooltip.SetDefault("");
+		}
         public override void SetDefaults()
         {
-            item.name = "Honey Sword";     //Sword name
             item.damage = 28;            //Sword damage
             item.melee = true;            //if it's melee
             item.width = 32;              //Sword width
