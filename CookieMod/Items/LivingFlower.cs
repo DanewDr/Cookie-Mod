@@ -7,12 +7,15 @@ namespace CookieMod.Items
 {
     public class LivingFlower : ModItem
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Living Flower");
+			Tooltip.SetDefault("It seems friendly");
+		}
         public override void SetDefaults()
         {
-            item.name = "Living Flower";
             item.width = 20;
             item.height = 20;
-            item.toolTip = "It seems friendly";
             item.value = 100;
             item.rare = 1;
             item.maxStack = 1;
