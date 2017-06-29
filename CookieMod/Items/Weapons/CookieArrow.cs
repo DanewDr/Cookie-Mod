@@ -5,15 +5,18 @@ namespace 	CookieMod.Items.Weapons
 {
     public class CookieArrow : ModItem
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Cookie Arrow");
+			Tooltip.SetDefault("Don't even need wooden arrows!");
+		}
         public override void SetDefaults()
         {
-            item.name = "Cookie Arrow"; 
             item.damage = 12;
             item.ranged = true;
             item.width = 8;
             item.height = 8;
             item.maxStack = 999;
-            item.toolTip = "Don't even need wooden arrows!";
             item.consumable = true;
             item.knockBack = 3f;
             item.value = 5;
