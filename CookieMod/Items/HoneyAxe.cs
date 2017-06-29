@@ -7,14 +7,17 @@ namespace CookieMod.Items
 {
 	public class HoneyAxe : ModItem
 	{
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Honey Axe");
+			Tooltip.SetDefault("");
+		}
 		public override void SetDefaults()
 		{
-			item.name = "Honey Axe";
 			item.damage = 20;
 			item.melee = true;
 			item.width = 40;
 			item.height = 40;
-			item.toolTip = "This is a modded axe.";
 			item.useTime = 10;
 			item.useAnimation = 10;
 			item.axe = 30;	//x5 is displayed
