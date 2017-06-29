@@ -1,24 +1,21 @@
-using System.Collections.Generic;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace CookieMod.Items.Armor
 {
+	[AutoloadEquip(EquipType.Body)]
 	public class CookieBreastplate : ModItem
 	{
-		public override bool Autoload(ref string name, ref string texture, IList<EquipType> equips)
+		public override void SetStaticDefaults()
 		{
-			equips.Add(EquipType.Body);
-			return true;
+			DisplayName.SetDefault("Cookie Breastplate");
+			Tooltip.SetDefault("Looks defferent on you than in your inventory");
 		}
-
 		public override void SetDefaults()
 		{
-			item.name = "Cookie Breastplate";
 			item.width = 18;
 			item.height = 18;
-			AddTooltip("Looks different on you than in your inventory");
 			item.value = 4500;
 			item.rare = 2;
 			item.defense = 7;
