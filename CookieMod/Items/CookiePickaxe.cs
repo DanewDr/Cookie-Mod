@@ -6,10 +6,14 @@ using Terraria.ModLoader;
 namespace CookieMod.Items 
 {
 	public class CookiePickaxe : ModItem
-	{	
+	{
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Cookie Pickaxe");
+			Tooltip.SetDefault("");
+		}		
 		public override void SetDefaults()
 		{
-			item.name = "Cookie Pickaxe";
 			item.damage = 9;
 			item.melee = true;
 			item.width = 32;
