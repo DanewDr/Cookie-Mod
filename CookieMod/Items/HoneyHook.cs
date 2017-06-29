@@ -9,6 +9,11 @@ namespace CookieMod.Items
 {
 	class HoneyHook : ModItem
 	{
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Honey Hook");
+			Tooltip.SetDefault("");
+		}
 		public override void SetDefaults()
 		{
 			/*
@@ -30,7 +35,6 @@ namespace CookieMod.Items
 			*/
 			// Instead of copying these values, we can clone and modify the ones we want to copy
 			item.CloneDefaults(ItemID.AmethystHook);
-			item.name = "Example Hook";
 			item.shootSpeed = 18f; // how quickly the hook is shot.
 			item.shoot = mod.ProjectileType("HoneyHookProjectile");
 		}
