@@ -8,15 +8,18 @@ namespace CookieMod.Items.Weapons
 {  
     public class GingerStaff : ModItem
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Ginger Staff");
+			Tooltip.SetDefault("Summons a round chocolate cookie");
+		}
         public override void SetDefaults()
         {
-            item.name = "Ginger Staff";
             item.damage = 12;
             item.summon = true;
             item.mana = 10;
             item.width = 26;
             item.height = 28;
-            item.toolTip = "Summons a round chocolate cookie";
             item.useTime = 34;
             item.useAnimation = 26;
             item.useStyle = 1;
