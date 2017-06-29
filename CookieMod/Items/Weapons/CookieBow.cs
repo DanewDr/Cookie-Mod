@@ -9,16 +9,18 @@ namespace CookieMod.Items.Weapons
 {
     public class CookieBow : ModItem
     {
-
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Cookie Bow");
+			Tooltip.SetDefault("The power of cookies are finally in your ranger's hands!");
+		}		
         public override void SetDefaults()
         {
-            item.name = "Cookie Bow";
             item.damage = 14;
             item.noMelee = true;
             item.ranged = true;
             item.width = 20;
             item.height = 40;
-            item.toolTip = "The power of cookies are finally in your ranger's hands!";
             item.useTime = 24;
             item.useAnimation = 30;
             item.useStyle = 5;
