@@ -8,11 +8,14 @@ namespace CookieMod.Items
 {
     public class CooledChocolate : ModItem
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Chocolate");
+			Tooltip.SetDefault("The smell is so delightful");
+		}
         public override void SetDefaults()
         {
-            item.name = "Chocolate";
 	    item.maxStack = 99;
-	    item.toolTip = "The smell is so delightful.";
 	    item.rare = 3;
         }
 	public override void AddRecipes()
