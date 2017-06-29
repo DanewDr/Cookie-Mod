@@ -7,14 +7,17 @@ namespace CookieMod.Items
 {
     public class CookieHammer : ModItem
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Cookie Hammer");
+			Tooltip.SetDefault("Nothing to say about this item. Except that it is crumbling...");
+		}
         public override void SetDefaults()
         {
-            item.name = "Cookie Hammer";
             item.damage = 17;
             item.melee = true;
             item.width = 32;
             item.height = 32;
-            item.toolTip = "Nothing to say about this item. Except that it is crumbling...";
             item.useTime = 25;
             item.useAnimation = 25;
             item.hammer = 55;   //hammer power
