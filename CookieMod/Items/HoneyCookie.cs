@@ -7,12 +7,15 @@ namespace CookieMod.Items
 {
     public class HoneyCookie : ModItem
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Honey Cookie");
+			Tooltip.SetDefault("This makes me feel, Happy!");
+		}
         public override void SetDefaults()
         {
-            item.name = "Honey Cookie";
             item.width = 20;
             item.height = 20;
-            item.toolTip = "This makes me feel, Happy!";
             item.value = 100;
             item.rare = 1;
             item.maxStack = 999;
