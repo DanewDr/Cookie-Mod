@@ -5,9 +5,13 @@ namespace CookieMod.Items.Weapons
 {
 	public class Jawbreaker : ModItem
 	{
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Jawbreaker");
+			Tooltip.SetDefault("");
+		}
 		public override void SetDefaults()
 		{
-			item.name = "Jawbreaker";
 			item.damage = 16;
 			item.ranged = true;
 			item.width = 8;
