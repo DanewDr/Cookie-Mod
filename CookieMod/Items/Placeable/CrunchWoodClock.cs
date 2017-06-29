@@ -5,13 +5,16 @@ namespace CookieMod.Items.Placeable
 {
 	public class CrunchWoodClock: ModItem
 	{
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Crucnh Clock");
+			Tooltip.SetDefault("Tells the time");
+		}
 		public override void SetDefaults()
 		{
-			item.name = "Crunch Clock";
 			item.width = 26;
 			item.height = 22;
 			item.maxStack = 99;
-			AddTooltip("Tells the time");
 			item.useTurn = true;
 			item.autoReuse = true;
 			item.useAnimation = 15;
