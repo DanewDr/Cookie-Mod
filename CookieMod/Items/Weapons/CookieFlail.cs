@@ -10,12 +10,15 @@ namespace CookieMod.Items.Weapons
 {
     public class CookieFlail : ModItem
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Cookie Flail");
+			Tooltip.SetDefault("just a normal flail, like the ball of hurt!");
+		}
         public override void SetDefaults()
         {
-            item.name = "Cookie Flail";
             item.width = 30;
             item.height = 10;
-            item.toolTip = "Just a normal flail, like the ball of hurt!"; //from "just like a" to "just a"
             item.value = 2000;
             item.rare = 2;
 			item.noMelee = true; // Makes sure that the animation when using the item doesn't hurt NPCs.
