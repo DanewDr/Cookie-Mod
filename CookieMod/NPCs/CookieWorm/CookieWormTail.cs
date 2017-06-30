@@ -9,10 +9,12 @@ namespace CookieMod.NPCs.CookieWorm
 {    
     public class CookieWormTail : ModNPC
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Cookie Worm");
+		}
         public override void SetDefaults()
         {
-            npc.displayName = "Cookie Worm";
-            npc.name = "Cookie Worm Tail";
             npc.width = 10;     //this is where you put the npc sprite width.     important
             npc.height = 10;      //this is where you put the npc sprite height.   important
             npc.damage = 3;
@@ -43,7 +45,6 @@ namespace CookieMod.NPCs.CookieWorm
                     npc.life = 0;
                     npc.HitEffect(0, 10.0);
                     npc.active = false;
-                    NetMessage.SendData(28, -1, -1, "", npc.whoAmI, -1f, 0.0f, 0.0f, 0, 0, 0);
                 }
             }
  
