@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
@@ -9,9 +9,12 @@ namespace CookieMod.Projectiles
 {
     public class ThrowingCookie : ModProjectile
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Cookie");     //The English name of the projectile
+		}
 		public override void SetDefaults()
 		{
-			projectile.name = "Cookie";
 			aiType = ProjectileID.MiniSharkron;
 			projectile.CloneDefaults(ProjectileID.MiniSharkron);
 			projectile.friendly = true;
