@@ -8,14 +8,17 @@ namespace CookieMod.Items.Weapons
 {
     public class VanillaStaff : ModItem
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Vanilla Staff");
+			Tooltip.SetDefault("A staff made of sugar and chocolate");
+		}
         public override void SetDefaults()
-        {
-            item.name = "Vanilla Staff";          
+        {         
             item.damage = 46;                        
             item.magic = true;                     //this make the item do magic 
             item.width = 24;
             item.height = 28;
-            item.toolTip = "A staff made of sugar and chocolate.";
             item.useTime = 22;
             item.useAnimation = 22;
             item.useStyle = 5;        //this is how the item is holded
