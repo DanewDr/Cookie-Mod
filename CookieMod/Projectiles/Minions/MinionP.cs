@@ -9,12 +9,14 @@ namespace CookieMod.Projectiles.Minions
 {
     public class MinionP : ModProjectile
     {
-       
+ 		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("The Thing THAT Thing Just Shot");     //The English name of the projectile
+		}        
         private int[] dusts = {160, 600, 64, 61, 50, 60, 590};
        
         public override void SetDefaults()
         {
-            projectile.name = "The Thing THAT Thing Just Shot";
             projectile.width = 30;
             projectile.height = 30;
             projectile.aiStyle = 0;
