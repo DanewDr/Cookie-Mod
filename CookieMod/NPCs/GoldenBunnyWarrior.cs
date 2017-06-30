@@ -7,10 +7,13 @@ namespace CookieMod.NPCs
 {
     public class GoldenBunnyWarrior : ModNPC
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Golden Bunny Warrior");
+			Main.npcFrameCount[npc.type] = 1; // make sure to set this for your modnpcs.
+		}
         public override void SetDefaults()
         {
-            npc.name = "Golden Bunnt Warrior";
-            npc.displayName = "Golden Bunnt Warrior";
             npc.width = 39;
             npc.height = 34;
             npc.damage = 10;
@@ -20,8 +23,7 @@ namespace CookieMod.NPCs
             npc.DeathSound = SoundID.NPCDeath13;
             npc.value = 60f;
             npc.knockBackResist = 0.5f;
-            npc.aiStyle = 26;
-            Main.npcFrameCount[npc.type] = 1; 
+            npc.aiStyle = 26; 
             aiType = NPCID.Unicorn;  //npc behavior
             animationType = NPCID.Unicorn;
 			npc.noGravity = true;
