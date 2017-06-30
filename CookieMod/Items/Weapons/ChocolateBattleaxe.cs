@@ -7,9 +7,13 @@ namespace CookieMod.Items.Weapons
 {
     public class ChocolateBattleaxe : ModItem
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Chocolate Battle-Axe");
+			Tooltip.SetDefault("");
+		}
         public override void SetDefaults()
         {
-            item.name = "Chocolate Battle-Axe";    //the name displayed when hovering over the Weapon ingame.
             item.damage = 35;    //The damage stat for the Weapon.
             item.melee = true;     //This defines if it does Melee damage and if its effected by Melee increasing Armor/Accessories.
             item.width = 114;    //The size of the width of the hitbox in pixels.
