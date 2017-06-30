@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
@@ -9,9 +9,12 @@ namespace CookieMod.Projectiles
 {
     public class CookieClaymore : ModProjectile
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Cookie Claymore");     //The English name of the projectile
+		}
 		public override void SetDefaults()
 		{
-			projectile.name = "Cookie Claymore";
 			aiType = ProjectileID.NightBeam;
 			projectile.melee = true;
 			projectile.friendly = true;
