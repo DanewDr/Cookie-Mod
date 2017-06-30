@@ -9,10 +9,13 @@ namespace CookieMod.Projectiles
 {
     public class HoneyYoyo : ModProjectile
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Honey Yoyo");     //The English name of the projectile
+		}
         public override void SetDefaults()
         {
             projectile.CloneDefaults(ProjectileID.WoodYoyo);
-            projectile.name = "Honey Yoyo";
             projectile.penetrate = 5;  
             projectile.width = 22;
             projectile.height = 22;
