@@ -8,9 +8,12 @@ namespace CookieMod.Projectiles
 {
     public class Jawbreaker : ModProjectile
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Jawbreaker");     //The English name of the projectile
+		}
         public override void SetDefaults()
         {
-            projectile.name = "Jawbreaker";
             projectile.width = 8;
             projectile.height = 8;
             projectile.friendly = true;
