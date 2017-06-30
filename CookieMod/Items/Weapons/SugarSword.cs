@@ -25,6 +25,16 @@ namespace CookieMod.Items.Weapons
             item.knockBack = 1f;        
             item.rare = 3;            //mana use
             item.autoReuse = true;
-        }      
+        }    
+	public override void AddRecipes()  //How to craft this sword
+        {
+	    ModRecipe recipe = new ModRecipe(mod);
+            recipe.AddIngredient(null, "CookieCrumbs", 3);
+            recipe.AddIngredient(null, "SugarDust", 18);
+            recipe.AddIngredient(ItemID.Bone, 6);
+            recipe.SetResult(null, "SugarSword");
+            recipe.AddTile(null, "CookieWorkbench");
+            recipe.AddRecipe();
+        }
     }
 }
