@@ -9,9 +9,12 @@ namespace CookieMod.Projectiles
 {
     public class PopRockBeam : ModProjectile
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Pop Rock");     //The English name of the projectile
+		}
 		public override void SetDefaults()
 		{
-			projectile.name = "Pop Rock";
 			aiType = ProjectileID.MiniSharkron;
 			projectile.CloneDefaults(ProjectileID.MiniSharkron);
 			projectile.friendly = true;
@@ -35,3 +38,4 @@ namespace CookieMod.Projectiles
 
         }
  }
+
