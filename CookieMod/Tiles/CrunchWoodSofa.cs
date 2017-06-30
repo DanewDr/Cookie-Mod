@@ -22,7 +22,9 @@ namespace CookieMod.Tiles
 			TileObjectData.newTile.StyleHorizontal = true;
 			TileObjectData.addTile(Type);
 			AddToArray(ref TileID.Sets.RoomNeeds.CountsAsChair);
-			AddMapEntry(new Color(200, 200, 200), "Crunch Sofa");
+			ModTranslation name = CreateMapEntryName();
+			name.SetDefault("Crunch Sofa");
+			AddMapEntry(new Color(200, 200, 200), name);
 			disableSmartCursor = true;
 			adjTiles = new int[]{ TileID.Chairs };
 		}
