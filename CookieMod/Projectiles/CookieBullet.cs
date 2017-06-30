@@ -8,9 +8,14 @@ namespace CookieMod.Projectiles
 {
     public class CookieBullet : ModProjectile
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Cookie Bullet");     //The English name of the projectile
+			ProjectileID.Sets.TrailCacheLength[projectile.type] = 5;    //The length of old position to be recorded
+			ProjectileID.Sets.TrailingMode[projectile.type] = 0;        //The recording mode
+		}
         public override void SetDefaults()
         {
-            projectile.name = "Cookie Bullet";
             projectile.width = 8;
             projectile.height = 8;
             projectile.aiStyle = 1;
@@ -21,8 +26,6 @@ namespace CookieMod.Projectiles
             projectile.alpha = 0;
             projectile.light = 0.5f;
             projectile.extraUpdates = 1;
-            ProjectileID.Sets.TrailCacheLength[projectile.type] = 5;
-            ProjectileID.Sets.TrailingMode[projectile.type] = 0;
             aiType = ProjectileID.Bullet;
             projectile.CloneDefaults(ProjectileID.Bullet);
         }       
