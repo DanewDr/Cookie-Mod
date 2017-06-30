@@ -9,12 +9,14 @@ namespace CookieMod.Projectiles.Minions
 {
     public class HoneyP : ModProjectile
     {
-       
+ 		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Honey Stream");     //The English name of the projectile
+		}        
         private int[] dusts = {160, 600, 64, 61, 50, 60, 590};
        
         public override void SetDefaults()
         {
-            projectile.name = "Honey Stream";
             projectile.width = 6;
             projectile.height = 32;
             projectile.aiStyle = 0;
