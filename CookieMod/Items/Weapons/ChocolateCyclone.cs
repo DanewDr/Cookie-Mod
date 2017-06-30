@@ -8,14 +8,17 @@ namespace CookieMod.Items.Weapons
 {
     public class ChocolateCyclone : ModItem
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Chocolate Cyclone");
+			Tooltip.SetDefault("Sprays a cyclone of chocolate");
+		}
         public override void SetDefaults()
         {
-            item.name = "Chocolate Cyclone";          
             item.damage = 33;                        
             item.magic = true;                     //this make the item do magic 
             item.width = 24;
             item.height = 28;
-            item.toolTip = "Sprays a cyclone of chocolate";
             item.useTime = 22;
             item.useAnimation = 22;
             item.useStyle = 5;        //this is how the item is holded
