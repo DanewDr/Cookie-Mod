@@ -15,19 +15,25 @@ namespace CookieMod.Items.Weapons
 		}
         public override void SetDefaults()
         {
-            item.damage = 110;                        
+            item.damage = 72;                        
             item.melee = true;                     
             item.width = 58;
             item.height = 58;
-            item.useTime = 13;
-            item.useAnimation = 13;
+            item.useTime = 28;
+            item.useAnimation = 28;
             item.useStyle = 1;        
             item.knockBack = 4f;        
-            item.value = 1000;
             item.rare = 5;            
             item.autoReuse = true;
-            item.shoot = mod.ProjectileType ("SuperSwirl");  //this make the item shoot 
-            item.shootSpeed = 12f;    //projectile speed when shoot
         }      
+	public override void AddRecipes()
+	{
+            ModRecipe recipe = new ModRecipe(mod);
+            recipe.AddIngredient(null, "VanillaSwirl");
+            recipe.AddIngredient(null, "CookieClaymore");
+            recipe.AddTile(null, "CookieWorkbench");   //at work bench
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+        }
     }
 }
