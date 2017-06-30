@@ -10,9 +10,12 @@ namespace CookieMod.Projectiles
 
     public class CookieTome1 : ModProjectile
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Cookie");     //The English name of the projectile
+		}
         public override void SetDefaults()
         {
-            projectile.name = "ProjectileName";  //projectile name
             projectile.width = 20;       //projectile width
             projectile.height = 28;  //projectile height
             projectile.friendly = true;      //make that the projectile will not damage you
