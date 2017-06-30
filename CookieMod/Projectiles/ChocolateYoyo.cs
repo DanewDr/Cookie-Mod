@@ -8,10 +8,13 @@ namespace CookieMod.Projectiles
 {
 	class ChocolateYoyo : ModProjectile
 	{
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Chocolate Yoyo");     //The English name of the projectile
+		}
 		public override void SetDefaults()
 		{
 			projectile.extraUpdates = 0;
-			projectile.name = "Chocolate Yoyo";
 			projectile.width = 16;
 			projectile.height = 16;
 			// aiStyle 99 is used for all yoyos, and is Extremely suggested, as yoyo are extremely difficult without them
