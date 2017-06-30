@@ -10,9 +10,12 @@ namespace CookieMod.Projectiles
 
     public class GingerBlob : ModProjectile
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Ginger Blob");     //The English name of the projectile
+		}
         public override void SetDefaults()
         {
-            projectile.name = "Ginger Blob";  //projectile name
             projectile.width = 20;       //projectile width
             projectile.height = 28;  //projectile height
 			projectile.aiStyle = 16;
