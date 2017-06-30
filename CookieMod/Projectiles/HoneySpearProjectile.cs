@@ -11,9 +11,12 @@ namespace CookieMod.Projectiles
 {
 	public class HoneySpearProjectile : ModProjectile
 	{
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Honey Spear");     //The English name of the projectile
+		}
 		public override void SetDefaults()
 		{
-			projectile.name = "Honey Spear";
 			projectile.width = 18;
 			projectile.height = 18;
 			projectile.aiStyle = 19;
