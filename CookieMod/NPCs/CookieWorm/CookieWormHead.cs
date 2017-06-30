@@ -11,12 +11,16 @@ using Terraria.ModLoader;
  
 namespace CookieMod.NPCs.CookieWorm
 {
+	
     public class CookieWormHead : ModNPC
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Cookie Worm");
+			Main.npcFrameCount[npc.type] = 1; // make sure to set this for your modnpcs.
+		}
         public override void SetDefaults()
         {
-            npc.name = "Cookie Worm";        //this is the npc Name
-            npc.displayName = "Cookie Worm Head";
             npc.lifeMax = 100;        //this is the npc health
             npc.damage = 2;    //this is the npc damage
             npc.defense = 17;         //this is the npc defense
@@ -30,7 +34,6 @@ namespace CookieMod.NPCs.CookieWorm
             npc.HitSound = SoundID.NPCHit1;
             npc.behindTiles = true;
             npc.DeathSound = SoundID.NPCDeath1;
-            Main.npcFrameCount[npc.type] = 1;
             npc.value = Item.buyPrice(0, 0, 2, 10);
             npc.npcSlots = 1f;
             npc.netAlways = true;
