@@ -34,7 +34,9 @@ namespace CookieMod.Tiles
 			TileObjectData.addAlternate(0);
 			TileObjectData.addTile(Type);
 			AddToArray(ref TileID.Sets.RoomNeeds.CountsAsTorch);
-			AddMapEntry(new Color(172, 119, 14), "Torch");
+			ModTranslation name = CreateMapEntryName();
+			name.SetDefault("Torch");
+			AddMapEntry(new Color(172, 119, 14), name);
 			dustType = mod.DustType("Sparkle");
 			drop = mod.ItemType("CookieTorch");
 			disableSmartCursor = true;
