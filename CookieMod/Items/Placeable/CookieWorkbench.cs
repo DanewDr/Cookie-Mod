@@ -8,7 +8,7 @@ namespace CookieMod.Items.Placeable
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Cookie Factory");
-			Tooltip.SetDefault("Used to craft cookie items. Can also be used as a normal workbench");
+			Tooltip.SetDefault("Used to craft cookie items");
 		}
 		public override void SetDefaults()
 		{
