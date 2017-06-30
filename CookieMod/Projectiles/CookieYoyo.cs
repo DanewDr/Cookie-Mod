@@ -1,4 +1,4 @@
-﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.ID;
@@ -8,10 +8,13 @@ namespace CookieMod.Projectiles
 {
 	class CookieYoyo : ModProjectile
 	{
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Cookie Yoyo");     //The English name of the projectile
+		}
 		public override void SetDefaults()
 		{
 			projectile.extraUpdates = 0;
-			projectile.name = "Cookie Yoyo";
 			projectile.width = 16;
 			projectile.height = 16;
 			// aiStyle 99 is used for all yoyos, and is Extremely suggested, as yoyo are extremely difficult without them
