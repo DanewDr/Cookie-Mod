@@ -9,9 +9,12 @@ namespace CookieMod.Projectiles
 {
     public class GiantCookie : ModProjectile
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Giant Cookie");     //The English name of the projectile
+		}
         public override void SetDefaults()
         {
-            projectile.name = "Giant Cookie";
             projectile.width = 20;
             projectile.height = 20;
             projectile.friendly = true;
