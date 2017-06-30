@@ -8,14 +8,17 @@ namespace CookieMod.Items.Weapons
 {
     public class Sweetnir : ModItem
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Sweetnir");
+			Tooltip.SetDefault("All the sugar in the world combined into a single sword.");
+		}
         public override void SetDefaults()
         {
-            item.name = "Sweetnir";          
             item.damage = 110;                        
             item.melee = true;                     
             item.width = 58;
             item.height = 58;
-	    item.toolTip = "All the sugar in the world combined into a single sword.";
             item.useTime = 13;
             item.useAnimation = 13;
             item.useStyle = 1;        
