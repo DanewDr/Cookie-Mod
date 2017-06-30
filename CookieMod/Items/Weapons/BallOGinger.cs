@@ -10,12 +10,15 @@ namespace CookieMod.Items.Weapons
 {
     public class BallOGinger : ModItem
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Ball O' Ginger");
+			Tooltip.SetDefault("Shoots a ball of ginger (on a chain)");
+		}
         public override void SetDefaults()
         {
-            item.name = "Ball O' Ginger";
             item.width = 30;
             item.height = 32;
-            item.toolTip = "Shoots a ball of ginger (on a chain)";
             item.value = 2000;
             item.rare = 2;
 	    item.noMelee = true; // Makes sure that the animation when using the item doesn't hurt NPCs.
