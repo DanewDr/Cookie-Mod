@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
@@ -9,10 +9,13 @@ namespace CookieMod.Projectiles
 {
     public class SugarBeam : ModProjectile
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Sugar Beam");     //The English name of the projectile
+		}
 		public override void SetDefaults()
 		{
 			projectile.CloneDefaults(ProjectileID.DiamondBolt);
-			projectile.name = "Sugar Beam";
 			aiType = ProjectileID.DiamondBolt;
 		}
 
