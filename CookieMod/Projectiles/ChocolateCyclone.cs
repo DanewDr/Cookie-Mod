@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
@@ -9,10 +9,13 @@ namespace CookieMod.Projectiles
 {
     public class ChocolateCyclone : ModProjectile
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Chocolate Cyclone");     //The English name of the projectile
+		}
 		public override void SetDefaults()
 		{
 			projectile.CloneDefaults(ProjectileID.MiniSharkron);
-			projectile.name = "Chocolate Cyclone";
 			aiType = ProjectileID.MiniSharkron;
 		}
 
