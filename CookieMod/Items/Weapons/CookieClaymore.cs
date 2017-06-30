@@ -25,7 +25,8 @@ namespace CookieMod.Items.Weapons
             item.knockBack = 6f;        
             item.rare = 2;            //mana use
             item.autoReuse = true;
-        }      
+        }     
+	public override void AddRecipes()
 	{
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(ItemID.HallowedBar, 4);
