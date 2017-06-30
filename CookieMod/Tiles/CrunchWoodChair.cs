@@ -25,7 +25,9 @@ namespace CookieMod.Tiles
 			TileObjectData.addAlternate(1); //facing right will use the second texture style
 			TileObjectData.addTile(Type);
 			AddToArray(ref TileID.Sets.RoomNeeds.CountsAsChair);
-			AddMapEntry(new Color(200, 200, 200), "Crunch Chair");
+			ModTranslation name = CreateMapEntryName();
+			name.SetDefault("Crunch Chair");
+			AddMapEntry(new Color(200, 200, 200), name);
 			disableSmartCursor = true;
 			adjTiles = new int[]{ TileID.Chairs };
 		}
