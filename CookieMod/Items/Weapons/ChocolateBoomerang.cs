@@ -8,9 +8,13 @@ namespace CookieMod.Items.Weapons
 {
     public class ChocolateBoomerang : ModItem
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Chocolate Boomerang");
+			Tooltip.SetDefault("");
+		}
         public override void SetDefaults()
         {
-            item.name = "Chocolate Boomerang";
             item.damage = 32;            
             item.melee = true;
             item.width = 18;
