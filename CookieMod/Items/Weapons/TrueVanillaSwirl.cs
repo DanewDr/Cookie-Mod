@@ -8,9 +8,13 @@ namespace CookieMod.Items.Weapons
 {
     public class TrueVanillaSwirl : ModItem
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("True Vanilla Swirl");
+			Tooltip.SetDefault("");
+		}
         public override void SetDefaults()
-        {
-            item.name = "True Vanilla Swirl";          
+        {         
             item.damage = 92;                        
             item.melee = true;                     
             item.width = 58;
