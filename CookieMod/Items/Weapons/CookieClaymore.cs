@@ -19,8 +19,8 @@ namespace CookieMod.Items.Weapons
             item.melee = true;                     //this make the item do magic 
             item.width = 28;
             item.height = 28;
-            item.useTime = 28;
-            item.useAnimation = 28;
+            item.useTime = 24;
+            item.useAnimation = 24;
             item.useStyle = 1;        //this is how the item is holded
             item.knockBack = 6f;        
             item.rare = 2;            //mana use
