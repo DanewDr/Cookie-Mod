@@ -8,15 +8,18 @@ namespace CookieMod.Items.Weapons
 {  
     public class ChocolateStaff : ModItem
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Chocolate Staff");
+			Tooltip.SetDefault("Summons a chocolate minion to fight for you");
+		}
         public override void SetDefaults()
         {
-            item.name = "Chocolate Staff";
             item.damage = 21;
             item.summon = true;
             item.mana = 10;
             item.width = 26;
             item.height = 28;
-            item.toolTip = "Summon";
             item.useTime = 34;
             item.useAnimation = 26;
             item.useStyle = 1;
