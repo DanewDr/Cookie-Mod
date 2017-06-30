@@ -9,11 +9,12 @@ namespace CookieMod.Projectiles
 {
     public class GingerBall : ModProjectile
     {
-
-
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Ball O' Ginger");     //The English name of the projectile
+		}
         public override void SetDefaults()
         {
-            projectile.name = "Ball O' Ginger";
             projectile.width = 28;
             projectile.height = 28;
             projectile.friendly = true;
