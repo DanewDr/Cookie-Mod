@@ -9,10 +9,13 @@ namespace CookieMod.Projectiles.Minions
 {  
     public class HoneyImp : MinionINFO
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Honey Imp");     //The English name of the projectile
+		}  		
         public override void SetDefaults()
         {
             projectile.netImportant = true;
-            projectile.name = "Honey Imp";
             projectile.width = 32;
             projectile.height = 32;
             Main.projFrames[projectile.type] = 8;
