@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
@@ -9,9 +9,12 @@ namespace CookieMod.Projectiles
 {
     public class Popsicle : ModProjectile
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Popsicle");     //The English name of the projectile
+		}
 		public override void SetDefaults()
 		{
-			projectile.name = "Popsicle";
 			aiType = ProjectileID.Bullet;
 			projectile.CloneDefaults(ProjectileID.Bullet);
 			projectile.friendly = true;
