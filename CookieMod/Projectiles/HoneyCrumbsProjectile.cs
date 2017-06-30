@@ -9,10 +9,12 @@ namespace CookieMod.Projectiles
 {
     public class HoneyCrumbsProjectile : ModProjectile
     {
- 
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Honey Crumbs");     //The English name of the projectile
+		}
         public override void SetDefaults()
         {
-            projectile.name = "Honey Crumbs";  //this is the projectile name
             projectile.width = 20;
             projectile.height = 20;
             projectile.friendly = true;
