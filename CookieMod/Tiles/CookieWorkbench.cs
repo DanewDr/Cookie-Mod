@@ -10,21 +10,20 @@ namespace CookieMod.Tiles
 	{
 		public override void SetDefaults()
 		{
-			Main.tileSolidTop[Type] = true;
+			Main.tileSolidTop[Type] = false;
 			Main.tileFrameImportant[Type] = true;
 			Main.tileNoAttach[Type] = true;
 			Main.tileTable[Type] = true;
-			Main.tileLavaDeath[Type] = true;
+			Main.tileLavaDeath[Type] = false;
 			TileObjectData.newTile.CopyFrom(TileObjectData.Style3x3);
-			TileObjectData.newTile.CoordinateHeights = new int[]{ 18 };
+			TileObjectData.newTile.CoordinateHeights = new int[] { 16, 16, 16 };
 			TileObjectData.addTile(Type);
 			AddToArray(ref TileID.Sets.RoomNeeds.CountsAsTable);
 			ModTranslation name = CreateMapEntryName();
 			name.SetDefault("Cookie Factory");
 			AddMapEntry(new Color(250, 250, 250), name);
-			dustType = -1;
 			disableSmartCursor = true;
-			adjTiles = new int[]{ TileID.WorkBenches };
+			animationFrameHeight = 56;
 		}
 
 		public override void NumDust(int i, int j, bool fail, ref int num)
@@ -36,19 +35,19 @@ namespace CookieMod.Tiles
 		{
 			Item.NewItem(i * 16, j * 16, 32, 16, mod.ItemType("CookieWorkbench"));
 		}
+		
  		public override void AnimateTile(ref int frame, ref int frameCounter)
+        {
+        	frameCounter++;
+        	if (frameCounter > 5)  //this is the frames speed, the bigger is the value the slower are the frames
         	{
-            		frameCounter++;
-           		if (frameCounter > 20)  //this is the frames speed, the bigger is the value the slower are the frames
-            		{
-                		frameCounter = 0;
-                		frame++;
-                		if (frame > 2)   //this is where you add how may frames your spritesheet has but -1, so if it has 4 frames you put 3 etc.
-                		{
-                    			frame = 0;
-                		}
-            		}
-        	}		
+          		frameCounter = 0;
+           		frame++;
+           		if (frame > 2)   //this is where you add how may frames your spritesheet has but -1, so if it has 4 frames you put 3 etc.
+           		{
+           			frame = 0;
+           		}
+        	}
+        }		
 	}
 }
-
