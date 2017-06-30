@@ -31,7 +31,9 @@ namespace CookieMod.Tiles
             TileObjectData.newTile.RandomStyleRange = 3;
             TileObjectData.addTile(Type);
             sapling = true;
-            AddMapEntry(new Color(200, 200, 0), "Sapling");
+			ModTranslation name = CreateMapEntryName();
+			name.SetDefault("Sapling");
+			AddMapEntry(new Color(200, 200, 0), name);
             adjTiles = new int[] { TileID.Saplings };
         }
         public override void SetSpriteEffects(int i, int j, ref SpriteEffects effects)
