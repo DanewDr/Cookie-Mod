@@ -9,10 +9,13 @@ namespace CookieMod.Projectiles
 {
     public class GingerThrowP : ModProjectile
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Ginger Throw");     //The English name of the projectile
+		}
         public override void SetDefaults()
         {
             projectile.CloneDefaults(ProjectileID.WoodYoyo);
-            projectile.name = "Ginger Throw";
             projectile.penetrate = 5;  
             projectile.width = 22;
             projectile.height = 22;
