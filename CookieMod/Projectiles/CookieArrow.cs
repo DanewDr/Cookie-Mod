@@ -8,9 +8,14 @@ namespace CookieMod.Projectiles
 {
     public class CookieArrow : ModProjectile
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Cookie Arrow");     //The English name of the projectile
+			ProjectileID.Sets.TrailCacheLength[projectile.type] = 5;    //The length of old position to be recorded
+			ProjectileID.Sets.TrailingMode[projectile.type] = 0;        //The recording mode
+		}
         public override void SetDefaults()
         {
-            projectile.name = "Cookie Arrow";
             projectile.width = 8;
             projectile.height = 8;
             projectile.aiStyle = 1;
