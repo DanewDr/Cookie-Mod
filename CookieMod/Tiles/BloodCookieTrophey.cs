@@ -16,7 +16,9 @@ namespace CookieMod.Tiles
 			TileObjectData.newTile.StyleWrapLimit = 42;
 			TileObjectData.addTile(Type);			
 			disableSmartCursor = true;
-			AddMapEntry(new Color(120, 85, 60), "Blood Cookie Trophy");
+			ModTranslation name = CreateMapEntryName();
+			name.SetDefault("Trophy");
+			AddMapEntry(new Color(120, 85, 60), name);
 		}
         public override void KillMultiTile(int i, int j, int frameX, int frameY) //this make that when you break the Trophy it will give you the TrophyItem
         {
