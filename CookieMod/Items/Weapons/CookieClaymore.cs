@@ -6,27 +6,33 @@ using Terraria.ModLoader;
  
 namespace CookieMod.Items.Weapons
 {
-    public class TrueCookieClaymore : ModItem
+    public class CookieClaymore : ModItem
     {
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("True Cookie Claymore");
+			DisplayName.SetDefault("Cookie Claymore");
 			Tooltip.SetDefault("");
 		}
         public override void SetDefaults()
         {         
-            item.damage = 98;                        
+            item.damage = 64;                        
             item.melee = true;                     //this make the item do magic 
             item.width = 28;
             item.height = 28;
-            item.useTime = 22;
-            item.useAnimation = 22;
+            item.useTime = 28;
+            item.useAnimation = 28;
             item.useStyle = 1;        //this is how the item is holded
             item.knockBack = 6f;        
             item.rare = 2;            //mana use
             item.autoReuse = true;
-	    item.shoot = mod.ProjectileType ("CookieClaymore");
-	    item.shootSpeed = 6f;
         }      
+	{
+            ModRecipe recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.HallowedBar, 4);
+            recipe.AddIngredient(null, "Cookie", 16);
+            recipe.AddTile(null, "CookieWorkbench");   //at work bench
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+         }
     }
 }
