@@ -19,7 +19,9 @@ namespace CookieMod.Tiles
 			TileObjectData.newTile.CoordinateHeights = new int[]{ 18 };
 			TileObjectData.addTile(Type);
 			AddToArray(ref TileID.Sets.RoomNeeds.CountsAsTable);
-			AddMapEntry(new Color(200, 200, 200), "Crunch Table");
+			ModTranslation name = CreateMapEntryName();
+			name.SetDefault("Crunch Table");
+			AddMapEntry(new Color(200, 200, 200), name);
 			disableSmartCursor = true;
 			adjTiles = new int[]{ TileID.Tables };
 		}
