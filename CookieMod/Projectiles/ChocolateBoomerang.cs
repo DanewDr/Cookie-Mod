@@ -9,9 +9,12 @@ namespace CookieMod.Projectiles
 {
     public class ChocolateBoomerang : ModProjectile
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Chocolate Boomerang");     //The English name of the projectile
+		}
         public override void SetDefaults()
         {
-            projectile.name = "Chocolate Boomerang";
             projectile.width = 30;
             projectile.height = 30;
             projectile.aiStyle = 3;
