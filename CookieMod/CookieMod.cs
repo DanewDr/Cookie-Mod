@@ -98,12 +98,6 @@ namespace CookieMod
             recipe.AddTile(TileID.Anvils);
             recipe.AddRecipe();
             recipe = new ModRecipe(this);
-            recipe.AddIngredient(null, "TrueCookieClaymore");
-            recipe.AddIngredient(null, "TrueVanillaSwirl");
-            recipe.SetResult(null, "Sweetnir");
-            recipe.AddTile(TileID.MythrilAnvil);
-            recipe.AddRecipe();
-            recipe = new ModRecipe(this);
             recipe.AddIngredient(null, "SugarCube", 30);
             recipe.AddIngredient(null, "CookieCrumbs", 15);
             recipe.AddIngredient(ItemID.Diamond);
