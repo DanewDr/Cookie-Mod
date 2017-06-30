@@ -8,9 +8,12 @@ namespace CookieMod.Projectiles
 {
     public class HotChocolate : ModProjectile
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Hot Chocolate");     //The English name of the projectile
+		}
         public override void SetDefaults()
         {
-        projectile.name = "Hot Chocolate";
         projectile.width = 14;
         projectile.height = 14;
         projectile.aiStyle = 68;
