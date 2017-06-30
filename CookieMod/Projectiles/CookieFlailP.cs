@@ -9,11 +9,12 @@ namespace CookieMod.Projectiles
 {
     public class CookieFlailP : ModProjectile
     {
-
-
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Cookie Flail Ball");     //The English name of the projectile
+		}
         public override void SetDefaults()
         {
-            projectile.name = "Cookie Flail Ball";
             projectile.width = 28;
             projectile.height = 28;
             projectile.friendly = true;
@@ -65,3 +66,4 @@ namespace CookieMod.Projectiles
         }
     }
 }
+
