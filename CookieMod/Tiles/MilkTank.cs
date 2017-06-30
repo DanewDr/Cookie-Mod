@@ -16,7 +16,9 @@ namespace CookieMod.Tiles
             Main.tileTable[Type] = true;
             Main.tileLavaDeath[Type] = true;
             TileObjectData.newTile.CopyFrom(TileObjectData.Style2x2);
-            AddMapEntry(new Color(200, 200, 200), "Milk Tank");
+			ModTranslation name = CreateMapEntryName();
+			name.SetDefault("Milk Tank");
+			AddMapEntry(new Color(200, 200, 200), name);
             disableSmartCursor = true;
             TileObjectData.addTile(Type);
         }
