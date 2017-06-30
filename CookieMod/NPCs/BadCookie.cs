@@ -7,10 +7,13 @@ namespace CookieMod.NPCs
 {
     public class BadCookie : ModNPC
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Bad Cookie");
+			Main.npcFrameCount[npc.type] = 2; // make sure to set this for your modnpcs.
+		}
         public override void SetDefaults()
         {
-            npc.name = "Bad Cookie";
-            npc.displayName = "Bad Cookie";
             npc.width = 39;
             npc.height = 34;
             npc.damage = 10;
@@ -21,7 +24,6 @@ namespace CookieMod.NPCs
             npc.value = 60f;
             npc.knockBackResist = 0.5f;
             npc.aiStyle = 5;
-            Main.npcFrameCount[npc.type] = 2; 
             aiType = NPCID.DemonEye;  //npc behavior
             animationType = NPCID.DemonEye;
 			npc.noGravity = true;
