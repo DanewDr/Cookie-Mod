@@ -5,9 +5,13 @@ namespace CookieMod.Items.Weapons
 {
     public class ChocolateGun : ModItem
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Chocolate Gun");
+			Tooltip.SetDefault("");
+		}
         public override void SetDefaults()
         {
-            item.name = "Chocolate Gun";  //Gun name  
             item.damage = 12;  //gun damage
             item.ranged = true;   //its a gun so set this to true
             item.width = 40;     //gun image width
