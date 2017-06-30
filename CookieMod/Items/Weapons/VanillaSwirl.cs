@@ -10,7 +10,7 @@ namespace CookieMod.Items.Weapons
     {
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Vanilla Swirl");
+			DisplayName.SetDefault("Milky Swirl");
 			Tooltip.SetDefault("");
 		}
         public override void SetDefaults()
@@ -26,5 +26,14 @@ namespace CookieMod.Items.Weapons
             item.rare = 2;            //mana use
             item.autoReuse = true;
         }      
+	public override void AddRecipes()  //How to craft this gun
+        {
+            ModRecipe recipe = new ModRecipe(mod);
+            recipe.AddIngredient(null, "CookieSword");
+	    recipe.AddIngredient(null, "SugarSword");
+            recipe.AddTile(null, "CookieWorkbench");   //at work bench
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+        }
     }
 }
