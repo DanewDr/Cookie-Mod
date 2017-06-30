@@ -9,9 +9,12 @@ namespace CookieMod.Projectiles
 {
     public class RainbowPopsicle : ModProjectile
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Rainbow Popsicle");     //The English name of the projectile
+		}
 		public override void SetDefaults()
 		{
-			projectile.name = "Rainbow Popsicle";
 			aiType = ProjectileID.Bullet;
 			projectile.CloneDefaults(ProjectileID.Bullet);
 			projectile.friendly = true;
