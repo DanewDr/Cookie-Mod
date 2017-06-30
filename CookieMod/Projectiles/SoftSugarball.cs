@@ -9,9 +9,12 @@ namespace CookieMod.Projectiles
 {
     public class SoftSugarball : ModProjectile
     {
+		public override void SetStaticDefaults()
+		{
+			DisplayName.SetDefault("Soft Sugarball");     //The English name of the projectile
+		}
 		public override void SetDefaults()
 		{
-			projectile.name = "Soft Sugarball";
 			aiType = ProjectileID.MiniSharkron;
 			projectile.CloneDefaults(ProjectileID.MiniSharkron);
 			projectile.friendly = true;
