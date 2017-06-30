@@ -24,7 +24,9 @@ namespace CookieMod.Tiles
 				16
 			};
 			TileObjectData.addTile(Type);
-			AddMapEntry(new Color(200, 200, 200), "Crunch Clock");
+			ModTranslation name = CreateMapEntryName();
+			name.SetDefault("Crunch Clock");
+			AddMapEntry(new Color(200, 200, 200), name);
 			adjTiles = new int[] { TileID.GrandfatherClocks };
 		}
 
