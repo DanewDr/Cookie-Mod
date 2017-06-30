@@ -19,7 +19,9 @@ namespace CookieMod.Tiles
 			TileObjectData.newTile.CoordinateHeights = new int[]{ 18 };
 			TileObjectData.addTile(Type);
 			AddToArray(ref TileID.Sets.RoomNeeds.CountsAsTable);
-			AddMapEntry(new Color(250, 250, 250), "Cookie Factory");
+			ModTranslation name = CreateMapEntryName();
+			name.SetDefault("Cookie Factory");
+			AddMapEntry(new Color(250, 250, 250), name);
 			dustType = -1;
 			disableSmartCursor = true;
 			adjTiles = new int[]{ TileID.WorkBenches };
@@ -49,3 +51,4 @@ namespace CookieMod.Tiles
         	}		
 	}
 }
+
