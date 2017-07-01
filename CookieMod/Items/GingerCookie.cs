@@ -10,10 +10,14 @@ namespace CookieMod.Items
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Ginger Cookie");
-			Tooltip.SetDefault("This makes me feel, Happy!");
+			Tooltip.SetDefault("Mhmm...ginger...");
 		}
         public override void SetDefaults()
         {
+            item.damage = 12;
+	    item.consumable = true;
+	    item.shoot = mod.ProjectileType ("ThrowingCookieGinger");
+	    item.ammo = mod.ItemType("SlingshotAmmo");
             item.width = 20;
             item.height = 20;
             item.value = 100;
