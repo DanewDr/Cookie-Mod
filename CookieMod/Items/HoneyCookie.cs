@@ -10,14 +10,14 @@ namespace CookieMod.Items
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Honey Cookie");
-			Tooltip.SetDefault("This makes me feel, Happy!");
+			Tooltip.SetDefault("Possitively ravishing!");
 		}
         public override void SetDefaults()
         {
-            item.damage = 8;
+            item.damage = 18;
 	    item.consumable = true;
 	    item.shoot = mod.ProjectileType ("ThrowingCookieHoney");
-	    item.ammo = mod.ItemType("Cookie");
+	    item.ammo = mod.ItemType("SlingshotAmmo");
 	    item.width = 20;
             item.height = 20;
             item.value = 100;
