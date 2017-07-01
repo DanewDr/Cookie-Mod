@@ -15,7 +15,11 @@ namespace CookieMod.Items
 
         public override void SetDefaults()
         {
-            item.width = 20;
+            item.damage = 3;
+	    item.consumable = true;
+	    item.shoot = mod.ProjectileType ("ThrowingCookieChocolate");
+	    item.ammo = mod.ItemType("Cookie");
+	    item.width = 20;
             item.height = 20;
             item.value = 100;
             item.rare = 1;
