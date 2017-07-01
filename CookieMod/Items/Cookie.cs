@@ -21,7 +21,7 @@ namespace CookieMod.Items
             item.maxStack = 999;
 	    item.consumable = true;
             ItemID.Sets.ItemNoGravity[item.type] = false;  //this make that the item will float in air
-	    item.ammo = item.type;
+	    item.ammo = mod.ItemType("SlingshotAmmo");
         }
  
        
