@@ -10,7 +10,7 @@ namespace CookieMod.Items.Weapons
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Slingshot");
-			Tooltip.SetDefault("Allows you to use extra cookies as ammo");
+			Tooltip.SetDefault("Super springy!");
 		}
 		public override void SetDefaults()
 		{
