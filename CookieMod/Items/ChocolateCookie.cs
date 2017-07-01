@@ -10,7 +10,7 @@ namespace CookieMod.Items
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Chocolate Cookie");
-			Tooltip.SetDefault("This makes me feel, Happy!");
+			Tooltip.SetDefault("Not recommended for dogs");
 		}
 
         public override void SetDefaults()
