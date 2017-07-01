@@ -8,7 +8,7 @@ namespace CookieMod.Items.Weapons
     {
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Cookie Bow");
+			DisplayName.SetDefault("Honey Bow");
 			Tooltip.SetDefault("");
 		}
         public override void SetDefaults()
