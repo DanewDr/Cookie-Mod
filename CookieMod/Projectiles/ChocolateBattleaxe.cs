@@ -12,7 +12,6 @@ namespace CookieMod.Projectiles
 		{
 			DisplayName.SetDefault("Chocolate Battle-Axe");     //The English name of the projectile
 		}
-    {
         public override void SetDefaults()
         {
             projectile.width = 220;     //Set the hitbox width
@@ -60,5 +59,6 @@ namespace CookieMod.Projectiles
             player.itemTime = 2;
             player.itemAnimation = 2;
             player.itemRotation = projectile.rotation;
+	}
     }
 }
