@@ -15,7 +15,7 @@ namespace CookieMod.Items
 
         public override void SetDefaults()
         {
-            item.damage = 3;
+            item.damage = 14;
 	    item.consumable = true;
 	    item.shoot = mod.ProjectileType ("ThrowingCookieChocolate");
 	    item.ammo = mod.ItemType("SlingshotAmmo");
