@@ -29,6 +29,27 @@ namespace CookieMod.NPCs
                     }
  
             }
+	    if (Main.hardMode)     //this make the item drop only in hardmode
+                {
+				    if (Main.player[Main.myPlayer].ZoneOverworldHeight)          //this is where you choose what biome you whant the item to drop. ZoneCorrupt is in Corruption
+					    {
+						    if (Main.rand.Next(9) == 0)      //this is the item rarity, so 9 = 1 in 10 chance that the npc will drop the item.
+						    {
+							    Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("SugarDust"), Main.rand.Next(5, 10));//this is where you set what item to drop ,ItemID.VileMushroom is an example of how to add vanila items , Main.rand.Next(5, 10) it's the quantity,so it will chose a number from 5 to 10
+						    }
+					    }
+				    }
+			    else    //else if it's not hardmode this will happen
+                {
+                    if (Main.player[Main.myPlayer].ZoneOverworldHeight)  //so again if the player is in corruption
+                    {
+                        if (Main.rand.Next(2) == 0)    //   the item has a 1 in 3 chance to drop
+                        {
+                            Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("Sugardust"), Main.rand.Next(1, 5));
+                        }
+                    }
+ 
+            }
 			if (Main.hardMode)     
             {
 				if (Main.player[Main.myPlayer].ZoneUnderworldHeight)          
@@ -49,15 +70,6 @@ namespace CookieMod.NPCs
                     }
                 }
  
-            }
-            if (npc.type == NPCID.QueenBee)   
-            {
-                if (Main.rand.Next(1) == 0) 
-                {
-                    {
-                        Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("SugarCube"), Main.rand.Next(25, 40));
-                    }
-                }
             }
             if (npc.type == NPCID.Bunny)   //this is where you choose the npc you want
             {
