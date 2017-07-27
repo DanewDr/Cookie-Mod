@@ -36,7 +36,7 @@ namespace CookieMod.Items.Weapons
 	{
 		ModRecipe recipe = new ModRecipe(mod);
 		recipe.AddIngredient(null, "SugarWand");
-		recipe.AddIngredient(null, "CookieDust", 20);
+		recipe.AddIngredient(ItemID.HallowedBar, 6);
 		recipe.AddTile(null, "CookieWorkbench");
 		recipe.SetResult(this);
 		recipe.AddRecipe();
