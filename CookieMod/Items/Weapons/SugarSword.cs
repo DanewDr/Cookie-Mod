@@ -29,8 +29,7 @@ namespace CookieMod.Items.Weapons
 	public override void AddRecipes()  //How to craft this sword
         {
 	    ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(null, "CookieCrumbs", 3);
-            recipe.AddIngredient(null, "SugarDust", 18);
+            recipe.AddIngredient(null, "SugarCookie", 8);
             recipe.AddIngredient(ItemID.Bone, 6);
             recipe.SetResult(null, "SugarSword");
             recipe.AddTile(null, "CookieWorkbench");
