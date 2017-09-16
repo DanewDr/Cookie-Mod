@@ -53,8 +53,8 @@ namespace CookieMod
             recipe.AddTile(TileID.Hellforge);
             recipe.AddRecipe();
             recipe = new ModRecipe(this);
-            recipe.AddIngredient(null, "SugarCube", 30);
-            recipe.AddIngredient(null, "CookieCrumbs", 5);
+            recipe.AddIngredient(null, "SugarDust", 30);
+            recipe.AddIngredient(null, "CookieDust", 5);
             recipe.SetResult(null, "SugarBlaster");
             recipe.AddTile(null, "CookieWorkbench");
             recipe.AddRecipe();
