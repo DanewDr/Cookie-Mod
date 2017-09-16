@@ -8,7 +8,7 @@ namespace CookieMod.Items.Placeable
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Crunch Dresser");
-			Tooltip.SetDefault("Change clothes and even stor items!");
+			Tooltip.SetDefault("Change clothes and even store items!");
 		}
 		public override void SetDefaults()
 		{
@@ -28,7 +28,6 @@ namespace CookieMod.Items.Placeable
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.Dresser);
 			recipe.AddIngredient(null, "CrunchWood", 10);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
