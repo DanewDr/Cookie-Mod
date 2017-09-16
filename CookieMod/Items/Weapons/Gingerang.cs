@@ -45,7 +45,7 @@ namespace CookieMod.Items.Weapons
         public override void AddRecipes()
         {
                 ModRecipe recipe = new ModRecipe(mod);
-				recipe.AddIngredient(null, "Cookie", 15);
+				recipe.AddIngredient(null, "GingerCookie", 15);
 				recipe.AddTile(null, "CookieWorkbench");   
                 recipe.SetResult(this);
                 recipe.AddRecipe();
