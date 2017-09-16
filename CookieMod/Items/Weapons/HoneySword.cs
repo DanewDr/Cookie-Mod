@@ -34,7 +34,7 @@ namespace CookieMod.Items.Weapons   //where is located
         public override void AddRecipes()  //How to craft this sword
         {
             ModRecipe recipe = new ModRecipe(mod);      
-            recipe.AddIngredient(null, "Cookie", 10);   //you need 1 DirtBlock
+            recipe.AddIngredient(null, "HoneyCookie", 10);   //you need 1 DirtBlock
             recipe.AddTile(null, "CookieWorkbench");   //at work bench
             recipe.SetResult(this);
             recipe.AddRecipe();
