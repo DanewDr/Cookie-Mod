@@ -34,7 +34,6 @@ namespace CookieMod.Items.Weapons   //where is located
             ModRecipe recipe = new ModRecipe(mod);      
             recipe.AddIngredient(null, "DoughBall", 10);
             recipe.AddIngredient(ItemID.WoodenSword);//you need 1 DirtBlock
-            recipe.AddTile(null, "CookieWorkbench");   //at work bench
             recipe.SetResult(this);
             recipe.AddRecipe();
         }	
