@@ -40,7 +40,7 @@ namespace CookieMod.Items
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(null, "BunnyFur", 12);
 			      recipe.AddIngredient(ItemID.Bunny, 2);
-			      recipe.AddIngredient(ItemID.GoldBunny, 2);
+			      recipe.AddIngredient(ItemID.GoldBunny, 1);
             recipe.AddIngredient(ItemID.GoldCrown);
 			      recipe.AddTile(TileID.DemonAltar);
             recipe.SetResult(this);
