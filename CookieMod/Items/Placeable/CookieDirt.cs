@@ -27,7 +27,7 @@ namespace CookieMod.Items.Placeable
         {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(ItemID.DirtBlock, 1);   //you need 10 Wood
-			recipe.AddIngredient(null, "Cookie", 1);
+			recipe.AddIngredient(null, "DoughBall", 2);
             recipe.AddTile(TileID.WorkBenches);   //at work bench
             recipe.SetResult(this, 2);
             recipe.AddRecipe();
