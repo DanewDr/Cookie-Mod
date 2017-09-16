@@ -32,7 +32,7 @@ namespace CookieMod.Items.Weapons
 		public override void AddRecipes()
         	{
             		ModRecipe recipe = new ModRecipe(mod);
-            		recipe.AddIngredient(null, "Wood", 5);
+            		recipe.AddIngredient(ItemID.Wood, 5);
 	   		recipe.AddRecipeGroup("IronBar", 2);
            		recipe.SetResult(this);
 			recipe.AddTile(TileID.WorkBenches);
