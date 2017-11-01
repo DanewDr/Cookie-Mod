@@ -38,9 +38,7 @@ namespace CookieMod.Items.Weapons
 		ModRecipe recipe = new ModRecipe(mod);
 		recipe.AddIngredient(null, "ChocolateStave");
 		recipe.AddIngredient(null, "SugarStaff");
-		recipe.AddIngredient(null, "SugarDust", 20);
-		recipe.AddIngredient(null, "CookieDust", 20);
-    recipe.AddIngredient(ItemID.SoulofSight, 15);
+    		recipe.AddIngredient(ItemID.SoulofSight, 15);
 		recipe.AddTile(null, "CookieWorkbench");
 		recipe.SetResult(this);
 		recipe.AddRecipe();
