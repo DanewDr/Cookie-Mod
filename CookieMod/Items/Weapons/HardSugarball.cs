@@ -33,5 +33,4 @@ namespace CookieMod.Items.Weapons
 			recipe.AddRecipe();
        		}
 	}
-	}
 }
