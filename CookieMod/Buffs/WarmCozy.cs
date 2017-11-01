@@ -11,14 +11,14 @@ namespace CookieMod.Buffs
         {
             Main.buffNoTimeDisplay[Type] = false;
  			DisplayName.SetDefault("Warm and Cozy");
-			Description.SetDefault("Increased defence but decreased damgae");
+			Description.SetDefault("Decreased melee abilities, increased defense");
         }
         public override void Update(Player player, ref int buffIndex)
         {                                             //
             player.AddBuff(mod.BuffType("WarmCozy"), 1); //this is an example of how to add your own buff
-            player.statDefense += 12;  //
-      	    player.meleeDamage -= .18f;
-	    player.meleeSpeed -= .06f;
+            player.statDefense += 8;  //
+      	    player.meleeDamage -= .14f;
+	    player.meleeSpeed -= .07f;
         }
     }
 }
