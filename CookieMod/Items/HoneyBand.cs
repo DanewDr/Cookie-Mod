@@ -24,8 +24,8 @@ namespace CookieMod.Items
 
 		public override void UpdateAccessory(Player player, bool hideVisual)
 		{
-			player.lifeRegen += 3;
-			player.moveSpeed -= 0.5f;
+			player.lifeRegen += 1;
+			player.honey = true;
 		}
 
 		public override void AddRecipes()
