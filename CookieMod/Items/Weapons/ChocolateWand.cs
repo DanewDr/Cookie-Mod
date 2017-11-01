@@ -13,7 +13,7 @@ namespace CookieMod.Items.Weapons
 		}
 		public override void SetDefaults()
 		{
-			item.damage = 20;
+			item.damage = 16;
 			item.magic = true;
 			item.mana = 8;
 			item.width = 40;
@@ -34,7 +34,7 @@ namespace CookieMod.Items.Weapons
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(null, "ChocolateCookie", 10);
+			recipe.AddIngredient(null, "ChocolateCookie", 6);
 			recipe.AddIngredient(ItemID.Topaz);
 			recipe.AddTile(null, "CookieWorkbench");
 			recipe.SetResult(this);
