@@ -26,7 +26,7 @@ namespace CookieMod.Items.Weapons
 		{
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(null, "Popsicle", 150);
-			recipe.AddIngredient(ItemID.CursedFlame);
+			recipe.AddIngredient(ItemID.Ichor);
 			recipe.SetResult(this, 150);
 			recipe.AddRecipe();
 		}
