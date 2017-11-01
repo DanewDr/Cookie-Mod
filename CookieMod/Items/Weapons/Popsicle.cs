@@ -13,7 +13,6 @@ namespace CookieMod.Items.Weapons
 		}
 		public override void SetDefaults()
 		{
-			item.damage = 5;
 			item.width = 12;
 			item.height = 12;
 			item.maxStack = 999;
