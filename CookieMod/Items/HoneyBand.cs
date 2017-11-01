@@ -9,7 +9,7 @@ namespace CookieMod.Items
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Honey Band");
-			Tooltip.SetDefault("Increases life regen but decreases movement speed");
+			Tooltip.SetDefault("Increases life regen and soaks the player in honey");
 		}
 		public override void SetDefaults()
 		{
@@ -23,15 +23,15 @@ namespace CookieMod.Items
 
 		public override void UpdateAccessory(Player player, bool hideVisual)
 		{
-			player.lifeRegen += 10;
-			player.moveSpeed -= 0.5f;
+			player.lifeRegen += 1;
+			player.honeyWet = true;
 		}
 
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(null, "HoneyCookie", 60);
-			recipe.AddTile(null, "CookieWorkbench");
+			recipe.AddIngredient(ItemID.BandofRegeneration);
+			recipe.needHoney = true;
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}
