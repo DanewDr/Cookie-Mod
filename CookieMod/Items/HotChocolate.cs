@@ -15,7 +15,6 @@ namespace CookieMod.Items
 		}
         public override void SetDefaults()
         {
-	item.damage = 8;
         item.UseSound = SoundID.Item3;
         item.useStyle = 2;
         item.useTurn = true;
@@ -27,10 +26,8 @@ namespace CookieMod.Items
         item.buffType = mod.BuffType("WarmCozy");
         item.buffTime = 7200;
 	item.consumable = true;
-        item.value = 100;
+        item.value = 200;
         item.holdStyle = 1;
-	item.ammo = item.type;
-        item.notAmmo = true;
         }
 	public override void HoldStyle(Player player)
 	{
@@ -41,11 +38,9 @@ namespace CookieMod.Items
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.Mug, 3);
-	    recipe.AddIngredient(null, "Milk");
+            recipe.AddIngredient(ItemID.Mug);
 	    recipe.AddIngredient(null, "MoltenChocolate");
-	    recipe.AddTile(TileID.WorkBenches);
-            recipe.SetResult(this, 3);
+            recipe.SetResult(this);
             recipe.AddRecipe();
         }
     }
