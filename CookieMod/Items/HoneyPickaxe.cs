@@ -20,7 +20,7 @@ namespace CookieMod.Items
 			item.height = 40;
 			item.useTime = 10;
 			item.useAnimation = 10;
-			item.pick = 220;
+			item.pick = 100;
 			item.useStyle = 1;
 			item.knockBack = 6;
 			item.value = 10000;
