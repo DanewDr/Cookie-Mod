@@ -5,7 +5,7 @@ using Terraria.ModLoader;
 
 namespace CookieMod.Items.Weapons
 {
-	public class PopsiclePopper : ModItem
+	public class Lollipopper : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
