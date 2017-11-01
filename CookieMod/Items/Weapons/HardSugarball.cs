@@ -8,7 +8,7 @@ namespace CookieMod.Items.Weapons
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Hardned Sugarball");
+			DisplayName.SetDefault("Hardened Sugarball");
 			Tooltip.SetDefault("This packs quite a punch");
 		}
 		public override void SetDefaults()
@@ -21,7 +21,7 @@ namespace CookieMod.Items.Weapons
 			item.rare = 3;
 			item.consumable = true;
 			item.knockBack = 8f;
-			item.ammo = mod.ItemType("SoftSugarball");
+			item.ammo = AmmoID.Snowball
 			item.shoot = mod.ProjectileType ("HardSugarball");
 		}
 	}
