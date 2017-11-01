@@ -11,11 +11,11 @@ namespace CookieMod.Items.Weapons
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Vanilla Staff");
-			Tooltip.SetDefault("A staff made of sugar and chocolate");
+			Tooltip.SetDefault("Two worlds collide");
 		}
         public override void SetDefaults()
         {         
-            item.damage = 46;                        
+            item.damage = 27;                        
             item.magic = true;                     //this make the item do magic 
             item.width = 24;
             item.height = 28;
@@ -27,10 +27,10 @@ namespace CookieMod.Items.Weapons
             item.knockBack = 2f;        
             item.value = 1000;
             item.rare = 2;
-            item.mana = 8;             //mana use
+            item.mana = 4;             //mana use
             item.UseSound = SoundID.Item21;            //this is the 
             item.autoReuse = true;
-            item.shoot = mod.ProjectileType ("SugarBeam");  //this make the item shoot 
+            item.shoot = mod.ProjectileType ("MixedChocolate");  //this make the item shoot 
             item.shootSpeed = 9f;    //projectile speed when shoot
         }      
 	public override void AddRecipes()
@@ -43,30 +43,5 @@ namespace CookieMod.Items.Weapons
 		recipe.SetResult(this);
 		recipe.AddRecipe();
 	}
-	public override bool AltFunctionUse(Player player)
-		{
-			return true;
-		}
-
-		public override bool CanUseItem(Player player)
-		{
-			if (player.altFunctionUse == 2)
-			{
-				item.useTime = 28;
-				item.useAnimation = 28;
-				item.damage = 48;
-				item.shoot = mod.ProjectileType ("ChocolateBall");
-				item.shootSpeed = 6f;
-			}
-			else
-			{
-				item.useTime = 22;
-				item.useAnimation = 22;
-				item.damage = 46;
-				item.shoot = mod.ProjectileType ("SugarBeam");
-				item.mana = 11;
-			}
-			return base.CanUseItem(player);
-		}
     }
 }
