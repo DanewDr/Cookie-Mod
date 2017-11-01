@@ -18,5 +18,12 @@ namespace CookieMod.Items
 			item.maxStack = 99;
 			item.rare = 3;
 		}
+		public override void AddRecipes()
+        	{
+			recipe.AddIngredient(null, "SugarDust", 5);
+			recipe.SetResult(null, "HardSugarDust", 5);
+			recipe.AddTile(TileID.Hellforge);
+			recipe.AddRecipe();
+       		}
 	}
 }
