@@ -19,8 +19,8 @@ namespace CookieMod.Items.Weapons
             item.magic = true;                     //this make the item do magic 
             item.width = 24;
             item.height = 28;
-            item.useTime = 30;
-            item.useAnimation = 30;
+            item.useTime = 19;
+            item.useAnimation = 19;
             item.useStyle = 5;        //this is how the item is holded
 	    Item.staff[item.type] = true;
             item.noMelee = true;
