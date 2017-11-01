@@ -15,7 +15,7 @@ namespace CookieMod.Items.Weapons
 		}
         public override void SetDefaults()
         {         
-            item.damage = 33;                        
+            item.damage = 27;                        
             item.magic = true;                     //this make the item do magic 
             item.width = 24;
             item.height = 28;
@@ -26,7 +26,7 @@ namespace CookieMod.Items.Weapons
             item.noMelee = true;
             item.knockBack = 2f;        
             item.rare = 2;
-            item.mana = 10;             //mana use
+            item.mana = 6;             //mana use
             item.UseSound = SoundID.Item21;            //this is the 
             item.autoReuse = true;
             item.shoot = mod.ProjectileType ("SugarBeam");  //this make the item shoot 
@@ -36,7 +36,7 @@ namespace CookieMod.Items.Weapons
 	{
 		ModRecipe recipe = new ModRecipe(mod);
 		recipe.AddIngredient(null, "SugarWand");
-		recipe.AddIngredient(ItemID.HallowedBar, 6);
+		recipe.AddIngredient(null, "BoneStaffRod");
 		recipe.AddTile(null, "CookieWorkbench");
 		recipe.SetResult(this);
 		recipe.AddRecipe();
