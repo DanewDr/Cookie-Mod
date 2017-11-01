@@ -33,5 +33,13 @@ namespace CookieMod.Items.Weapons
             item.shoot = mod.ProjectileType ("SugarBeam");  //this make the item shoot 
             item.shootSpeed = 6f;    //projectile speed when shoot
         }      
+        public override void AddRecipes()
+        {
+		recipe.AddIngredient(null, "SugarCookie", 6);
+		recipe.AddIngredient(ItemID.Diamond);
+		recipe.SetResult(this);
+		recipe.AddTile(null, "CookieWorkbench");
+		recipe.AddRecipe();
+        }
     }
 }
