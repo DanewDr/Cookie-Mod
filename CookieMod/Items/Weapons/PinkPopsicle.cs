@@ -18,7 +18,7 @@ namespace CookieMod.Items.Weapons
 			item.maxStack = 999;
 			item.rare = 2;
 			item.consumable = true;
-			item.damage = 32;
+			item.damage = 16;
 			item.shoot = mod.ProjectileType ("PinkPopsicle");
 			item.ammo = mod.ItemType("Popsicle");
 		}
