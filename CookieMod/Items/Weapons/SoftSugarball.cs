@@ -24,5 +24,12 @@ namespace CookieMod.Items.Weapons
 			item.ammo = AmmoID.Snowball
 			item.shoot = mod.ProjectileType ("SoftSugarball");
 		}
+		public override void AddRecipes()
+        	{
+			recipe.AddIngredient(null, "SugarDust", 20);
+			recipe.SetResult(this, 15);
+			recipe.AddTile(null, "CookieWorkbench");
+			recipe.AddRecipe();
+       		}
 	}
 }
