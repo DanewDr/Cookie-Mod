@@ -21,11 +21,12 @@ namespace CookieMod.Items.Weapons
 			item.rare = 3;
 			item.consumable = true;
 			item.knockBack = 8f;
-			item.ammo = AmmoID.Snowball
+			item.ammo = AmmoID.Snowball;
 			item.shoot = mod.ProjectileType ("HardSugarball");
 		}
 		public override void AddRecipes()
         	{
+			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(null, "HardSugarDust", 10);
 			recipe.AddIngredient(null, "SoftSugarball", 15);
 			recipe.SetResult(this, 15);
