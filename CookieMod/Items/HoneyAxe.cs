@@ -14,13 +14,13 @@ namespace CookieMod.Items
 		}
 		public override void SetDefaults()
 		{
-			item.damage = 20;
+			item.damage = 6;
 			item.melee = true;
 			item.width = 40;
 			item.height = 40;
 			item.useTime = 10;
 			item.useAnimation = 10;
-			item.axe = 30;	//x5 is displayed
+			item.axe = 15;	//x5 is displayed
 			item.useStyle = 1;
 			item.knockBack = 6;
 			item.value = 10000;
