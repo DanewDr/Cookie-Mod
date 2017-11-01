@@ -22,7 +22,7 @@ namespace CookieMod.Items
 	{
 		ModRecipe recipe = new ModRecipe(mod);
 		recipe.AddIngredient(null, "MoltenChocolate");
-		recipe.AddTile(null, "MilkTank");
+		recipe.AddTile(null, "CookieWorkbench");
 		recipe.SetResult(this);
 		recipe.AddRecipe();
 	}
