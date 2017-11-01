@@ -15,18 +15,18 @@ namespace CookieMod.Items.Weapons
 		}
         public override void SetDefaults()
         {         
-            item.damage = 27;                        
+            item.damage = 29;                        
             item.magic = true;                     //this make the item do magic 
             item.width = 24;
             item.height = 28;
-            item.useTime = 23;
-            item.useAnimation = 23;
+            item.useTime = 20;
+            item.useAnimation = 20;
             item.useStyle = 5;        //this is how the item is holded
 	    Item.staff[item.type] = true;
             item.noMelee = true;
             item.knockBack = 2f;        
             item.rare = 2;
-            item.mana = 6;             //mana use
+            item.mana = 7;             //mana use
             item.UseSound = SoundID.Item21;            //this is the 
             item.autoReuse = true;
             item.shoot = mod.ProjectileType ("SugarBeam");  //this make the item shoot 
