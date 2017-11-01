@@ -9,7 +9,7 @@ namespace CookieMod.Items.Weapons
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Popsicle Popper");
+			DisplayName.SetDefault("Lollipopper");
 			Tooltip.SetDefault("Let's blow this popsicle stand");
 		}
 		public override void SetDefaults()
@@ -36,7 +36,7 @@ namespace CookieMod.Items.Weapons
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddRecipeGroup("IronBar", 7);
 			recipe.AddIngredient(null, "Popsicle", 12);
-			recipe.AddTile(null, "MilkTank");
+			recipe.AddTile(null, "CookieWorkbench");
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}
