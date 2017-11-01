@@ -15,12 +15,12 @@ namespace CookieMod.Items.Weapons
 		}
         public override void SetDefaults()
         {
-            item.damage = 48;                        
+            item.damage = 22;                        
             item.melee = true;                     //this make the item do magic 
             item.width = 28;
             item.height = 28;
-            item.useTime = 23;
-            item.useAnimation = 23;
+            item.useTime = 17;
+            item.useAnimation = 17;
             item.useStyle = 1;        //this is how the item is holded
             item.knockBack = 4f;        
             item.rare = 2;            //mana use
