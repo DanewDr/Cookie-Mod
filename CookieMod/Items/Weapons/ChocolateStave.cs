@@ -18,8 +18,8 @@ namespace CookieMod.Items.Weapons
 			item.mana = 13;
 			item.width = 40;
 			item.height = 40;
-			item.useTime = 33;
-			item.useAnimation = 33;
+			item.useTime = 26;
+			item.useAnimation = 26;
 			item.useStyle = 5;
 			Item.staff[item.type] = true; //this makes the useStyle animate as a staff instead of as a gun
 			item.noMelee = true; //so the item's animation doesn't do damage
@@ -35,7 +35,7 @@ namespace CookieMod.Items.Weapons
 		{
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(null, "ChocolateWand");
-			recipe.AddIngredient(null, "CookieDust", 25);
+			recipe.AddIngredient(null, "BoneStaffRod");
 			recipe.AddTile(null, "CookieWorkbench");
 			recipe.SetResult(this);
 			recipe.AddRecipe();
