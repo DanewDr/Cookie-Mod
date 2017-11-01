@@ -35,6 +35,7 @@ namespace CookieMod.Items.Weapons
         }      
         public override void AddRecipes()
         {
+		ModRecipe recipe = new ModRecipe(mod);
 		recipe.AddIngredient(null, "SugarCookie", 6);
 		recipe.AddIngredient(ItemID.Diamond);
 		recipe.SetResult(this);
