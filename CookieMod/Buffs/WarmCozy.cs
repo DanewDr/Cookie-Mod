@@ -18,8 +18,8 @@ namespace CookieMod.Buffs
         {                                             //
             player.AddBuff(mod.BuffType("WarmCozy"), 1); //this is an example of how to add your own buff
             player.statDefense += 10;  //
-      	    player.meleeDamage -= .6f;
-	    player.meleeSpeed -= .04f;
+      	    player.meleeDamage -= .09f;
+	    player.meleeSpeed -= .06f;
         }
     }
 }
