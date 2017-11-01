@@ -6,21 +6,21 @@ using Terraria.ModLoader;
  
 namespace CookieMod.Items.Weapons
 {
-    public class CookieClaymore : ModItem
+    public class HoneyClaymore : ModItem
     {
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Cookie Claymore");
+			DisplayName.SetDefault("Honey Claymore");
 			Tooltip.SetDefault("");
 		}
         public override void SetDefaults()
         {         
-            item.damage = 55;                        
+            item.damage = 35;                        
             item.melee = true;                     //this make the item do magic 
             item.width = 28;
             item.height = 28;
-            item.useTime = 20;
-            item.useAnimation = 20;
+            item.useTime = 24;
+            item.useAnimation = 24;
             item.useStyle = 1;        //this is how the item is holded
             item.knockBack = 6f;        
             item.rare = 2;            //mana use
@@ -29,8 +29,8 @@ namespace CookieMod.Items.Weapons
 	public override void AddRecipes()
 	{
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.HallowedBar, 4);
-            recipe.AddIngredient(null, "Cookie", 16);
+            recipe.AddIngredient(null, "BoneToolRod");
+            recipe.AddIngredient(null, "HoneySword");
             recipe.AddTile(null, "CookieWorkbench");   //at work bench
             recipe.SetResult(this);
             recipe.AddRecipe();
