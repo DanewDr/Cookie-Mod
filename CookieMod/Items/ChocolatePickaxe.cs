@@ -23,7 +23,7 @@ namespace CookieMod.Items
 			item.useStyle = 1;
 			item.knockBack = 4;
 			item.value = 1200;
-			item.rare = 2;
+			item.rare = 3;
 			item.UseSound = SoundID.Item1;
 			item.autoReuse = true;
 		}
