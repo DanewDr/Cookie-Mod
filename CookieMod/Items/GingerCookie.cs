@@ -21,7 +21,7 @@ namespace CookieMod.Items
             item.width = 20;
             item.height = 20;
             item.value = 100;
-            item.rare = 1;
+            item.rare = 3;
             item.maxStack = 999;
             ItemID.Sets.ItemNoGravity[item.type] = false;  //this make that the item will float in air
         }
