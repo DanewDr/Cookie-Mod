@@ -27,7 +27,7 @@ namespace CookieMod.Items.Weapons
 			item.width = 32;
 			item.height = 32;
 			item.scale = 1f;
-			item.rare = 5;
+			item.rare = 2;
 			item.UseSound = SoundID.Item1;
 			item.shoot = mod.ProjectileType<HoneySpearProjectile>();
 			item.value = 1000;
@@ -40,6 +40,14 @@ namespace CookieMod.Items.Weapons
 		public override bool CanUseItem(Player player)
 		{
 			return player.ownedProjectileCounts[item.shoot] < 1; // This is to ensure the spear doesn't bug out when using autoReuse = true
+		}
+		public override void AddRecipes()
+		{
+			ModRecipe recipe = new ModRecipe(mod);
+			recipe.AddIngredient(mod, "HoneyCookie", 10);
+			recipe.AddTile(mod, "CookieWorkbench");
+			recipe.SetResult(this);
+			recipe.AddRecipe();
 		}
 	}
 }
