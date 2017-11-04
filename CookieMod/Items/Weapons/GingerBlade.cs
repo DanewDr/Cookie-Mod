@@ -26,7 +26,7 @@ namespace CookieMod.Items.Weapons   //where is located
             item.useStyle = 1;        //Style is how this item is used, 1 is the style of the sword
             item.knockBack = 3;      //Sword knockback
             item.value = 1000;        
-            item.rare = 2;
+            item.rare = 3;
             item.UseSound = SoundID.Item1;       //1 is the sound of the sword
             item.autoReuse = true;   //if it's capable of autoswing.
             item.useTurn = true;  			
