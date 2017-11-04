@@ -35,7 +35,7 @@ namespace CookieMod.Items.Weapons
 			item.noMelee = true;
 			item.autoReuse = true;
 			item.value = Item.sellPrice(0, 0, 5, 0);
-			item.rare = 5;
+			item.rare = 3;
 		}
 		public override void AddRecipes()
         	{
