@@ -25,7 +25,7 @@ namespace CookieMod.Items.Weapons
             item.noMelee = true;
             item.knockBack = 7.5f;        
             item.value = 1000;
-            item.rare = 2;
+            item.rare = 3;
             item.mana = 10;             //mana use
             item.UseSound = SoundID.Item21;            //this is the sound when you use the item
             item.autoReuse = true;
