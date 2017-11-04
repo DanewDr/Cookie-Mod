@@ -30,7 +30,7 @@ namespace CookieMod.Items.Weapons
 			item.knockBack = 2.5f;
 			item.damage = 27;
 			item.value = Item.sellPrice(0, 0, 1, 0);
-			item.rare = 0;
+			item.rare = 3;
 
 			// These are all related to gamepad controls and don't seem to affect anything else
 			ItemID.Sets.Yoyo[item.type] = true;
