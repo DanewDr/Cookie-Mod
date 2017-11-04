@@ -25,7 +25,7 @@ namespace CookieMod.Items.Weapons
             item.useStyle = 1;
             item.knockBack = 8;
             item.value = 8;
-            item.rare = 6;
+            item.rare = 3;
             item.shootSpeed = 11f;
             item.shoot = mod.ProjectileType ("Gingerang");
             item.UseSound = SoundID.Item1;
