@@ -23,7 +23,7 @@ namespace CookieMod.Items.Weapons
             item.useAnimation = 13;
             item.useStyle = 1;        //this is how the item is holded
             item.knockBack = 1f;        
-            item.rare = 3;            //mana use
+            item.rare = 2;            //mana use
             item.autoReuse = true;
         }    
 	public override void AddRecipes()  //How to craft this sword
