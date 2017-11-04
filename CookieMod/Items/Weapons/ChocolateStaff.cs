@@ -26,7 +26,7 @@ namespace CookieMod.Items.Weapons
             item.noMelee = true;
             item.knockBack = 3;
             item.value = 1000;
-            item.rare = 2;
+            item.rare = 3;
             item.UseSound = SoundID.Item44;
             item.shoot = mod.ProjectileType("ChocolateMinion");
             item.shootSpeed = 10f;
