@@ -27,7 +27,7 @@ namespace CookieMod.Items.Weapons
 			item.height = 30;
 			item.useTime = 20;
 			item.UseSound = SoundID.Item13;
-			item.useStyle = 5;
+			item.useStyle = 2;
 			item.shootSpeed = 14f;				//Speed is not important here
 			item.useAnimation = 20;                         
 			item.shoot = mod.ProjectileType("HoneyStream");
