@@ -35,7 +35,15 @@ namespace CookieMod.Items.Weapons
 			item.noMelee = true;
 			item.autoReuse = true;
 			item.value = Item.sellPrice(0, 0, 5, 0);
-			item.rare = 5;
+			item.rare = 3;
 		}
+		public override void AddRecipes()
+        	{
+            	ModRecipe recipe = new ModRecipe(mod);
+            	recipe.AddIngredient(null, "GingerCookie", 1);
+				recipe.AddTile(null, "CookieWorkbench");   
+            	recipe.SetResult(this, 20);
+            	recipe.AddRecipe();
+        	}
 	}
 }
