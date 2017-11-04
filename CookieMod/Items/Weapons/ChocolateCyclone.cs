@@ -35,7 +35,7 @@ namespace CookieMod.Items.Weapons
 	public override void AddRecipes()
 	{
 		ModRecipe recipe = new ModRecipe(mod);
-		recipe.AddIngredient(null, "CookieDirt", 5);
+		recipe.AddIngredient(null, "ChocolateCookie", 5);
 		recipe.AddIngredient(ItemID.SpellTome);
 		recipe.AddIngredient(ItemID.SoulofFright, 5);
 		recipe.AddTile(TileID.Bookcases);
