@@ -14,8 +14,8 @@ namespace CookieMod.Projectiles
 		}
         public override void SetDefaults()
         {
-            projectile.width = 220;     //Set the hitbox width
-            projectile.height = 220;       //Set the hitbox height
+            projectile.width = 114;     //Set the hitbox width
+            projectile.height = 78;       //Set the hitbox height
             projectile.friendly = true;    //Tells the game whether it is friendly to players/friendly npcs or not
             projectile.penetrate = -1;    //Tells the game how many enemies it can hit before being destroyed. -1 = never
             projectile.tileCollide = false; //Tells the game whether or not it can collide with a tile
