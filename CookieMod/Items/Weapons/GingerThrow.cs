@@ -29,7 +29,7 @@ namespace CookieMod.Items.Weapons
             item.shoot = 541;
             item.useAnimation = 25;
 			item.damage = 22;
-			item.rare = 2;
+			item.rare = 3;
             item.useTime = 24;
             item.shootSpeed = 16f;
             item.shoot = mod.ProjectileType("GingerThrowP");         
