@@ -20,7 +20,7 @@ namespace 	CookieMod.Items.Weapons
             item.consumable = true;
             item.knockBack = 8f;
             item.value = 5;
-            item.rare = 2;
+            item.rare = 3;
             item.shoot = mod.ProjectileType("GingerArrow");
             item.shootSpeed = 6.5f;
             item.ammo = AmmoID.Arrow;
