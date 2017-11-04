@@ -9,20 +9,21 @@ namespace CookieMod.Items
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Chocolate Tool Turner");
+			Tooltip.SetDefault("Increases melee and pick spead");			
 		}
 		public override void SetDefaults()
 		{
 			item.width = 24;
 			item.height = 28;
 			item.value = 10000;
-			item.rare = 2;
+			item.rare = 3;
 			item.accessory = true;
-			item.lifeRegen = 19;
 		}
 
 		public override void UpdateAccessory(Player player, bool hideVisual)
 		{
-			player.statDefense = 1;
+			player.meleeSpeed += 0.2f;
+			player.pickSpeed -= 0.2f;
 		}
 
 		public override void AddRecipes()
