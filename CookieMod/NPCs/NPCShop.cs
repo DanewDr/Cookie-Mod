@@ -13,7 +13,7 @@ namespace CookieMod.NPCs
             {
                 case NPCID.Merchant:  
                 {
-                    shop.item[nextSlot].SetDefaults(mod.ItemType("BowName"));
+                    shop.item[nextSlot].SetDefaults(mod.ItemType("Milk"));
                     nextSlot++;
                 }    
                 break;
