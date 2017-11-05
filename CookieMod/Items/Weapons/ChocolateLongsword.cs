@@ -29,7 +29,7 @@ namespace CookieMod.Items.Weapons
 	public override void AddRecipes()
 	{
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(null, "HallowedToolRod");
+            recipe.AddIngredient(null, "BoneToolRod");
             recipe.AddIngredient(null, "ChocolateSword");
             recipe.AddTile(null, "CookieWorkbench");   //at work bench
             recipe.SetResult(this);
