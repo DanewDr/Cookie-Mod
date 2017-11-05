@@ -58,6 +58,7 @@ namespace CookieMod.NPCs.BloodCookie
 				Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("Cookie"), Main.rand.Next(15, 25));
 				Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("Milk"), Main.rand.Next(6, 10));
 			}
+			CookieModWorld.downedCookieBoss = true;
 		}
 		
 		public override void BossLoot(ref string name, ref int potionType)
