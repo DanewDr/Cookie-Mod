@@ -13,10 +13,21 @@ using CookieMod.Items;
 
 namespace CookieMod
 {
+	
     public class CookieMod : Mod
     {
+        public override void PostSetupContent()
+        {
+            Mod bossChecklist = ModLoader.GetMod("BossChecklist");
+            if(bossChecklist != null)
+            {
+
+                bossChecklist.Call("AddBossWithInfo", "Corrupt/Blood Cookie", 3.5f, (Func<bool>)(() => CookieModWorld.downedCookieBoss), "Use a [i:" + ItemType("CursedCookie") + "] or a [i:" + ItemType("BloodyCookie") + "] at night");
+            }
+        }		
         public CookieMod()
         {
+
             Properties = new ModProperties()
             {
                 Autoload = true,
