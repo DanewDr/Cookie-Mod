@@ -35,7 +35,7 @@ namespace CookieMod.NPCs.BunnyKing
             npc.HitSound = mod.GetLegacySoundSlot(SoundType.Item, "Sounds/Custom/Crunch");
             npc.DeathSound = mod.GetLegacySoundSlot(SoundType.Item, "Sounds/Custom/LongCrunch");
             npc.buffImmune[24] = true;
-            music = mod.GetSoundSlot(SoundType.Music, "Sounds/Music/BunnyKing");
+            music = mod.GetSoundSlot(SoundType.Music, "Sounds/Music/TrueBunnyKing");
             npc.netAlways = true;
         }
         
