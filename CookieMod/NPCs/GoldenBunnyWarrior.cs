@@ -26,7 +26,7 @@ namespace CookieMod.NPCs
             npc.aiStyle = 26; 
             aiType = NPCID.Unicorn;  //npc behavior
             animationType = NPCID.Unicorn;
-			npc.noGravity = true;
+			npc.noGravity = false;
         }
 
         public override void FindFrame(int frameHeight)
