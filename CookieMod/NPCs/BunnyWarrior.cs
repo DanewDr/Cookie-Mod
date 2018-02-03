@@ -26,7 +26,7 @@ namespace CookieMod.NPCs
             npc.aiStyle = 1;
             aiType = NPCID.GreenSlime;  //npc behavior
             animationType = NPCID.GreenSlime;
-			npc.noGravity = true;
+			npc.noGravity = false;
         }
 
         public override void FindFrame(int frameHeight)
