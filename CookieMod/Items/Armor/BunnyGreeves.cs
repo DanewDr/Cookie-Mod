@@ -22,15 +22,10 @@ namespace CookieMod.Items.Armor
 			item.defense = 4;
 		}
 
-		public override void UpdateEquip(Player player)
-		{
-			player.jumpBoost = true;
-		}
-
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(null, "BunnyFur", 30);
+			recipe.AddIngredient(null, "BunnyFur", 20);
 	    recipe.AddTile(TileID.Anvils);
 			recipe.SetResult(this);
 			recipe.AddRecipe();

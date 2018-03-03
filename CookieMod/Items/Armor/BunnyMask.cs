@@ -36,7 +36,7 @@ namespace CookieMod.Items.Armor
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(null, "BunnyFur", 25);
+			recipe.AddIngredient(null, "BunnyFur", 15);
 	    recipe.AddTile(TileID.Anvils);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
