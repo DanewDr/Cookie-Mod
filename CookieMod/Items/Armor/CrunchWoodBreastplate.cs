@@ -18,7 +18,7 @@ namespace CookieMod.Items.Armor
 			item.width = 18;
 			item.height = 18;
 			item.value = 4500;
-			item.rare = 2;
+			item.rare = 0;
 			item.defense = 2;
 		}
 
