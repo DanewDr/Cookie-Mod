@@ -7,7 +7,7 @@ namespace CookieMod.Items.Placeable
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Crucnh Clock");
+			DisplayName.SetDefault("Crunch Clock");
 			Tooltip.SetDefault("Tells the time");
 		}
 		public override void SetDefaults()
