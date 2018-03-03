@@ -67,7 +67,7 @@ namespace CookieMod.NPCs.BloodCookie
 			potionType = ItemID.LesserHealingPotion;
 			if (Main.rand.Next(10) == 0)
 			{
-				Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("BloodCookieTrophy"));
+				Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("BloodCookieTrophey"));
 			}	
 		}
 		
