@@ -14,7 +14,7 @@ namespace CookieMod.NPCs
 		}
         public override void SetDefaults()
         {
-            npc.width = 39;
+            npc.width = 38;
             npc.height = 34;
             npc.damage = 10;
             npc.defense = 10;

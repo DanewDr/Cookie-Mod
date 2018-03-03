@@ -18,13 +18,13 @@ namespace CookieMod.NPCs.BunnyKing
 		}
         public override void SetDefaults()
         {
-            npc.aiStyle = 15;  //5 is the flying AI
+            npc.aiStyle = 41;  //5 is the flying AI
             npc.lifeMax = 5000;   //boss life
             npc.damage = 20;  //boss damage
             npc.defense = 12;    //boss defense
             npc.knockBackResist = 0f;
-            npc.width = 338;
-            npc.height = 170;
+            npc.width = 126;
+            npc.height = 118;
             animationType = NPCID.KingSlime;   //this boss will behavior like the DemonEye
             npc.value = Item.buyPrice(0, 5, 0, 0);
             npc.npcSlots = 1f;
