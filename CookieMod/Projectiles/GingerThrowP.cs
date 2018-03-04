@@ -19,7 +19,8 @@ namespace CookieMod.Projectiles
             projectile.penetrate = 5;  
             projectile.width = 22;
             projectile.height = 22;
-           
+			ProjectileID.Sets.YoyosLifeTimeMultiplier[projectile.type] = 5.5f;			
+			ProjectileID.Sets.YoyosMaximumRange[projectile.type] = 300f;           
         }
         
         public override void AI()
