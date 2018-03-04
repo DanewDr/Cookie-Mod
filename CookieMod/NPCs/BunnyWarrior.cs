@@ -15,7 +15,7 @@ namespace CookieMod.NPCs
         public override void SetDefaults()
         {
             npc.width = 64;
-            npc.height = 6-;
+            npc.height = 60;
             npc.damage = 20;
             npc.defense = 10;
             npc.lifeMax = 100;
