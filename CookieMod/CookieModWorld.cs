@@ -13,7 +13,8 @@ namespace CookieMod
 {
     public class CookieModWorld : ModWorld
     {
-		public static bool downedCookieBoss = false;		
+		public static bool downedCookieBoss = false;	
+		public static bool downedBunny = false;
 		
 		public static int customBiome = 0;
 		public override void ModifyWorldGenTasks(List<GenPass> tasks, ref float totalWeight)

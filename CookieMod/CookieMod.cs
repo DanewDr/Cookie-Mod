@@ -23,6 +23,7 @@ namespace CookieMod
             {
 
                 bossChecklist.Call("AddBossWithInfo", "Corrupt/Blood Cookie", 3.5f, (Func<bool>)(() => CookieModWorld.downedCookieBoss), "Use a [i:" + ItemType("CursedCookie") + "] or a [i:" + ItemType("BloodyCookie") + "] at night");
+                bossChecklist.Call("AddBossWithInfo", "Bunny King", 5.5f, (Func<bool>)(() => CookieModWorld.downedBunny), "Use a [i:" + ItemType("BunnyCrown") + "] at any time");
             }
         }		
         public CookieMod()
