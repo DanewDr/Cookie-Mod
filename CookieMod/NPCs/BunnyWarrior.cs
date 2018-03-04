@@ -14,11 +14,11 @@ namespace CookieMod.NPCs
 		}
         public override void SetDefaults()
         {
-            npc.width = 38;
-            npc.height = 34;
-            npc.damage = 10;
+            npc.width = 64;
+            npc.height = 6-;
+            npc.damage = 20;
             npc.defense = 10;
-            npc.lifeMax = 200;
+            npc.lifeMax = 100;
             npc.HitSound = SoundID.NPCHit1;
             npc.DeathSound = SoundID.NPCDeath13;
             npc.value = 60f;

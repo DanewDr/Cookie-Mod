@@ -19,8 +19,8 @@ namespace CookieMod.NPCs.BunnyKing
         public override void SetDefaults()
         {
             npc.aiStyle = 25;  //5 is the flying AI
-            npc.lifeMax = 5000;   //boss life
-            npc.damage = 20;  //boss damage
+            npc.lifeMax = 7500;   //boss life
+            npc.damage = 40;  //boss damage
             npc.defense = 6;    //boss defense
             npc.knockBackResist = 0f;
             npc.width = 56;
