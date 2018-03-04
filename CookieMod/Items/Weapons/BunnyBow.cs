@@ -28,7 +28,7 @@ namespace CookieMod.Items.Weapons
             item.useAmmo = AmmoID.Arrow;
             item.knockBack = 1;
             item.value = 800;
-            item.rare = 2;
+            item.rare = 1;
             item.UseSound = SoundID.Item5;
             item.autoReuse = true;
             item.shootSpeed = 6.7f;

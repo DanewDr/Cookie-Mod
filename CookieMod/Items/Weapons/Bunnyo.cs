@@ -29,7 +29,7 @@ namespace CookieMod.Items.Weapons
             item.shoot = 541;
             item.useAnimation = 25;
 			item.damage = 11;
-			item.rare = 2;
+			item.rare = 1;
             item.useTime = 25;
             item.shootSpeed = 16f;
             item.shoot = mod.ProjectileType("Bunnyo");         

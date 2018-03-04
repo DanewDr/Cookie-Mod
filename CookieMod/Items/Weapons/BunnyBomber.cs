@@ -22,7 +22,7 @@ namespace CookieMod.Items.Weapons
             item.noMelee = true; //so the item's animation doesn't do damage
             item.knockBack = 2;
             item.value = 1200;
-            item.rare = 3;
+            item.rare = 1;
             item.UseSound = SoundID.Item11;
             item.autoReuse = false;
             item.shoot = 10; //idk why but all the guns in the vanilla source have this

@@ -24,7 +24,7 @@ namespace CookieMod.Items.Weapons
 			Item.staff[item.type] = true; //this makes the useStyle animate as a staff instead of as a gun
 			item.noMelee = true; //so the item's animation doesn't do damage
 			item.knockBack = 3f;
-			item.rare = 3;
+			item.rare = 1;
 			item.UseSound = SoundID.Item20;
 			item.autoReuse = true;
 			item.shoot = mod.ProjectileType("BunnyFoot");
