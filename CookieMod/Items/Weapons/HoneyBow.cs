@@ -19,7 +19,7 @@ namespace CookieMod.Items.Weapons
             item.ranged = true;
             item.width = 20;
             item.height = 40;
-            item.useTime = 24;
+            item.useTime = 30;
             item.useAnimation = 30;
             item.useStyle = 5;
             item.shoot = 3;

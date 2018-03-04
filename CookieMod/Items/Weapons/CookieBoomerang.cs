@@ -19,7 +19,7 @@ namespace CookieMod.Items.Weapons
             item.melee = true;
             item.width = 30;
             item.height = 30;
-            item.useTime = 14;
+            item.useTime = 25;
             item.useAnimation = 25;
             item.noUseGraphic = true;
             item.useStyle = 1;
@@ -29,7 +29,7 @@ namespace CookieMod.Items.Weapons
             item.shootSpeed = 10f;
             item.shoot = mod.ProjectileType ("CookieBoomerang");
             item.UseSound = SoundID.Item1;
-            item.autoReuse = true;
+            item.autoReuse = false;
         }
         public override bool CanUseItem(Player player)       //this make that you can shoot only 1 boomerang at once
         {

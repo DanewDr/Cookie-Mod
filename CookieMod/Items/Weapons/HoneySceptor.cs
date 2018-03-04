@@ -23,8 +23,8 @@ namespace CookieMod.Items.Weapons
 			item.channel = true;                            //Channel so that you can held the weapon [Important]
 			item.mana = 5;
 			item.rare = 2;
-			item.width = 28;
-			item.height = 30;
+			item.width = 48;
+			item.height = 18;
 			item.useTime = 20;
 			item.UseSound = SoundID.Item13;
 			item.useStyle = 2;

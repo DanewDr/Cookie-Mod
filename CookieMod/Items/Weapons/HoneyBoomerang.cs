@@ -19,7 +19,7 @@ namespace CookieMod.Items.Weapons
             item.melee = true;
             item.width = 30;
             item.height = 30;
-            item.useTime = 14;
+            item.useTime = 25;
             item.useAnimation = 25;
             item.noUseGraphic = true;
             item.useStyle = 1;
