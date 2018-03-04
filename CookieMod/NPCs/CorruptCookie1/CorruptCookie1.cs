@@ -13,7 +13,7 @@ namespace CookieMod.NPCs.CorruptCookie1
     {
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Corruot Cookie");
+			DisplayName.SetDefault("Corrupt Cookie");
 			Main.npcFrameCount[npc.type] = 2; // make sure to set this for your modnpcs.
 		}
         public override void SetDefaults()

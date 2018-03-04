@@ -51,7 +51,8 @@ namespace CookieMod.NPCs.BunnyKing
 					Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("BunnyKingMask"));
 				}
 				Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("GoldBunnyFur"), Main.rand.Next(15, 25));
-			}		
+			}
+			CookieModWorld.downedBunny = true;				
 		}		
 		public override void BossLoot(ref string name, ref int potionType)
 		{
