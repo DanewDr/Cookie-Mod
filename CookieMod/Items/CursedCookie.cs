@@ -25,7 +25,10 @@ namespace CookieMod.Items
             item.useTime = 30;
             item.consumable = true;
         }
-		
+        public override bool CanUseItem(Player player)
+        {
+            return !Main.dayTime && !NPC.AnyNPCs(mod.NPCType("CorruptCookie1"));
+        }		
 		
  		public override bool UseItem(Player player)
 		{

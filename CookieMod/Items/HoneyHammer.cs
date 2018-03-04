@@ -14,12 +14,12 @@ namespace CookieMod.Items
 		}
 		public override void SetDefaults()
 		{
-			item.damage = 25;
+			item.damage = 15;
 			item.melee = true;
 			item.width = 40;
 			item.height = 40;
-			item.useTime = 15;
-			item.useAnimation = 15;
+			item.useTime = 35;
+			item.useAnimation = 35;
 			item.hammer = 100;		//How much hammer power the weapon has
 			item.useStyle = 1;
 			item.knockBack = 6;

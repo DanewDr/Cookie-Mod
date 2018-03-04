@@ -18,8 +18,8 @@ namespace CookieMod.Items
 			item.melee = true;
 			item.width = 40;
 			item.height = 40;
-			item.useTime = 10;
-			item.useAnimation = 10;
+			item.useTime = 30;
+			item.useAnimation = 30;
 			item.pick = 220;
 			item.useStyle = 1;
 			item.knockBack = 6;

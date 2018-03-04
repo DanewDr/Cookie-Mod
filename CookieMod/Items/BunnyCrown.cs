@@ -26,7 +26,10 @@ namespace CookieMod.Items
             item.useTime = 30;
             item.consumable = true;
         }
-		
+        public override bool CanUseItem(Player player)
+        {
+            return !NPC.AnyNPCs(mod.NPCType("BunnyKing")) && !NPC.AnyNPCs(mod.NPCType("TrueBunnyKing"));
+		}		
 		
  		public override bool UseItem(Player player)
 		{
