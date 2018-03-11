@@ -17,9 +17,9 @@ namespace CookieMod.Buffs
         public override void Update(Player player, ref int buffIndex)
         {                                             //
             player.AddBuff(mod.BuffType("WarmCozy"), 1); //this is an example of how to add your own buff
-            player.statDefense += 10;  //
-      	    player.meleeDamage -= .09f;
-	    player.meleeSpeed -= .06f;
+            player.statDefense += 15;  //
+      	    player.meleeDamage -= .25f;
+	    player.meleeSpeed -= .1f;
         }
     }
 }
