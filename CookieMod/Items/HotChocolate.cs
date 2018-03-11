@@ -39,7 +39,7 @@ namespace CookieMod.Items
         {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(ItemID.Mug);
-	    recipe.AddIngredient(null, "MoltenChocolate");
+	    recipe.AddIngredient(null, "Chocolate");
             recipe.SetResult(this);
             recipe.AddRecipe();
         }
