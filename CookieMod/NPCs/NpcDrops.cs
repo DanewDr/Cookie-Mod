@@ -29,12 +29,12 @@ namespace CookieMod.NPCs
                     }
  
             }
-            if (npc.type == NPCID.QueenBee)   
+            if (Main.player[Main.myPlayer].ZoneSnow)   
             {
                 if (Main.rand.Next(1) == 0) 
                 {
                     {
-                        Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("SugarDust"), Main.rand.Next(25, 40));
+                        Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("SugarDust"), Main.rand.Next(3, 15));
                     }
                 }
             }
@@ -44,7 +44,7 @@ namespace CookieMod.NPCs
 					{
 						if (Main.rand.Next(9) == 0)      
 						{
-							Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("MoltenChocolate"), Main.rand.Next(1, 5));
+							Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("Chocolate"), Main.rand.Next(1, 5));
 						}
 					}
 				}
@@ -54,7 +54,7 @@ namespace CookieMod.NPCs
                 {
                     if (Main.rand.Next(2) == 0)    
                     {
-                        Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("MoltenChocolate"), Main.rand.Next(1, 2));
+                        Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("Chocolate"), Main.rand.Next(1, 2));
                     }
                 }
  
