@@ -37,6 +37,7 @@ namespace CookieMod.NPCs.BunnyKing
             npc.buffImmune[24] = true;
             music = mod.GetSoundSlot(SoundType.Music, "Sounds/Music/TrueBunnyKing");
             npc.netAlways = true;
+			bossBag = mod.ItemType("BunnyKingTreasureBag");			
         }
 		public override void NPCLoot()
 		{
