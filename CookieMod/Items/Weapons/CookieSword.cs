@@ -17,7 +17,7 @@ namespace CookieMod.Items.Weapons   //where is located
 		}
         public override void SetDefaults()
         {
-            item.damage = 8;            //Sword damage
+            item.damage = 18;            //Sword damage
             item.melee = true;            //if it's melee
             item.width = 32;              //Sword width
             item.height = 32;             //Sword height

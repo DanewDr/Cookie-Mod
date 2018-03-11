@@ -31,6 +31,13 @@ namespace CookieMod.Items.Weapons   //where is located
             item.autoReuse = true;   //if it's capable of autoswing.
             item.useTurn = true;  			
         }
+		public override void MeleeEffects(Player player, Rectangle hitbox)
+		{
+			if (Main.rand.Next(10) == 0)
+			{
+				int dust = Dust.NewDust(new Vector2(hitbox.X, hitbox.Y), hitbox.Width, hitbox.Height, mod.DustType("GingerCrumbs"));
+			}
+		}		
         public override void AddRecipes()  //How to craft this sword
         {
             ModRecipe recipe = new ModRecipe(mod);      

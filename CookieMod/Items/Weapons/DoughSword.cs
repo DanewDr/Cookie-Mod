@@ -29,6 +29,13 @@ namespace CookieMod.Items.Weapons   //where is located
             item.UseSound = SoundID.Item1;       //1 is the sound of the sword
             item.autoReuse = false;   //if it's capable of autoswing.  			
         }
+		public override void MeleeEffects(Player player, Rectangle hitbox)
+		{
+			if (Main.rand.Next(10) == 0)
+			{
+				int dust = Dust.NewDust(new Vector2(hitbox.X, hitbox.Y), hitbox.Width, hitbox.Height, mod.DustType("Dough"));
+			}
+		}		
         public override void AddRecipes()  //How to craft this sword
         {
             ModRecipe recipe = new ModRecipe(mod);      

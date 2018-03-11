@@ -25,7 +25,14 @@ namespace CookieMod.Items.Weapons
             item.knockBack = 1f;        
             item.rare = 2;            //mana use
             item.autoReuse = true;
-        }    
+        }
+		public override void MeleeEffects(Player player, Rectangle hitbox)
+		{
+			if (Main.rand.Next(10) == 0)
+			{
+				int dust = Dust.NewDust(new Vector2(hitbox.X, hitbox.Y), hitbox.Width, hitbox.Height, mod.DustType("SugarCrumbs"));
+			}
+		}		
 	public override void AddRecipes()  //How to craft this sword
         {
 	    ModRecipe recipe = new ModRecipe(mod);
