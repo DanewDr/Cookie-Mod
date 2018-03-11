@@ -20,7 +20,7 @@ namespace CookieMod.Items.Placeable
 			item.useTime = 10;
 			item.useStyle = 1;
 			item.consumable = true;			
-			item.rare = 2;
+			item.rare = 1;
 			item.createTile = mod.TileType("BunnyKingTrophy");
 			item.placeStyle = 0;
 		}

@@ -6,7 +6,7 @@ namespace CookieMod.Items.Placeable
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("BloodCookieTrophey");
+			DisplayName.SetDefault("Blood Cookie Trophey");
 			Tooltip.SetDefault("");
 		}
 		public override void SetDefaults()
@@ -20,7 +20,7 @@ namespace CookieMod.Items.Placeable
 			item.useTime = 10;
 			item.useStyle = 1;
 			item.consumable = true;			
-			item.rare = 2;
+			item.rare = 1;
 			item.createTile = mod.TileType("BloodCookieTrophey");
 			item.placeStyle = 0;
 		}
