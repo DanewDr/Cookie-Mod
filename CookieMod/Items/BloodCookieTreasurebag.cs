@@ -12,7 +12,7 @@ namespace CookieMod.Items
     {
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Blood Cookie Treasurebag");
+			DisplayName.SetDefault("Treasure Bag");
 			Tooltip.SetDefault("Right click to open");
 		}
 

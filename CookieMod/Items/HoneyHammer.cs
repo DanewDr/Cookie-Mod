@@ -28,7 +28,13 @@ namespace CookieMod.Items
 			item.UseSound = SoundID.Item1;
 			item.autoReuse = true;
 		}
-
+		public override void MeleeEffects(Player player, Rectangle hitbox)
+		{
+			if (Main.rand.Next(10) == 0)
+			{
+				int dust = Dust.NewDust(new Vector2(hitbox.X, hitbox.Y), hitbox.Width, hitbox.Height, mod.DustType("HoneyCrumbs"));
+			}
+		}
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);

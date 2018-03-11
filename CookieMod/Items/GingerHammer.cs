@@ -29,6 +29,13 @@ namespace CookieMod.Items
             item.autoReuse = true;
             item.useTurn = true;
         }
+		public override void MeleeEffects(Player player, Rectangle hitbox)
+		{
+			if (Main.rand.Next(10) == 0)
+			{
+				int dust = Dust.NewDust(new Vector2(hitbox.X, hitbox.Y), hitbox.Width, hitbox.Height, mod.DustType("GingerCrumbs"));
+			}
+		}		
         public override void AddRecipes()  //How to craft this item
         {
             ModRecipe recipe = new ModRecipe(mod);
