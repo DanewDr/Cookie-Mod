@@ -10,7 +10,7 @@ namespace CookieMod.NPCs
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Cookie Addict");
-			Main.npcFrameCount[npc.type] = 5; // make sure to set this for your modnpcs.
+			Main.npcFrameCount[npc.type] = 3; // make sure to set this for your modnpcs.
 		}
         public override void SetDefaults()
         {
@@ -24,19 +24,8 @@ namespace CookieMod.NPCs
             npc.value = 60f;
             npc.knockBackResist = 0.5f;
             npc.aiStyle = 3;
-            Main.npcFrameCount[npc.type] = 5; 
             aiType = NPCID.Zombie;  //npc behavior
             animationType = NPCID.Zombie;
-        }
-
-        public override void FindFrame(int frameHeight)
-        {
-            npc.frameCounter -= 0.5F; // Determines the animation speed. Higher value = faster animation.
-            npc.frameCounter %= Main.npcFrameCount[npc.type];
-            int frame = (int)npc.frameCounter;
-            npc.frame.Y = frame * frameHeight;
-
-            npc.spriteDirection = npc.direction;
         }
 		 public override void HitEffect(int hitDirection, double damage)
         {
@@ -50,8 +39,8 @@ namespace CookieMod.NPCs
         }
 		 public override float SpawnChance(NPCSpawnInfo spawnInfo)
         {
-            return Main.dayTime && Main.tile[(spawnInfo.spawnTileX), (spawnInfo.spawnTileY)].type == mod.TileType("CookieDirtTile") ? 5000f : 0f; //100f is the spown rate so If you want your NPC to be rarer just change that value less the 100f or something.
-			return !Main.dayTime && Main.tile[(spawnInfo.spawnTileX), (spawnInfo.spawnTileY)].type == mod.TileType("CookieDirtTile") ? 10000f : 0f;
+            return Main.dayTime && Main.tile[(spawnInfo.spawnTileX), (spawnInfo.spawnTileY)].type == mod.TileType("CookieDirtTile") ? 5.5f : 0f; //100f is the spown rate so If you want your NPC to be rarer just change that value less the 100f or something.
+			return !Main.dayTime && Main.tile[(spawnInfo.spawnTileX), (spawnInfo.spawnTileY)].type == mod.TileType("CookieDirtTile") ? 10.5f : 0f;
 		}      //Main.dayTime is day time, !Main.dayTime is night time   |||     Main.tile[(spawnInfo.spawnTileX), (spawnInfo.spawnTileY)].type == mod.TileType("CustomTileBlock") make the npc spawn only on this block/tile, make sure u add the tile that your using for the biome
         public override void NPCLoot()  //Npc drop
         {
