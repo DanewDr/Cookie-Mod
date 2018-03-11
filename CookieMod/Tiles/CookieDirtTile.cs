@@ -19,7 +19,7 @@ namespace CookieMod.Tiles
         public override int SaplingGrowthType(ref int style)
         {
             style = 0;
-            return mod.TileType("CookieSaplingTile");        //this make the spaling spawn the custom tree/sapling on this block/tile.    change CustomSaplingTile with u'r sapling name
+            return mod.TileType("CookieTreeSaplingTile");        //this make the spaling spawn the custom tree/sapling on this block/tile.    change CustomSaplingTile with u'r sapling name
         }
     }
 }
