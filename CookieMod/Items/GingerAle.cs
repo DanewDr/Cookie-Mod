@@ -11,7 +11,7 @@ namespace CookieMod.Items
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Ginger Ale");
-			Tooltip.SetDefault("");
+			Tooltip.SetDefault("Increased melee abilities, lowered defense");
 		}
         public override void SetDefaults()
         {
