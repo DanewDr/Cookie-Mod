@@ -3,7 +3,7 @@ using Terraria.ModLoader;
 
 namespace CookieMod.Dusts
 {
-	public class Sparkle : ModDust
+	public class Dough : ModDust
 	{
 		public override void OnSpawn(Dust dust)
 		{
