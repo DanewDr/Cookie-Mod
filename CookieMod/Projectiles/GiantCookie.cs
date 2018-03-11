@@ -24,5 +24,13 @@ namespace CookieMod.Projectiles
             projectile.tileCollide = true;                 //this make that the projectile does not go thru walls
             projectile.ignoreWater = false;
         }
+		public override void AI()
+		{
+			projectile.velocity.Y += projectile.ai[0];
+			if (Main.rand.Next(2) == 0)
+			{
+				Dust.NewDust(projectile.position + projectile.velocity, projectile.width, projectile.height, mod.DustType("Sparkle"), projectile.velocity.X * 0.5f, projectile.velocity.Y * 0.5f);
+			}
+		}
      }
 }

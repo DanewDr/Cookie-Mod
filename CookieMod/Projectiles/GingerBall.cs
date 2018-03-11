@@ -23,6 +23,14 @@ namespace CookieMod.Projectiles
 
             projectile.aiStyle = 15; // Set the aiStyle to that of a flail.
         }
+		public override void AI()
+		{
+			projectile.velocity.Y += projectile.ai[0];
+			if (Main.rand.Next(2) == 0)
+			{
+				Dust.NewDust(projectile.position + projectile.velocity, projectile.width, projectile.height, mod.DustType("GingerCrumbs"), projectile.velocity.X * 0.5f, projectile.velocity.Y * 0.5f);
+			}
+		}		
 
         // Now this is where the chain magic happens. You don't have to try to figure this whole thing out.
         // Just make sure that you edit the first line (which starts with 'Texture2D texture') correctly.

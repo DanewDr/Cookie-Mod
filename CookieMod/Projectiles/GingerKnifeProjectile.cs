@@ -25,8 +25,13 @@ namespace CookieMod.Projectiles
             aiType = ProjectileID.ThrowingKnife;
         }
  
-        public override void AI()
-        {            
+		public override void AI()
+		{
+			projectile.velocity.Y += projectile.ai[0];
+			if (Main.rand.Next(2) == 0)
+			{
+				Dust.NewDust(projectile.position + projectile.velocity, projectile.width, projectile.height, mod.DustType("GingerCrumbs"), projectile.velocity.X * 0.5f, projectile.velocity.Y * 0.5f);
+			}	           
                 projectile.ai[0] += 1f;
             if (projectile.ai[0] >= 50f)       //how much time the projectile can travel before landing
             {

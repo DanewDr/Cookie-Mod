@@ -35,6 +35,14 @@ namespace CookieMod.Projectiles
 			// Vanilla values range from 9f(Wood) to 17.5f(Terrarian), and defaults to 10f
 			ProjectileID.Sets.YoyosTopSpeed[projectile.type] = 13f;
 		}
+		public override void AI()
+		{
+			projectile.velocity.Y += projectile.ai[0];
+			if (Main.rand.Next(2) == 0)
+			{
+				Dust.NewDust(projectile.position + projectile.velocity, projectile.width, projectile.height, mod.DustType("ChocolateCrumbs"), projectile.velocity.X * 0.5f, projectile.velocity.Y * 0.5f);
+			}
+		}
 		// notes for aiStyle 99: 
 		// localAI[0] is used for timing up to YoyosLifeTimeMultiplier
 		// localAI[1] can be used freely by specific types

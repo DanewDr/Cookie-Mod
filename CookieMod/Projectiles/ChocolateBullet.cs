@@ -28,6 +28,14 @@ namespace CookieMod.Projectiles
             projectile.extraUpdates = 1;
             aiType = ProjectileID.Bullet;
             projectile.CloneDefaults(ProjectileID.Bullet);
-        }       
+        }
+		public override void AI()
+		{
+			projectile.velocity.Y += projectile.ai[0];
+			if (Main.rand.Next(2) == 0)
+			{
+				Dust.NewDust(projectile.position + projectile.velocity, projectile.width, projectile.height, mod.DustType("ChocolateCrumbs"), projectile.velocity.X * 0.5f, projectile.velocity.Y * 0.5f);
+			}
+		}		
     }
 }

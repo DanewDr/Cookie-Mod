@@ -25,10 +25,15 @@ namespace CookieMod.Projectiles
             projectile.timeLeft = 600;
             projectile.light = 0.5f;
             projectile.extraUpdates = 1;
-           
-           
         }
-       
+		public override void AI()
+		{
+			projectile.velocity.Y += projectile.ai[0];
+			if (Main.rand.Next(2) == 0)
+			{
+				Dust.NewDust(projectile.position + projectile.velocity, projectile.width, projectile.height, mod.DustType("ChocolateCrumbs"), projectile.velocity.X * 0.5f, projectile.velocity.Y * 0.5f);
+			}
+		}      
  
     }
 }

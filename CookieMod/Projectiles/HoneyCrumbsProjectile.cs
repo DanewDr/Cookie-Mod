@@ -25,9 +25,14 @@ namespace CookieMod.Projectiles
             aiType = ProjectileID.PurificationPowder;
         }
  
-        public override void AI()
-        {            
-                projectile.ai[0] += 1f;
+		public override void AI()
+		{
+			projectile.velocity.Y += projectile.ai[0];
+			if (Main.rand.Next(1) == 0)
+			{
+				Dust.NewDust(projectile.position + projectile.velocity, projectile.width, projectile.height, mod.DustType("HoneyCrumbs"), projectile.velocity.X * 0.5f, projectile.velocity.Y * 0.5f);
+			}	            
+            projectile.ai[0] += 1f;
             if (projectile.ai[0] >= 50f)       //how much time the projectile can travel before landing
             {
                 projectile.velocity.Y = projectile.velocity.Y + 0.15f;    // projectile fall velocity

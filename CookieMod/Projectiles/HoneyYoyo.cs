@@ -23,8 +23,13 @@ namespace CookieMod.Projectiles
 			ProjectileID.Sets.YoyosMaximumRange[projectile.type] = 250f;			
         }
         
-        public override void AI()
-        {
+		public override void AI()
+		{
+			projectile.velocity.Y += projectile.ai[0];
+			if (Main.rand.Next(2) == 0)
+			{
+				Dust.NewDust(projectile.position + projectile.velocity, projectile.width, projectile.height, mod.DustType("HoneyCrumbs"), projectile.velocity.X * 0.5f, projectile.velocity.Y * 0.5f);
+			}				
             Player player = Main.player[projectile.owner];
            
             if (projectile.ai[0] > 30)

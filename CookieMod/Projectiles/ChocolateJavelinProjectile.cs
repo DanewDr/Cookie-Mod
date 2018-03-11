@@ -23,6 +23,7 @@ namespace CookieMod.Projectiles
 			projectile.melee = true;
 			projectile.penetrate = 3;
 		}
+		
 
 		// NewTileCollideStyle is the replacement for TileCollideStyle, but we will support the old TileCollideStyle until a new vanilla release, at which time NewTileCollideStyle will become TileCollideStyle
 		public override bool TileCollideStyle(ref int width, ref int height, ref bool fallThrough)
@@ -151,6 +152,11 @@ namespace CookieMod.Projectiles
 
 		public override void AI()
 		{
+			projectile.velocity.Y += projectile.ai[0];
+			if (Main.rand.Next(2) == 0)
+			{
+				Dust.NewDust(projectile.position + projectile.velocity, projectile.width, projectile.height, mod.DustType("ChocolateCrumbs"), projectile.velocity.X * 0.5f, projectile.velocity.Y * 0.5f);
+			}				
 			// Slowly remove alpha as it is present
 			if (projectile.alpha > 0)
 			{

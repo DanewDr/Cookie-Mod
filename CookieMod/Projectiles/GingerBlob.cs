@@ -24,7 +24,15 @@ namespace CookieMod.Projectiles
             projectile.hostile = false;
             projectile.magic = true;
             projectile.tileCollide = true;
-            projectile.ignoreWater = true;   
+            projectile.ignoreWater = true;
+		}	
+		public override void AI()
+		{
+			projectile.velocity.Y += projectile.ai[0];
+			if (Main.rand.Next(2) == 0)
+			{
+				Dust.NewDust(projectile.position + projectile.velocity, projectile.width, projectile.height, mod.DustType("GingerCrumbs"), projectile.velocity.X * 0.5f, projectile.velocity.Y * 0.5f);
+			}
+		}			
         }
     }
-}
