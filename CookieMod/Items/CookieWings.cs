@@ -1,4 +1,5 @@
 using Terraria;
+using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace CookieMod.Items
@@ -22,7 +23,7 @@ namespace CookieMod.Items
 		//these wings use the same values as the solar wings
 		public override void UpdateAccessory(Player player, bool hideVisual)
 		{
-			player.wingTimeMax = 50;
+			player.wingTimeMax = 70;
 		}
 
 		public override void VerticalWingSpeeds(Player player, ref float ascentWhenFalling, ref float ascentWhenRising,
@@ -41,14 +42,15 @@ namespace CookieMod.Items
 			acceleration *= 2.5f;
 		}
 
- //       public override void AddRecipes()  //How to craft this gun
- //       {
- //          ModRecipe recipe = new ModRecipe(mod);
- //           recipe.AddIngredient(null, "Cookie", 12);   //you need 1 DirtBlock
-//			recipe.AddTile(null, "CookieWorkbench");
- //           recipe.SetResult(this);
-  //          recipe.AddRecipe();
-//		}
+        public override void AddRecipes()  //How to craft this gun
+        {
+           ModRecipe recipe = new ModRecipe(mod);
+            recipe.AddIngredient(null, "Cookie", 12);   //you need 1 DirtBlock
+            recipe.AddIngredient(ItemID.SoulofFlight, 20); 
+			recipe.AddTile(null, "CookieWorkbench");
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+		}
 		
 	}
 }

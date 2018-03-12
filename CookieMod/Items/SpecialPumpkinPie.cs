@@ -21,12 +21,12 @@ namespace CookieMod.Items
             item.useTime = 17;
             item.maxStack = 30;                 //this is where you set the max stack of item
             item.consumable = true;           //this make that the item is consumable when used
-            item.width = 20;
-            item.height = 25;
+            item.width = 38;
+            item.height = 30;
             item.value = 100;                
             item.rare = 1;
             item.buffType = BuffID.WellFed;    //this is where you put your Buff
-            item.buffTime = 200000;    //this is the buff duration        20000 = 6 min
+            item.buffTime = 50000;    //this is the buff duration        20000 = 6 min
             return;
         }
 		public override void AddRecipes()
