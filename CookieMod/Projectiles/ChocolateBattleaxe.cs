@@ -58,7 +58,6 @@ namespace CookieMod.Projectiles
             player.heldProj = projectile.whoAmI;
             player.itemTime = 2;
             player.itemAnimation = 2;
-			projectile.velocity.Y += projectile.ai[0];
 			if (Main.rand.Next(2) == 0)
 			{
 				Dust.NewDust(projectile.position + projectile.velocity, projectile.width, projectile.height, mod.DustType("ChocolateCrumbs"), projectile.velocity.X * 0.5f, projectile.velocity.Y * 0.5f);
