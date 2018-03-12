@@ -25,9 +25,9 @@ namespace CookieMod.Items.Weapons
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(null, "Popsicle", 150);
-			recipe.AddIngredient(ItemID.PixieDust);
-			recipe.SetResult(this, 150);
+			recipe.AddIngredient(ItemID.PinkIceBlock);
+			recipe.AddIngredient(ItemID.Wood);
+			recipe.SetResult(this, 25);
 			recipe.AddRecipe();
 		}
 	}
