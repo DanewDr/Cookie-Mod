@@ -22,6 +22,7 @@ namespace CookieMod.Items.Weapons
 			item.rare = 2;
 			item.useTime = 20;
 			item.useAnimation = 20;
+			item.UseSound = SoundID.Item14; 
 			item.useStyle = 5;
 			item.noMelee = true;
 			item.knockBack = 4f;
