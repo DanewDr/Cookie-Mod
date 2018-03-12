@@ -18,7 +18,7 @@ namespace CookieMod.Items.Weapons
 		}
 		public override void SetDefaults()
 		{
-			item.damage = 40;
+			item.damage = 20;
 			item.useStyle = 5;
 			item.useAnimation = 18;
 			item.useTime = 24;
@@ -34,7 +34,7 @@ namespace CookieMod.Items.Weapons
 			item.noMelee = true; // Important because the spear is acutally a projectile instead of an item. This prevents the melee hitbox of this item.
 			item.noUseGraphic = true; // Important, it's kind of wired if people see two spears at one time. This prevents the melee animation of this item.
 			item.melee = true;
-			item.autoReuse = true; // Most spears dont autoReuse, but it's possible
+			item.autoReuse = false; // Most spears dont autoReuse, but it's possible
 		}
 
 		public override bool CanUseItem(Player player)
