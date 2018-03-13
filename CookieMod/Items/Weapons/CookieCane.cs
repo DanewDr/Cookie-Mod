@@ -19,14 +19,14 @@ namespace CookieMod.Items.Weapons
 			item.shoot = mod.ProjectileType("CookieSentry"); 
 		}
 
-		public override void AddRecipes()
+/*		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(ItemID.DefenderMedal, 5);
 			recipe.AddIngredient(null, "Cookie", 15);
 			recipe.AddTile(null, "CookieWorkbench");
 			recipe.SetResult(this);
-			recipe.AddRecipe();
-		}
+			recipe.AddRecipe(); 
+		} */
 	}
 }

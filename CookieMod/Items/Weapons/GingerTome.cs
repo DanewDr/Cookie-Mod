@@ -11,10 +11,11 @@ namespace CookieMod.Items.Weapons
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Ginger Tome");
-			Tooltip.SetDefault("Fires a ball of ginger");
+			Tooltip.SetDefault("Fires a ball of ginger crumbs");
 		}
         public override void SetDefaults()
-        {        
+        {
+            item.CloneDefaults(ItemID.MagicMissile);			
             item.damage = 27;                        
             item.magic = true;                     //this make the item do magic damage
             item.width = 24;
@@ -28,7 +29,7 @@ namespace CookieMod.Items.Weapons
             item.rare = 3;
             item.mana = 10;             //mana use
             item.UseSound = SoundID.Item21;            //this is the sound when you use the item
-            item.autoReuse = true;
+            item.autoReuse = false;
             item.shoot = mod.ProjectileType ("GingerBlob");  //this make the item shoot your projectile
             item.shootSpeed = 6f;    //projectile speed when shoot
         } 
