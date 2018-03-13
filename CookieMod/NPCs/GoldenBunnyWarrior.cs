@@ -10,7 +10,7 @@ namespace CookieMod.NPCs
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Golden Bunny Warrior");
-			Main.npcFrameCount[npc.type] = 1; // make sure to set this for your modnpcs.
+			Main.npcFrameCount[npc.type] = 7; // make sure to set this for your modnpcs.
 		}
         public override void SetDefaults()
         {
@@ -25,7 +25,7 @@ namespace CookieMod.NPCs
             npc.knockBackResist = 0.5f;
             npc.aiStyle = 26; 
             aiType = NPCID.Unicorn;  //npc behavior
-            animationType = NPCID.Unicorn;
+            animationType = NPCID.Bunny;
 			npc.noGravity = false;
         }
 
