@@ -14,8 +14,6 @@ namespace CookieMod.Tiles
             Main.tileLighted[Type] = true;
             drop = mod.ItemType("CrunchWood");   //this is what will drop when this block is destroyed.
             AddMapEntry(new Color(0, 0, 200));      
-            soundType = 19;
-            soundStyle = 2;
 			minPick = 30;
         }
     }

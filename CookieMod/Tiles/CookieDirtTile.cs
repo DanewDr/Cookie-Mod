@@ -10,7 +10,7 @@ namespace CookieMod.Tiles
         {
             Main.tileSolid[Type] = true;
             Main.tileMergeDirt[Type] = true;
-            Main.tileBlockLight[Type] = false;  //true for block to emit light
+            Main.tileBlockLight[Type] = true;
             Main.tileLighted[Type] = true;
             drop = mod.ItemType("CookieDirt");   //put your CustomBlock name
             AddMapEntry(new Color(172, 119, 14));
