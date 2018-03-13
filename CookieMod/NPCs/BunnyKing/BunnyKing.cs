@@ -14,7 +14,7 @@ namespace CookieMod.NPCs.BunnyKing
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Bunny King");
-			Main.npcFrameCount[npc.type] = 6; // make sure to set this for your modnpcs.
+			Main.npcFrameCount[npc.type] = 7; // make sure to set this for your modnpcs.
 		}
         public override void SetDefaults()
         {
@@ -25,7 +25,7 @@ namespace CookieMod.NPCs.BunnyKing
             npc.knockBackResist = 0f;
             npc.width = 126;
             npc.height = 118;
-            animationType = NPCID.KingSlime;   //this boss will behavior like the DemonEye
+            animationType = NPCID.Bunny;   //this boss will behavior like the DemonEye
             npc.value = Item.buyPrice(0, 5, 0, 0);
             npc.npcSlots = 1f;
             npc.boss = true;
