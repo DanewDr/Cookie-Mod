@@ -18,17 +18,18 @@ namespace CookieMod.Projectiles
         {
             projectile.width = 20;       //projectile width
             projectile.height = 28;  //projectile height
-			projectile.aiStyle = 16;
+			projectile.aiStyle = 9;
             projectile.friendly = true;      //make that the projectile will not damage you
             projectile.penetrate = 2;      //how many npc will penetrate
             projectile.hostile = false;
             projectile.magic = true;
             projectile.tileCollide = true;
             projectile.ignoreWater = true;
+            projectile.alpha = 255;			
 		}	
 		public override void AI()
 		{
-			if (Main.rand.Next(2) == 0)
+			if (Main.rand.Next(1) == 0)
 			{
 				Dust.NewDust(projectile.position + projectile.velocity, projectile.width, projectile.height, mod.DustType("GingerCrumbs"), projectile.velocity.X * 0.5f, projectile.velocity.Y * 0.5f);
 			}
