@@ -1,46 +1,38 @@
 using System;
 using System.Collections.Generic;
 using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
 using Terraria;
-using Terraria.ModLoader;
+using Terraria.DataStructures;
 using Terraria.ID;
-
-namespace CookieMod.Items.Weapons
+using Terraria.ModLoader;
+ 
+namespace CookieMod.Items.Weapons           //We need this to basically indicate the folder where it is to be read from, so you the texture will load correctly
 {
-	public class HoneySceptor : ModItem
-	{
+    public class HoneySceptor : ModItem
+    {
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Honey Sceptor");
-			Tooltip.SetDefault("Shoots a beam of honey to slow your foes");
-		}
-		public override void SetDefaults()
-		{
-			item.damage = 4;
-			item.noMelee = true;
-			item.magic = true;
-			item.channel = true;                            //Channel so that you can held the weapon [Important]
-			item.mana = 5;
-			item.rare = 2;
-			item.width = 48;
-			item.height = 18;
-			item.useTime = 20;
-			item.UseSound = SoundID.Item13;
-			item.useStyle = 2;
-			item.shootSpeed = 14f;				//Speed is not important here
-			item.useAnimation = 20;                         
-			item.shoot = mod.ProjectileType("HoneyStream");
-			item.value = Item.sellPrice(0, 3, 0, 0);
-		}
-
-		public override void AddRecipes()
-		{
-			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(mod, "HoneyCookie", 10);
-			recipe.AddTile(mod, "CookieWorkbench");
-			recipe.SetResult(this);
-			recipe.AddRecipe();
-		}
-	}
+			Tooltip.SetDefault("Shoots a stream of honey to slow your foes");
+		}		
+        public override void SetDefaults()
+        {
+            item.damage = 4;
+            item.magic = true;
+            item.width = 48;
+            item.height = 18;
+            item.useTime = 6;
+            item.useAnimation = 6;
+            item.useStyle = 5;
+            item.noMelee = true;
+            item.knockBack = 3.25f;
+            item.UseSound = SoundID.Item34;
+            item.value = 1000;
+            item.rare = 2;
+            item.autoReuse = true;
+            item.shoot = mod.ProjectileType("HoneyStream");
+            item.shootSpeed = 4.5f;
+            item.mana = 5;			
+        }
+    }
 }
