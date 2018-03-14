@@ -11,7 +11,7 @@ namespace CookieMod.Items.Armor
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Bunny Greaves");
-			Tooltip.SetDefault("Jump like a bunny");
+			Tooltip.SetDefault("Run like a bunny");
 		}
 		public override void SetDefaults()
 		{
@@ -21,7 +21,10 @@ namespace CookieMod.Items.Armor
 			item.rare = 2;
 			item.defense = 4;
 		}
-
+		public override void UpdateEquip(Player player)
+		{
+			player.moveSpeed += 0.1f;
+		}
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
