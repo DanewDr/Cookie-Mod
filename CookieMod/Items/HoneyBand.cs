@@ -19,13 +19,13 @@ namespace CookieMod.Items
 			item.value = 10000;
 			item.rare = 2;
 			item.accessory = true;
-			item.lifeRegen = 19;
 		}
 
 		public override void UpdateAccessory(Player player, bool hideVisual)
 		{
-			player.lifeRegen += 1;
+			player.lifeRegen += 3;
 			player.honey = true;
+			player.moveSpeed -= 0.5f;			
 		}
 
 		public override void AddRecipes()
