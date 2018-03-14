@@ -17,7 +17,13 @@ namespace CookieMod.Buffs
         public override void Update(Player player, ref int buffIndex)
         {                                             //
             player.AddBuff(mod.BuffType("Honeyed"), 1); //this is an example of how to add your own buff
-            player.moveSpeed -= 0.50f;;  //
+            player.moveSpeed -= 0.50f;
         }
+		public override void Update(NPC npc, ref int buffIndex)
+		{
+			npc.AddBuff(mod.BuffType("Honeyed"), 1);
+			npc.velocity.Y /= 2;
+			npc.velocity.X /= 2;
+		}		
     }
 }
