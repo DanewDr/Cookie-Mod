@@ -21,8 +21,8 @@ namespace CookieMod.Items.Weapons           //We need this to basically indicate
             item.magic = true;
             item.width = 48;
             item.height = 18;
-            item.useTime = 6;
-            item.useAnimation = 6;
+            item.useTime = 20;
+            item.useAnimation = 20;
             item.useStyle = 5;
             item.noMelee = true;
             item.knockBack = 3.25f;
