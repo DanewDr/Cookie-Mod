@@ -24,7 +24,7 @@ namespace CookieMod.Items.Armor
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(null, "Cookie", 45);
+			recipe.AddIngredient(null, "Cookie", 35);
 			recipe.AddTile(null, "CookieWorkbench");
 			recipe.SetResult(this);
 			recipe.AddRecipe();

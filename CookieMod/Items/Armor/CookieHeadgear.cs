@@ -28,7 +28,7 @@ namespace CookieMod.Items.Armor
 		public override void UpdateArmorSet(Player player)
 		{
 			player.setBonus = "Incresead Ranged Damge";
-			player.rangedDamage *= 1.5f;
+			player.rangedDamage *= 1.05f;
 		}
 
 		public override void AddRecipes()

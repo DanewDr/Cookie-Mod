@@ -29,7 +29,7 @@ namespace CookieMod.Items.Armor
 		public override void UpdateArmorSet(Player player)
 		{
 			player.setBonus = "Incresead Throwing Damge";
-			player.thrownDamage *= 1.5f;
+			player.thrownDamage *= 1.09f;
 		}
 
 		public override void AddRecipes()
