@@ -10,7 +10,7 @@ namespace CookieMod.Items     //We need this to basically indicate the folder wh
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Honey Shield");
-			Tooltip.SetDefault("Grants immunity to knckback\n8% magic and summoner damage increase");
+			Tooltip.SetDefault("Grants immunity to knckback\n8% summoner damage increase");
 		}		
         public override void SetDefaults()
         {
@@ -25,7 +25,6 @@ namespace CookieMod.Items     //We need this to basically indicate the folder wh
         public override void UpdateAccessory(Player player, bool hideVisual)  //this is so when the item is equipped will give this stats to the player
         {
             player.noKnockback = true;   //so the player is immune to knockback
-	    player.magicDamage += .08f;
       player.minionDamage = .08f;
         }
  
