@@ -23,7 +23,7 @@ namespace CookieMod.Projectiles
             projectile.penetrate = -1;
             projectile.timeLeft = 125;
             projectile.extraUpdates = 3;
-			projectile.alpha = 255
+			projectile.alpha = 255;
         }
  
         public override void AI()
