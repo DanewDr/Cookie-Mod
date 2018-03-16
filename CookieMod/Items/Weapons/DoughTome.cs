@@ -15,7 +15,7 @@ namespace CookieMod.Items.Weapons
 		}
         public override void SetDefaults()
         {         
-            item.damage = 21;                        
+            item.damage = 15;                        
             item.magic = true;                     //this make the item do magic 
             item.width = 24;
             item.height = 28;
@@ -25,7 +25,7 @@ namespace CookieMod.Items.Weapons
             item.noMelee = true;
             item.knockBack = 0;        
             item.rare = 2;
-            item.mana = 2;             //mana use
+            item.mana = 10;             //mana use
             item.UseSound = SoundID.Item21;            //this is the 
             item.autoReuse = true;
             item.shoot = mod.ProjectileType ("GiantDough");  //this make the item shoot 

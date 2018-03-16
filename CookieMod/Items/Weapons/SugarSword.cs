@@ -15,7 +15,7 @@ namespace CookieMod.Items.Weapons
 		}
         public override void SetDefaults()
         {
-            item.damage = 11;                        
+            item.damage = 18;                        
             item.melee = true;                     //this make the item do magic 
             item.width = 28;
             item.height = 28;
