@@ -10,7 +10,7 @@ namespace CookieMod.Items.Armor
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Cookie Hood");
-			Tooltip.SetDefault("#putyourhelmetonhappy");
+			Tooltip.SetDefault("#putyourhelmetonhappy\n(Throwing)");
 		}
 		public override void SetDefaults()
 		{

@@ -10,7 +10,7 @@ namespace CookieMod.Items.Armor
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Cookie Mask");
-			Tooltip.SetDefault("#putyourhelmetonhappy");
+			Tooltip.SetDefault("#putyourhelmetonhappy\n(Magic)");
 		}
 		public override void SetDefaults()
 		{

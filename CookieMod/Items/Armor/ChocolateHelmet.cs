@@ -5,12 +5,12 @@ using Terraria.ModLoader;
 namespace CookieMod.Items.Armor
 {
 	[AutoloadEquip(EquipType.Head)]
-	public class CookieHorns : ModItem
+	public class ChocolateHelmet : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Cookie Horns");
-			Tooltip.SetDefault("#putyourhelmetonhappy\n(Summon)");
+			DisplayName.SetDefault("Chocolate Helmet");
+			Tooltip.SetDefault("5% increased melee damage");
 		}
 		public override void SetDefaults()
 		{
@@ -18,25 +18,29 @@ namespace CookieMod.Items.Armor
 			item.height = 18;
 			item.value = 2500;
 			item.rare = 2;
-			item.defense = 3;
+			item.defense = 9;
 		}
-
+		public override void UpdateEquip(Player player)
+		{
+			player.meleeDamage *= 1.1f;		
+		}
 		public override bool IsArmorSet(Item head, Item body, Item legs)
 		{
-			return body.type == mod.ItemType("CookieBreastplate") && legs.type == mod.ItemType("CookieLeggings");
+			return body.type == mod.ItemType("ChocolateBreastplate") && legs.type == mod.ItemType("ChocolateLegs");
 		}
 
 		public override void UpdateArmorSet(Player player)
 		{
-			player.setBonus = "Incresead Summon  Damage + max number of minions";
-			player.minionDamage *= 1.09f;
-			player.maxMinions++;
+			player.setBonus = "Incresead Melee Damge\n+5% critical strike chance\n+15% melee speed";
+			player.meleeDamage *= 1.1f;
+			player.meleeCrit += 5;
+			player.meleeSpeed += 0.15f;
 		}
 
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(null, "Cookie", 25);
+			recipe.AddIngredient(null, "ChocolateCookie", 25);
 			recipe.AddTile(null, "CookieWorkbench");
 			recipe.SetResult(this);
 			recipe.AddRecipe();
