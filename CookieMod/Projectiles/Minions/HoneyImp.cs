@@ -7,7 +7,7 @@ using Terraria.ModLoader;
  
 namespace CookieMod.Projectiles.Minions
 {  
-    public class HoneyImp : MinionINFO
+    public class HoneyImp : HoneyINFO
     {
 		public override void SetStaticDefaults()
 		{
@@ -32,7 +32,7 @@ namespace CookieMod.Projectiles.Minions
             ProjectileID.Sets.Homing[projectile.type] = true;
             inertia = 30f;
             shoot = mod.ProjectileType("HoneyP");
-            shootSpeed = 1f;
+            shootSpeed = 10f;
             ProjectileID.Sets.LightPet[projectile.type] = true;
             Main.projPet[projectile.type] = true;
         }

@@ -12,15 +12,15 @@ namespace CookieMod.Projectiles.Minions
 		}    	
         public override void SetDefaults()
         {
-            projectile.width = 26;
-            projectile.height = 26;
+            projectile.width = 36;
+            projectile.height = 17;
             projectile.netImportant = true;
             projectile.friendly = true;
             projectile.minionSlots = 1;
             projectile.alpha = 75;
             projectile.aiStyle = 26;
             projectile.timeLeft = 18000;
-            Main.projFrames[projectile.type] = 2;
+            Main.projFrames[projectile.type] = 6;
             ProjectileID.Sets.MinionSacrificable[projectile.type] = true;
             projectile.penetrate = -1;
             projectile.timeLeft *= 5;

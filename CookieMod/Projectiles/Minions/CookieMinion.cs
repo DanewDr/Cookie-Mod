@@ -22,7 +22,6 @@ namespace CookieMod.Projectiles.Minions
             projectile.friendly = true;
             Main.projPet[projectile.type] = true;
             projectile.minion = true;
-            projectile.netImportant = true;
             projectile.minionSlots = 1;
             projectile.penetrate = 1;
             projectile.timeLeft = 18000;
@@ -33,7 +32,6 @@ namespace CookieMod.Projectiles.Minions
             inertia = 30f;
             shoot = mod.ProjectileType("MinionP");
             shootSpeed = 10f;
-            ProjectileID.Sets.LightPet[projectile.type] = true;
             Main.projPet[projectile.type] = true;
         }
  

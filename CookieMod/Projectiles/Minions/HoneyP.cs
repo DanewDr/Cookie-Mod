@@ -20,7 +20,7 @@ namespace CookieMod.Projectiles.Minions
             projectile.width = 6;
             projectile.height = 32;
             projectile.aiStyle = 0;
-            projectile.alpha = 0;
+            projectile.alpha = 255;
             projectile.timeLeft = 150;
             projectile.friendly = true;
             projectile.tileCollide = true;
