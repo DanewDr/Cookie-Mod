@@ -1,3 +1,4 @@
+using System;
 using Terraria;
 using Terraria.ModLoader;
 
@@ -18,9 +19,9 @@ namespace CookieMod.Buffs
 			MyPlayer modPlayer = player.GetModPlayer<MyPlayer>(mod);
 			if (player.ownedProjectileCounts[mod.ProjectileType("HoneyImp")] > 0)
 			{
-				modPlayer.ChocMin = true;
+				modPlayer.HoneyImp = true;
 			}
-			if (!modPlayer.ChocMin)
+			if (!modPlayer.HoneyImp)
 			{
 				player.DelBuff(buffIndex);
 				buffIndex--;
