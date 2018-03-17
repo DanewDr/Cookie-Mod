@@ -11,7 +11,7 @@ namespace CookieMod.Items.Weapons
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Ginger Staff");
-			Tooltip.SetDefault("Summons a round chocolate cookie");
+			Tooltip.SetDefault("Summons a round ginger cookie");
 		}
         public override void SetDefaults()
         {
