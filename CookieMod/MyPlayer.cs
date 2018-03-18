@@ -14,17 +14,21 @@ namespace CookieMod
     {
         private const int saveVersion = 0;
         public bool CookieMinion = false;
-	public bool GingerMinion = false;
-	public bool ChocMin;
-	public bool HoneyImp = false;
+		public bool GingerMinion = false;
+		public bool ChocMin = false;
+		public bool HoneyImp = false;
+		public bool BunMin = false;
+		public bool GBunMin = false;
         public static bool hasProjectile;
-	public bool ZoneCookieBiome = false;
+		public bool ZoneCookieBiome = false;
         public override void ResetEffects()
         {
             CookieMinion = false;
-	    ChocMin = false;
-	    HoneyImp = false;
-	    GingerMinion = false;
+			ChocMin = false;
+			HoneyImp = false;
+			GingerMinion = false;
+			BunMin = false;
+			GBunMin = false;
         }
 		public override void UpdateBiomes()
         {
