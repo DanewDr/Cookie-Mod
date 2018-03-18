@@ -9,6 +9,7 @@ namespace CookieMod.Projectiles.Minions
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Chocolate Minion");     //The English name of the projectile
+			ProjectileID.Sets.MinionTargettingFeature[projectile.type] = true;			
 		}    	
         public override void SetDefaults()
         {

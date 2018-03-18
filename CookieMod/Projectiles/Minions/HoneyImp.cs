@@ -12,6 +12,7 @@ namespace CookieMod.Projectiles.Minions
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Honey Imp");     //The English name of the projectile
+			ProjectileID.Sets.MinionTargettingFeature[projectile.type] = true;			
 		}  		
         public override void SetDefaults()
         {
