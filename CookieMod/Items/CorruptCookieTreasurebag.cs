@@ -35,7 +35,7 @@ namespace CookieMod.Items
             //and this is the items that will 100% drop from the treasure bag
             player.QuickSpawnItem(mod.ItemType("Cookie"), Main.rand.Next(25, 35));
 			player.QuickSpawnItem(mod.ItemType("Milk"), Main.rand.Next(10, 20));
-            player.QuickSpawnItem(mod.ItemType("CorruptCookiesArm"));				
+            player.QuickSpawnItem(mod.ItemType("CookieOrb"));				
 			if (Main.rand.Next(7) == 0)
 			{
 				player.QuickSpawnItem(mod.ItemType("CorruptCookieMask"));
