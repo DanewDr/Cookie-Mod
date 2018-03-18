@@ -33,6 +33,24 @@ namespace CookieMod.Items.Weapons
             item.buffTime = 3600;
 			item.buffType = mod.BuffType("MinionBuff");
         }
+		public override bool AltFunctionUse(Player player)
+		{
+			return true;
+		}
+		
+		public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
+		{
+			return player.altFunctionUse != 2;
+		}
+		
+		public override bool UseItem(Player player)
+		{
+			if(player.altFunctionUse == 2)
+			{
+				player.MinionNPCTargetAim();
+			}
+			return base.UseItem(player);
+		}		
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
