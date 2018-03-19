@@ -2,20 +2,25 @@ using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 
 namespace CookieMod.Items.Weapons
 {
-	public class Slingshot : ModItem
+	public class Slingshot : CookClass
 	{
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Slingshot");
 			Tooltip.SetDefault("Super springy!");
 		}
-		public override void SetDefaults()
+		public override void SafeSetDefaults()
 		{
 			item.damage = 6;
-			item.ranged = true;
+			item.crit = 4;
+			item.ranged = false;
 			item.noMelee = true;
 			item.width = 34;
 			item.height = 22;

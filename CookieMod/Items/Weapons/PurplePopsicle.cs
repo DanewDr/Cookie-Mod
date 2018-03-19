@@ -1,17 +1,21 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace CookieMod.Items.Weapons
 {
-	public class PurplePopsicle : ModItem
+	public class PurplePopsicle : CookClass
 	{
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Purple Popsicle");
 			Tooltip.SetDefault("");
 		}
-		public override void SetDefaults()
+		public override void SafeSetDefaults()
 		{
 			item.width = 12;
 			item.height = 12;

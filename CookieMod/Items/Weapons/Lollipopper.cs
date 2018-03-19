@@ -2,19 +2,24 @@ using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 
 namespace CookieMod.Items.Weapons
 {
-	public class Lollipopper : ModItem
+	public class Lollipopper : CookClass
 	{
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Lollipopper");
 			Tooltip.SetDefault("Let's blow this popsicle stand");
 		}
-		public override void SetDefaults()
+		public override void SafeSetDefaults()
 		{
 			item.damage = 12;
+			item.crit = 4;
 			item.ranged = true;
 			item.noMelee = true;
 			item.width = 32;
