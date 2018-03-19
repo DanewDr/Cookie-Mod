@@ -2,10 +2,14 @@ using Microsoft.Xna.Framework;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
  
 namespace CookieMod.Items
 {
-    public class ChocolateCookie : ModItem
+    public class ChocolateCookie : CookClass
     {
 		public override void SetStaticDefaults()
 		{
@@ -13,7 +17,7 @@ namespace CookieMod.Items
 			Tooltip.SetDefault("Not recommended for dogs");
 		}
 
-        public override void SetDefaults()
+        public override void SafeSetDefaults()
         {
             item.damage = 14;
 	    item.consumable = true;
