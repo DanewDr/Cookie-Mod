@@ -2,17 +2,21 @@ using Microsoft.Xna.Framework;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
  
 namespace CookieMod.Items
 {
-    public class Cookie : ModItem
+    public class Cookie : CookClass
     {
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Cookie");
 			Tooltip.SetDefault("This makes me feel, Happy!");
 		}
-        public override void SetDefaults()
+        public override void SafeSetDefaults()
         {
             item.width = 20;
             item.height = 20;

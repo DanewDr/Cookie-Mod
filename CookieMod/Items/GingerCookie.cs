@@ -2,19 +2,24 @@ using Microsoft.Xna.Framework;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
  
 namespace CookieMod.Items
 {
-    public class GingerCookie : ModItem
+    public class GingerCookie : CookClass
     {
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Ginger Cookie");
 			Tooltip.SetDefault("Mhmm...ginger...");
 		}
-        public override void SetDefaults()
+        public override void SafeSetDefaults()
         {
             item.damage = 12;
+			item.crit = 4;
 	    item.consumable = true;
 	    item.shoot = mod.ProjectileType ("ThrowingCookieGinger");
 	    item.ammo = mod.ItemType("SlingshotAmmo");

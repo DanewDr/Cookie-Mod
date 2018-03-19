@@ -2,17 +2,21 @@ using Microsoft.Xna.Framework;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
  
 namespace CookieMod.Items
 {
-    public class HoneyCookie : ModItem
+    public class HoneyCookie : CookClass
     {
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Honey Cookie");
 			Tooltip.SetDefault("Possitively ravishing!");
 		}
-        public override void SetDefaults()
+        public override void SafeSetDefaults()
         {
             item.damage = 18;
 	    item.consumable = true;

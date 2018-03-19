@@ -2,17 +2,21 @@ using Microsoft.Xna.Framework;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
  
 namespace CookieMod.Items
 {
-    public class RottenCookie : ModItem
+    public class RottenCookie : CookClass
     {
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Rotten Cookie");
 			Tooltip.SetDefault("It's all gross!");
 		}
-        public override void SetDefaults()
+        public override void SafeSetDefaults()
         {
             item.damage = 12;
 	    item.consumable = true;
