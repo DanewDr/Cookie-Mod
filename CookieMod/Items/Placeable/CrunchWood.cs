@@ -13,8 +13,8 @@ namespace CookieMod.Items.Placeable
 		}
 		public override void SetDefaults()
 		{
-			item.width = 12;
-			item.height = 12;
+			item.width = 24;
+			item.height = 22;
 			item.maxStack = 999;
 			item.rare = 2;
 			item.useTurn = true;

@@ -14,8 +14,8 @@ namespace CookieMod.Items.Placeable
 		}
 		public override void SetDefaults()
 		{
-			item.width = 10;
-			item.height = 12;
+			item.width = 14;
+			item.height = 16;
 			item.maxStack = 99;
 			item.holdStyle = 1;
 			item.noWet = true;
