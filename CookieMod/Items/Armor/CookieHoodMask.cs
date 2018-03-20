@@ -14,8 +14,8 @@ namespace CookieMod.Items.Armor
 		}
 		public override void SetDefaults()
 		{
-			item.width = 18;
-			item.height = 18;
+			item.width = 22;
+			item.height = 20;
 			item.value = 2500;
 			item.rare = 2;
 			item.defense = 4;
@@ -29,7 +29,7 @@ namespace CookieMod.Items.Armor
 		public override void UpdateArmorSet(Player player)
 		{
 			player.setBonus = "Incresead Magic Damge";
-			player.magicDamage *= 1.9f;
+			player.magicDamage *= 1.09f;
 		}
 
 		public override void AddRecipes()

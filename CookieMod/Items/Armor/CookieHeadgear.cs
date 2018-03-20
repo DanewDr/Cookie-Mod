@@ -13,8 +13,8 @@ namespace CookieMod.Items.Armor
 		}
 		public override void SetDefaults()
 		{
-			item.width = 18;
-			item.height = 18;
+			item.width = 24;
+			item.height = 26;
 			item.value = 2500;
 			item.rare = 2;
 			item.defense = 5;
@@ -28,7 +28,7 @@ namespace CookieMod.Items.Armor
 		public override void UpdateArmorSet(Player player)
 		{
 			player.setBonus = "Incresead Ranged Damge";
-			player.rangedDamage *= 1.05f;
+			player.rangedDamage *= 1.09f;
 		}
 
 		public override void AddRecipes()

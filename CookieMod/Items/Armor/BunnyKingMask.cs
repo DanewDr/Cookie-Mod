@@ -15,7 +15,7 @@ namespace CookieMod.Items.Armor
 		public override void SetDefaults()
 		{
 			item.width = 28;
-			item.height = 20;
+			item.height = 26;
 			item.rare = 1;
 			item.vanity = true;
 		}
