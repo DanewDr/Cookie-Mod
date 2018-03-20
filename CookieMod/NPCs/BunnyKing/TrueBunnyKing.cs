@@ -53,7 +53,10 @@ namespace CookieMod.NPCs.BunnyKing
 				}
 				Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("GoldBunnyFur"), Main.rand.Next(15, 25));
 			}
-			CookieModWorld.downedBunny = true;				
+			if (!CookieModWorld.downedBunny)
+			{	
+				CookieModWorld.downedBunny = true;	
+			}				
 		}		
 		public override void BossLoot(ref string name, ref int potionType)
 		{
@@ -75,9 +78,13 @@ namespace CookieMod.NPCs.BunnyKing
 			
 			if (npc.ai[0] % 600 ==3)
 			{
-				NPC.NewNPC((int)npc.position.X, (int)npc.position.Y, mod.NPCType("BunnyWarrior"));
+				NPC.NewNPC((int)npc.position.X, (int)npc.position.Y, mod.NPCType("BunnyWarrior"), 2);
 				NPC.NewNPC((int)npc.position.X, (int)npc.position.Y, mod.NPCType("GoldenBunnyWarrior"));
-			}
+				if (Main.expertMode)
+				{	
+					NPC.NewNPC((int)npc.position.X, (int)npc.position.Y, mod.NPCType("TheChariot"));					
+				}
+			}	
 			npc.ai[1] += 0;	
 		}		
         public override void ScaleExpertStats(int numPlayers, float bossLifeScale)
