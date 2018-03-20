@@ -34,6 +34,7 @@ namespace CookieMod.Items
         public override void OpenBossBag(Player player)
         {                                        
             player.QuickSpawnItem(mod.ItemType("GoldBunnyFur"), Main.rand.Next(20, 30));
+			player.QuickSpawnItem(mod.ItemType("BunnyKingTome"));
 //            player.QuickSpawnItem(mod.ItemType("ExpertDrop"));				
 			if (Main.rand.Next(7) == 0)
 			{
