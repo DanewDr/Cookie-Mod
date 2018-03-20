@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+
 namespace CookieMod.Items.Weapons
 {
   public class PortableOven : CookClass 
@@ -43,5 +44,5 @@ namespace CookieMod.Items.Weapons
      recipe.AddTile(TileID.WorkBenches);
      recipe.AddRecipe();
     }
-   }
   }
+}
