@@ -7,7 +7,7 @@ using Terraria.World.Generation;
 using Microsoft.Xna.Framework;
 using Terraria.GameContent.Generation;
 using System.Linq;
- 
+using Terraria.ModLoader.IO; 
  
 namespace CookieMod
 {
@@ -44,5 +44,51 @@ namespace CookieMod
         }
         public static bool spawnSugar = false;
         public static bool spawnCookie = false;
+		public override TagCompound Save()
+        {
+            var downed = new List<string>();
+            if (downedBunny) downed.Add("downedBunny");
+			if (downedCookieBoss) downed.Add("downedCookieBoss)");
+            return new TagCompound	{
+                {"downed", downed},
+			};				
+        }
+		public override void Load(TagCompound tag)
+        {
+            var downed = tag.GetList<string>("downed");
+            downedBunny = downed.Contains("downedBunny");
+			downedCookieBoss = downed.Contains("downedCookieBoss");
+        }
+		public override void NetSend(BinaryWriter writer)
+		{
+			BitsByte flags = new BitsByte();
+			flags[0] = downedBunny; //+1 flag number for each new boss
+			flags[1] = downedCookieBoss;
+		}
+		public override void NetReceive(BinaryReader reader)
+		{
+			BitsByte flags = reader.ReadByte();
+			downedBunny = flags[0];
+			downedCookieBoss = flags[1];
+		}
+		public override void LoadLegacy(BinaryReader reader)
+        {
+            int loadVersion = reader.ReadInt32();
+            if(loadVersion == 1)
+            {         
+                byte flags=reader.ReadByte();
+                CookieModWorld.downedBunny=((flags&1)!=0);
+				CookieModWorld.downedCookieBoss=((flags&2)!=0); //double flag numbers with each new boss
+            }
+            else if(loadVersion == 2)
+            {  
+                byte flags=reader.ReadByte();
+				byte flags2=reader.ReadByte();		
+                CookieModWorld.downedBunny=((flags&1)!=0);
+				CookieModWorld.downedCookieBoss=((flags&2)!=0);
+            }
+            
+            
+        }		
     }
 }
