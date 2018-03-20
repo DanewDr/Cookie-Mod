@@ -29,8 +29,9 @@ namespace CookieMod.Items.Placeable
 		{
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(ItemID.Glass, 6);
-			recipe.AddIngredient(ItemID.IronBar, 2);
+			recipe.AddIngredient(ItemID.IronBar, 3);
 			recipe.AddIngredient(null, "CrunchWood", 10);
+			recipe.AddTile(TileID.WorkBenches);			
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}

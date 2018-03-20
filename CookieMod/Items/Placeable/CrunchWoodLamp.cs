@@ -31,9 +31,9 @@ namespace CookieMod.Items.Placeable
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(null, "CookieTorch", 4);
+			recipe.AddIngredient(null, "CookieTorch");
 			recipe.AddIngredient(null, "CrunchWood", 3);
-		//	recipe.AddTile(null, "FlameAnvil");
+			recipe.AddTile(TileID.WorkBenches);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}
