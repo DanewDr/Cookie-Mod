@@ -20,8 +20,8 @@ namespace CookieMod.Items
         {
             item.damage = 12;
 	    item.consumable = true;
-	    item.shoot = mod.ProjectileType ("ThrowingRottenCookie");
-	    item.ammo = mod.ItemType("SlingshotAmmo");
+	    item.shoot = mod.ProjectileType ("ThrowingCookieRotten");
+	    item.ammo = mod.ItemType("Cookie");
             item.width = 20;
             item.height = 20;
             item.value = 100;
