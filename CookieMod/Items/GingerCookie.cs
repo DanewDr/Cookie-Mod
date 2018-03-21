@@ -22,7 +22,7 @@ namespace CookieMod.Items
 			item.crit = 4;
 	    item.consumable = true;
 	    item.shoot = mod.ProjectileType ("ThrowingCookieGinger");
-	    item.ammo = mod.ItemType("SlingshotAmmo");
+	    item.ammo = mod.ItemType("Cookie");
             item.width = 20;
             item.height = 20;
             item.value = 100;
