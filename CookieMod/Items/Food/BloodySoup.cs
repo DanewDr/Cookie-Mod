@@ -19,8 +19,8 @@ namespace CookieMod.Items.Food
 		{
 			item.width = 22;
 			item.height = 14;
-      			item.damage = 16
-      			item.crit = 4
+      			item.damage = 8;
+      			item.crit = 4;
       			item.useSound = SoundID.Item3;
 			item.maxStack = 30;
 			item.rare = 1;
