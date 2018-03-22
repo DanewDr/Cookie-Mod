@@ -20,6 +20,7 @@ namespace CookieMod.Tiles
 			Main.tileTable[Type] = true;
 			Main.tileContainer[Type] = true;
 			Main.tileLavaDeath[Type] = true;
+			TileID.Sets.HasOutlines[Type] = true;			
 			TileObjectData.newTile.CopyFrom(TileObjectData.Style3x2);
 			TileObjectData.newTile.Origin = new Point16(1, 1);
 			TileObjectData.newTile.CoordinateHeights = new int[] { 16, 16 };
@@ -144,7 +145,7 @@ namespace CookieMod.Tiles
 			player.showItemIcon2 = -1;
 			if (chestIndex < 0)
 			{
-				player.showItemIconText = Lang.dresserType[0].Value;
+				player.showItemIconText = Language.dresserType[0].Value;
 			}
 			else
 			{
@@ -186,7 +187,7 @@ namespace CookieMod.Tiles
 			player.showItemIcon2 = -1;
 			if (num138 < 0)
 			{
-				player.showItemIconText = Lang.dresserType[0].Value;
+				player.showItemIconText = Language.dresserType[0].Value;
 			}
 			else
 			{
