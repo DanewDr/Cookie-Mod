@@ -8,25 +8,25 @@ using Terraria.ModLoader;
 
 namespace CookieMod.Items.Food
 {
-	public class BloodySoup : CookClass
+	public class RottenSoup : CookClass
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Bowl of Blood Soup");
+			DisplayName.SetDefault("Bowl of Rotten Soup");
 			Tooltip.SetDefault("Gives food poisoning, <right> to eat!");
 		}
 		public override void SafeSetDefaults()
 		{
 			item.width = 22;
 			item.height = 14;
-      			item.damage = 8;
-      			item.crit = 4;
-      			item.UseSound = SoundID.Item3;
+      		item.damage = 8;
+      		item.crit = 4;
+      		item.UseSound = SoundID.Item3;
 			item.maxStack = 30;
 			item.rare = 1;
 			item.consumable = true;
-      			item.value = 400;
-			item.shoot = mod.ProjectileType ("BloodySoup");
+      		item.value = 400;
+			item.shoot = mod.ProjectileType ("RottenSoup");
 			item.ammo = item.type;
 		}
 		public override bool CanRightClick()
@@ -43,7 +43,8 @@ namespace CookieMod.Items.Food
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(ItemID.Bowl);
 			recipe.AddIngredient(ItemID.ViciousMushroom);
-     			recipe.AddIngredient(ItemID.Vertebrae);
+     		recipe.AddIngredient(ItemID.Vertebrae);
+			recipe.AddIngredient(null, "Rot");
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}
