@@ -27,7 +27,7 @@ namespace CookieMod.Items.Food
 			item.consumable = true;
       		item.value = 400;
 			item.shoot = mod.ProjectileType ("RottenSoup");
-			item.ammo = item.type;
+			item.ammo = mod.ItemType("BloodySoup");
 		}
 		public override bool CanRightClick()
 		{
