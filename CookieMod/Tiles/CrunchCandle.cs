@@ -7,7 +7,7 @@ using Terraria.ObjectData;
  
 namespace CookieMod.Tiles
 {
-    public class CrunchWoodChandelier : ModTile
+    public class CrunchCandle : ModTile
     {
         public override void SetDefaults()
         {
@@ -16,20 +16,14 @@ namespace CookieMod.Tiles
             Main.tileNoAttach[Type] = true;
             Main.tileLavaDeath[Type] = true;
 			Main.tileLighted[Type] = true;
-            TileObjectData.newTile.CopyFrom(TileObjectData.Style1x2Top);
-			TileObjectData.newTile.Width = 2;
-			TileObjectData.newTile.Origin = new Point16(1, 0);
+            TileObjectData.newTile.CopyFrom(TileObjectData.Style1x1);
 			AddToArray(ref TileID.Sets.RoomNeeds.CountsAsTorch);
-//			name.SetDefault("Crunch Chandelier");			
+//			name.SetDefault("Crunch Candle");			
 //            AddMapEntry(new Color(172, 119, 14), name);
             disableSmartCursor = true;
-			TileObjectData.newTile.CoordinateHeights = new int[] { 16, 16 };
             TileObjectData.addTile(Type);
+			drop = mod.ItemType("CrunchCandle");			
         } 
-        public override void KillMultiTile(int i, int j, int frameX, int frameY)
-        {
-            Item.NewItem(i * 16, j * 16, 32, 16, mod.ItemType("CrunchWoodChandelier"));
-        }
 		
 		public override void ModifyLight(int i, int j, ref float r, ref float g, ref float b)   //light colors
         {

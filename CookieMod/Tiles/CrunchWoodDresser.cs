@@ -145,7 +145,7 @@ namespace CookieMod.Tiles
 			player.showItemIcon2 = -1;
 			if (chestIndex < 0)
 			{
-				player.showItemIconText = Language.dresserType[0].Value;
+				player.showItemIconText = Lang.dresserType[0].Value;
 			}
 			else
 			{
@@ -187,7 +187,7 @@ namespace CookieMod.Tiles
 			player.showItemIcon2 = -1;
 			if (num138 < 0)
 			{
-				player.showItemIconText = Language.dresserType[0].Value;
+				player.showItemIconText = Lang.dresserType[0].Value;
 			}
 			else
 			{

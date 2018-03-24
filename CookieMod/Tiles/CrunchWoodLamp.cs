@@ -23,10 +23,6 @@ namespace CookieMod.Tiles
 			TileObjectData.newTile.CoordinateHeights = new int[] { 16, 16, 18 };
 			AddToArray(ref TileID.Sets.RoomNeeds.CountsAsTorch);
             TileObjectData.addTile(Type);
-
-			soundType = 21;
-      
-			soundStyle = 6;
         }
 
         public override void KillMultiTile(int i, int j, int frameX, int frameY)
