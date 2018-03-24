@@ -19,6 +19,8 @@ namespace CookieMod.Items
             item.value = 100;
             item.rare = 1;
             item.maxStack = 999;
+			item.ammo = item.type;
+			item.consumable = true;			
         }
     public override void AddRecipes()
   		{
