@@ -28,7 +28,7 @@ namespace CookieMod.Items.Placeable
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.IronBar, 4);
+			recipe.AddRecipeGroup("IronBar", 4);
 			recipe.AddRecipeGroup("CorruptBar", 6);
 			recipe.AddIngredient(null, "DoughBall", 3);
 			recipe.SetResult(this);

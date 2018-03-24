@@ -28,6 +28,7 @@ namespace CookieMod.Items.Placeable
 		{
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(null, "CrunchWood", 8);
+			recipe.AddRecipeGroup("IronBar");
 			recipe.AddTile(TileID.WorkBenches);			
 			recipe.SetResult(this);
 			recipe.AddRecipe();
