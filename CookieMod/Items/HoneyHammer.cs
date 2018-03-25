@@ -20,7 +20,7 @@ namespace CookieMod.Items
 			item.height = 40;
 			item.useTime = 35;
 			item.useAnimation = 35;
-			item.hammer = 100;		//How much hammer power the weapon has
+			item.hammer = 70;		//How much hammer power the weapon has
 			item.useStyle = 1;
 			item.knockBack = 6;
 			item.value = 10000;
