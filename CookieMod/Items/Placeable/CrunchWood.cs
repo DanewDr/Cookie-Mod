@@ -16,7 +16,7 @@ namespace CookieMod.Items.Placeable
 			item.width = 24;
 			item.height = 22;
 			item.maxStack = 999;
-			item.rare = 2;
+			item.rare = 0;
 			item.useTurn = true;
 			item.autoReuse = true;
 			item.useAnimation = 15;
