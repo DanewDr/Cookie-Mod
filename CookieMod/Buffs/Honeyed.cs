@@ -21,9 +21,9 @@ namespace CookieMod.Buffs
         }
 		public override void Update(NPC npc, ref int buffIndex)
 		{
-			npc.AddBuff(mod.BuffType("Honeyed"), 1);
-			npc.velocity.Y /= 2;
-			npc.velocity.X /= 2;
+			npc.AddBuff(BuffID.Slow, 4);
+			npc.velocity.Y /= 1.05f;
+			npc.velocity.X /= 1.05f;
 		}		
     }
 }
