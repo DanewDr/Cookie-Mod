@@ -17,7 +17,7 @@ namespace CookieMod.Items.Weapons           //We need this to basically indicate
 		}		
         public override void SetDefaults()
         {
-            item.damage = 4;
+            item.damage = 12;
             item.magic = true;
             item.width = 48;
             item.height = 18;

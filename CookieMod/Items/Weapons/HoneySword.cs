@@ -37,7 +37,11 @@ namespace CookieMod.Items.Weapons   //where is located
 			{
 				int dust = Dust.NewDust(new Vector2(hitbox.X, hitbox.Y), hitbox.Width, hitbox.Height, mod.DustType("HoneyCrumbs"));
 			}
-		}		
+		}
+		public override void OnHitNPC(Player player, NPC target, int damage, float knockback, bool crit)
+        {
+			target.AddBuff(mod.BuffType("Honeyed"),800);
+        }			
         public override void AddRecipes()  //How to craft this sword
         {
             ModRecipe recipe = new ModRecipe(mod);      
