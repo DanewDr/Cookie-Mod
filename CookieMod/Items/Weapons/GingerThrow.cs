@@ -19,8 +19,8 @@ namespace CookieMod.Items.Weapons
             item.CloneDefaults(ItemID.WoodYoyo);
 			item.value = 1200;
             item.useStyle = 5;
-            item.width = 24;
-            item.height = 24;
+            item.width = 30;
+            item.height = 26;
             item.noUseGraphic = true;
             item.UseSound = SoundID.Item1;
             item.melee = true;
