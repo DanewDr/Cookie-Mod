@@ -17,8 +17,8 @@ namespace CookieMod.Projectiles
 		}
 		public override void SetDefaults()
 		{
-			projectile.width = 18;
-			projectile.height = 18;
+			projectile.width = 48;
+			projectile.height = 48;
 			projectile.aiStyle = 19;
 			projectile.friendly = true;
 			projectile.penetrate = -1;
@@ -103,5 +103,9 @@ namespace CookieMod.Projectiles
 				return;
 			}
 		}
+        public override void OnHitNPC(NPC target, int damage, float knockback, bool crit)
+        {
+			target.AddBuff(mod.BuffType("Honeyed"),800);
+        }			
 	}
 }

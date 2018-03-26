@@ -16,8 +16,8 @@ namespace CookieMod.Projectiles
 		}
 		public override void SetDefaults()
 		{
-			projectile.width = 16;
-			projectile.height = 16;
+			projectile.width = 22;
+			projectile.height = 70;
 			projectile.aiStyle = -1;
 			projectile.friendly = true;
 			projectile.melee = true;
@@ -53,18 +53,9 @@ namespace CookieMod.Projectiles
 			Vector2 rotVector = (projectile.rotation - MathHelper.ToRadians(90f)).ToRotationVector2(); // rotation vector to use for dust velocity
 			usePos += rotVector * 16f;
 
-			// Spawn some dusts upon javelin death
-			for (int i = 0; i < 20; i++)
+			for (int k = 0; k < 5; k++)
 			{
-				// Create a new dust
-				int dustIndex = Dust.NewDust(usePos, projectile.width, projectile.height, 81, 0f, 0f, 0, default(Color), 1f);
-				Dust currentDust = Main.dust[dustIndex]; // If you plan to access the dust often, it's a smart idea to make this local variable to make your life a bit easier
-				// Modify some of the dust behaviour
-				currentDust.position = (currentDust.position + projectile.Center) / 2f;
-				currentDust.velocity += rotVector * 2f;
-				currentDust.velocity *= 0.5f;
-				currentDust.noGravity = true;
-				usePos -= rotVector * 8f;
+				Dust.NewDust(projectile.position + projectile.velocity, projectile.width, projectile.height, mod.DustType("ChocolateCrumbs"), projectile.oldVelocity.X * 0f, projectile.oldVelocity.Y * 0f);
 			}
 
 			int item = 0;
@@ -149,7 +140,6 @@ namespace CookieMod.Projectiles
 		private const float maxTicks = 45f;
 		// Change this number if you want to alter how the alpha changes
 		private const int alphaReduction = 25;
-
 		public override void AI()
 		{
 			if (Main.rand.Next(2) == 0)

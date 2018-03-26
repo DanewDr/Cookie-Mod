@@ -38,6 +38,13 @@ namespace CookieMod.Projectiles
                 projectile.velocity.X = projectile.velocity.X * 0.99f;    // projectile velocity
             }
         }
+		public override void Kill(int timeLeft)
+		{
+			for (int k = 0; k < 5; k++)
+			{
+				Dust.NewDust(projectile.position + projectile.velocity, projectile.width, projectile.height, mod.DustType("HoneyCrumbs"), projectile.oldVelocity.X * 0f, projectile.oldVelocity.Y * 0f);
+			}
+		}		
         public override bool OnTileCollide(Vector2 oldVelocity)
         {                                                           // sound that the projectile make when hiting the terrain
             {
@@ -47,5 +54,9 @@ namespace CookieMod.Projectiles
             }
             return false;
         }
+        public override void OnHitNPC(NPC target, int damage, float knockback, bool crit)
+        {
+			target.AddBuff(mod.BuffType("Honeyed"),800);
+        }			
     }
 }

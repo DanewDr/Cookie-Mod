@@ -33,6 +33,13 @@ namespace CookieMod.Projectiles
 			{
 				Dust.NewDust(projectile.position + projectile.velocity, projectile.width, projectile.height, mod.DustType("GingerCrumbs"), projectile.velocity.X * 0.5f, projectile.velocity.Y * 0.5f);
 			}
-		}			
-        }
+		}
+		public override void Kill(int timeLeft)
+		{
+			for (int k = 0; k < 5; k++)
+			{
+				Dust.NewDust(projectile.position + projectile.velocity, projectile.width, projectile.height, mod.DustType("GingerCrumbs"), projectile.oldVelocity.X * 0f, projectile.oldVelocity.Y * 0f);
+			}
+		}		
     }
+}

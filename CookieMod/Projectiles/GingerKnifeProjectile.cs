@@ -15,8 +15,8 @@ namespace CookieMod.Projectiles
 		}
         public override void SetDefaults()
         {
-            projectile.width = 20;
-            projectile.height = 20;
+            projectile.width = 10;
+            projectile.height = 24;
             projectile.friendly = true;
             projectile.aiStyle = 1;
             projectile.thrown = true;
@@ -38,6 +38,13 @@ namespace CookieMod.Projectiles
                 projectile.velocity.X = projectile.velocity.X * 0.99f;    // projectile velocity
             }
         }
+		public override void Kill(int timeLeft)
+		{
+			for (int k = 0; k < 5; k++)
+			{
+				Dust.NewDust(projectile.position + projectile.velocity, projectile.width, projectile.height, mod.DustType("GingerCrumbs"), projectile.oldVelocity.X * 0f, projectile.oldVelocity.Y * 0f);
+			}
+		}		
         public override bool OnTileCollide(Vector2 oldVelocity)
         {                                                           // sound that the projectile make when hiting the terrain
             {

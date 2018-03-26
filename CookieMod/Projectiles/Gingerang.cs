@@ -15,8 +15,8 @@ namespace CookieMod.Projectiles
 		}
         public override void SetDefaults()
         {
-            projectile.width = 30;
-            projectile.height = 30;
+            projectile.width = 32;
+            projectile.height = 32;
             projectile.aiStyle = 3;
             projectile.friendly = true;
             projectile.ranged = true;

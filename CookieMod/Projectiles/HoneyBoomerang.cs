@@ -15,8 +15,8 @@ namespace CookieMod.Projectiles
 		}
         public override void SetDefaults()
         {
-            projectile.width = 30;
-            projectile.height = 30;
+            projectile.width = 18;
+            projectile.height = 32;
             projectile.aiStyle = 3;
             projectile.friendly = true;
             projectile.ranged = true;
@@ -33,7 +33,9 @@ namespace CookieMod.Projectiles
 				Dust.NewDust(projectile.position + projectile.velocity, projectile.width, projectile.height, mod.DustType("HoneyCrumbs"), projectile.velocity.X * 0.5f, projectile.velocity.Y * 0.5f);
 			}
 		}		
-       
- 
+        public override void OnHitNPC(NPC target, int damage, float knockback, bool crit)
+        {
+			target.AddBuff(mod.BuffType("Honeyed"),800);
+        } 
     }
 }

@@ -16,8 +16,8 @@ namespace CookieMod.Projectiles
 		}
         public override void SetDefaults()
         {
-            projectile.width = 8;
-            projectile.height = 8;
+            projectile.width = 14;
+            projectile.height = 34;
             projectile.aiStyle = 1;
             projectile.friendly = true;
             projectile.ranged = true;
@@ -35,6 +35,13 @@ namespace CookieMod.Projectiles
 			if (Main.rand.Next(2) == 0)
 			{
 				Dust.NewDust(projectile.position + projectile.velocity, projectile.width, projectile.height, mod.DustType("Sparkle"), projectile.velocity.X * 0.5f, projectile.velocity.Y * 0.5f);
+			}
+		}
+		public override void Kill(int timeLeft)
+		{
+			for (int k = 0; k < 5; k++)
+			{
+				Dust.NewDust(projectile.position + projectile.velocity, projectile.width, projectile.height, mod.DustType("Sparkle"), projectile.oldVelocity.X * 0f, projectile.oldVelocity.Y * 0f);
 			}
 		}		
     }

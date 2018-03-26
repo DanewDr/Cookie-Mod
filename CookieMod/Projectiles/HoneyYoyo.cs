@@ -17,8 +17,8 @@ namespace CookieMod.Projectiles
         {
             projectile.CloneDefaults(ProjectileID.WoodYoyo);
             projectile.penetrate = 5;  
-            projectile.width = 22;
-            projectile.height = 22;
+            projectile.width = 26;
+            projectile.height = 26;
 			ProjectileID.Sets.YoyosLifeTimeMultiplier[projectile.type] = 4.5f;
 			ProjectileID.Sets.YoyosMaximumRange[projectile.type] = 250f;			
         }
@@ -35,9 +35,10 @@ namespace CookieMod.Projectiles
             {
                 projectile.timeLeft = 50;
             }
-            
-
+		}	
+        public override void OnHitNPC(NPC target, int damage, float knockback, bool crit)
+        {
+			target.AddBuff(mod.BuffType("Honeyed"),800);
         }
-
     }
 }

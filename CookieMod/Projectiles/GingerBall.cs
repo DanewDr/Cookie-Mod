@@ -15,8 +15,8 @@ namespace CookieMod.Projectiles
 		}
         public override void SetDefaults()
         {
-            projectile.width = 28;
-            projectile.height = 28;
+            projectile.width = 18;
+            projectile.height = 18;
             projectile.friendly = true;
             projectile.penetrate = -1; // Penetrates NPCs infinitely.
             projectile.melee = true; // Deals melee dmg.
