@@ -17,8 +17,8 @@ namespace CookieMod.Projectiles
         {
             projectile.CloneDefaults(ProjectileID.WoodYoyo);
             projectile.penetrate = 5;  
-            projectile.width = 26;
-            projectile.height = 26;
+            projectile.width = 16;
+            projectile.height = 16;
 			ProjectileID.Sets.YoyosLifeTimeMultiplier[projectile.type] = 5.5f;			
 			ProjectileID.Sets.YoyosMaximumRange[projectile.type] = 300f;           
         }

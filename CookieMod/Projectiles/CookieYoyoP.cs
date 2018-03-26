@@ -17,8 +17,8 @@ namespace CookieMod.Projectiles
         {
             projectile.CloneDefaults(ProjectileID.WoodYoyo);
             projectile.penetrate = 5;  
-            projectile.width = 22;
-            projectile.height = 22;
+            projectile.width = 16;
+            projectile.height = 16;
            
         }
         
