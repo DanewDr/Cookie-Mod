@@ -29,7 +29,7 @@ namespace CookieMod.Items
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(null, "ChocolateCookie", 60);
+			recipe.AddIngredient(null, "ChocolateCookie", 16);
 			recipe.AddTile(null, "CookieWorkbench");
 			recipe.SetResult(this);
 			recipe.AddRecipe();

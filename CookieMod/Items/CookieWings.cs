@@ -10,7 +10,7 @@ namespace CookieMod.Items
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Cookie Wings");
-			Tooltip.SetDefault("Pre-hardmode wings, Yay!");
+			Tooltip.SetDefault("");
 		}		
 		public override void SetDefaults()
 		{
