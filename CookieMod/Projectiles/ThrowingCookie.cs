@@ -21,7 +21,7 @@ namespace CookieMod.Projectiles
 			projectile.tileCollide = true;
 			projectile.ignoreWater = false;
 			projectile.penetrate = 1;
-			projectile.width = 8;
+			projectile.width = 16;
 			projectile.height = 4;
 			projectile.extraUpdates = 1;
 		}
@@ -38,5 +38,12 @@ namespace CookieMod.Projectiles
              	projectile.velocity.X = projectile.velocity.X * 1f;    // projectile velocity
       		}
        	}
+		public override void Kill(int timeLeft)
+		{
+			for (int k = 0; k < 5; k++)
+			{
+				Dust.NewDust(projectile.position + projectile.velocity, projectile.width, projectile.height, mod.DustType("Sparkle"), projectile.oldVelocity.X * 0f, projectile.oldVelocity.Y * 0f);
+			}
+		}		
 	}
 }

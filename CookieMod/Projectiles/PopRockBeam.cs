@@ -25,17 +25,26 @@ namespace CookieMod.Projectiles
 			projectile.height = 20;
 			projectile.extraUpdates = 1;
 		}
-        	public override void AI()
-        	{            
-              		projectile.ai[0] += 1f;
-            		if (projectile.ai[0] >= 75f)       //how much time the projectile can travel before landing
-          		{
-               			projectile.velocity.Y = projectile.velocity.Y + 0.05f;    // projectile fall velocity
-                		projectile.velocity.X = projectile.velocity.X * 1f;    // projectile velocity
-            		}
-        	}
-
-
-        }
- }
+        public override void AI()
+        {            
+			projectile.ai[0] += 1f;
+            if (projectile.ai[0] >= 75f)       //how much time the projectile can travel before landing
+          	{
+				projectile.velocity.Y = projectile.velocity.Y + 0.05f;    // projectile fall velocity
+                projectile.velocity.X = projectile.velocity.X * 1f;    // projectile velocity
+           	}
+			if (Main.rand.Next(2) == 0)
+			{
+				Dust.NewDust(projectile.position + projectile.velocity, projectile.width, projectile.height, mod.DustType("HardSugar"), projectile.velocity.X * 0.5f, projectile.velocity.Y * 0.5f);
+			}
+		}
+		public override void Kill(int timeLeft)
+		{
+			for (int k = 0; k < 5; k++)
+			{
+				Dust.NewDust(projectile.position + projectile.velocity, projectile.width, projectile.height, mod.DustType("HardSugar"), projectile.oldVelocity.X * 0f, projectile.oldVelocity.Y * 0f);
+			}
+		}		
+	}
+}
 

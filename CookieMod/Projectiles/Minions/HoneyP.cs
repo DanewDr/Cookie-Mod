@@ -35,20 +35,10 @@ namespace CookieMod.Projectiles.Minions
                 Main.PlaySound(2, (int)projectile.position.X, (int)projectile.position.Y, 20);
                 projectile.localAI[0] = 1f;
             }
-            int dust = Dust.NewDust(projectile.position, projectile.width, projectile.height, 66, 0f, 0f, 100, new Color(224, 179, 88), 1.5f);
-            Main.dust[dust].velocity *= 0.1f;
-            if (projectile.velocity == Vector2.Zero)
-            {
-                Main.dust[dust].velocity.Y -= 1f;
-                Main.dust[dust].scale = 1.2f;
-            }
-            else
-            {
-                Main.dust[dust].velocity += projectile.velocity * 0.2f;
-            }
-            Main.dust[dust].position.X = projectile.Center.X + 4f + (float)Main.rand.Next(-2, 3);
-            Main.dust[dust].position.Y = projectile.Center.Y + (float)Main.rand.Next(-2, 3);
-            Main.dust[dust].noGravity = true;
+			if (Main.rand.Next(2) == 0)
+			{
+				Dust.NewDust(projectile.position + projectile.velocity, projectile.width, projectile.height, mod.DustType("HoneyCrumbs"), projectile.velocity.X * 0.5f, projectile.velocity.Y * 0.5f);
+			}
         }
       public override void OnHitNPC(NPC target, int damage, float knockback, bool crit)
 	     {

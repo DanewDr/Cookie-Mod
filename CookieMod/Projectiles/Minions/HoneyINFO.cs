@@ -14,7 +14,7 @@ namespace CookieMod.Projectiles.Minions
         protected float chaseDist = 200f;       //how far the minion can go
         protected float chaseAccel = 6f;
         protected float inertia = 40f;
-        protected float shootCool = 5f;       //how fast the minion can shoot
+        protected float shootCool = 10f;       //how fast the minion can shoot
         protected float shootSpeed;
         protected int shoot;
  

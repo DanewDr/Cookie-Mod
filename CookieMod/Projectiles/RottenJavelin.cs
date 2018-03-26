@@ -16,15 +16,13 @@ namespace CookieMod.Projectiles
 		}
 		public override void SetDefaults()
 		{
-			projectile.width = 16;
-			projectile.height = 16;
+			projectile.width = 22;
+			projectile.height = 70;
 			projectile.aiStyle = -1;
 			projectile.friendly = true;
 			projectile.melee = true;
 			projectile.penetrate = 3;
 		}
-		
-
 		public override bool TileCollideStyle(ref int width, ref int height, ref bool fallThrough)
 		{
 
@@ -49,15 +47,9 @@ namespace CookieMod.Projectiles
 			Vector2 rotVector = (projectile.rotation - MathHelper.ToRadians(90f)).ToRotationVector2();
 			usePos += rotVector * 16f;
 
-			for (int i = 0; i < 20; i++)
+			for (int k = 0; k < 5; k++)
 			{
-				int dustIndex = Dust.NewDust(usePos, projectile.width, projectile.height, 81, 0f, 0f, 0, default(Color), 1f);
-				Dust currentDust = Main.dust[dustIndex];
-				currentDust.position = (currentDust.position + projectile.Center) / 2f;
-				currentDust.velocity += rotVector * 2f;
-				currentDust.velocity *= 0.5f;
-				currentDust.noGravity = true;
-				usePos -= rotVector * 8f;
+				Dust.NewDust(projectile.position + projectile.velocity, projectile.width, projectile.height, mod.DustType("RottenCrumbs"), projectile.oldVelocity.X * 0f, projectile.oldVelocity.Y * 0f);
 			}
 
 			int item = 0;

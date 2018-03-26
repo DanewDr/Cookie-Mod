@@ -21,20 +21,29 @@ namespace CookieMod.Projectiles
 			projectile.tileCollide = true;
 			projectile.ignoreWater = false;
 			projectile.penetrate = 1;
-			projectile.width = 30;
-			projectile.height = 20;
+			projectile.width = 40;
+			projectile.height = 26;
 			projectile.extraUpdates = 1;
 		}
-        	public override void AI()
-        	{            
-              		projectile.ai[0] += 1f;
-            		if (projectile.ai[0] >= 75f)
-          		{
-               			projectile.velocity.Y = projectile.velocity.Y + 0.05f;
-                		projectile.velocity.X = projectile.velocity.X * 1f;
-            		}
-        	}
-
-
-        }
- }
+        public override void AI()
+        {            
+			projectile.ai[0] += 1f;
+			if (projectile.ai[0] >= 75f)
+			{
+				projectile.velocity.Y = projectile.velocity.Y + 0.05f;
+				projectile.velocity.X = projectile.velocity.X * 1f;
+			}
+			if (Main.rand.Next(2) == 0)
+			{
+				Dust.NewDust(projectile.position + projectile.velocity, projectile.width, projectile.height, mod.DustType("Pancake"), projectile.velocity.X * 0.5f, projectile.velocity.Y * 0.5f);
+			}
+		}
+		public override void Kill(int timeLeft)
+		{
+			for (int k = 0; k < 5; k++)
+			{
+				Dust.NewDust(projectile.position + projectile.velocity, projectile.width, projectile.height, mod.DustType("Pancake"), projectile.oldVelocity.X * 0f, projectile.oldVelocity.Y * 0f);
+			}
+		}		
+	}
+}

@@ -15,8 +15,8 @@ namespace CookieMod.Projectiles
 		}
         public override void SetDefaults()
         {
-            projectile.width = 20;
-            projectile.height = 20;
+            projectile.width = 10;
+            projectile.height = 24;
             projectile.friendly = true;
             projectile.aiStyle = 1;
             projectile.thrown = true;
