@@ -10,7 +10,7 @@ namespace CookieMod.Items.Weapons
     {
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Bunny Book");
+			DisplayName.SetDefault("Tome of the Bunny");
 			Tooltip.SetDefault("Shoots a bit of fur at your enemies");
 		}
         public override void SetDefaults()
@@ -30,7 +30,7 @@ namespace CookieMod.Items.Weapons
             item.UseSound = SoundID.Item21;            //this is the 
             item.autoReuse = true;
             item.shoot = mod.ProjectileType ("BunnyBolt");  //this make the item shoot 
-            item.shootSpeed = 6f;    //projectile speed when shoot
+            item.shootSpeed = 8f;    //projectile speed when shoot
         }      
 	public override void AddRecipes()
 	{

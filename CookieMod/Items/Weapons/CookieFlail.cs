@@ -12,8 +12,8 @@ namespace CookieMod.Items.Weapons
     {
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Cookie Flail");
-			Tooltip.SetDefault("just a normal flail, like the ball of hurt!");
+			DisplayName.SetDefault("Cookie Crusher");
+			Tooltip.SetDefault("Just a normal flail, like the ball of hurt!");
 		}
         public override void SetDefaults()
         {

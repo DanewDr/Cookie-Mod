@@ -20,7 +20,7 @@ namespace CookieMod.Items.Weapons
             item.width = 30;
             item.height = 32;
             item.value = 2000;
-            item.rare = 2;
+            item.rare = 3;
 	    item.noMelee = true; // Makes sure that the animation when using the item doesn't hurt NPCs.
             item.useStyle = 5; // Set the correct useStyle.
             item.useAnimation = 40; // Determines how long the animation lasts. 

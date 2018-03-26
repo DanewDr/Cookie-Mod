@@ -34,5 +34,13 @@ namespace CookieMod.Items.Weapons           //We need this to basically indicate
             item.shootSpeed = 4.5f;
             item.mana = 5;			
         }
+        public override void AddRecipes()
+        {
+            ModRecipe recipe = new ModRecipe(mod);
+            recipe.AddIngredient(null, "HoneyCookie", 13);
+            recipe.SetResult(this);
+			recipe.AddTile(null, "CookieWorkbench"); 
+            recipe.AddRecipe();
+        }		
     }
 }

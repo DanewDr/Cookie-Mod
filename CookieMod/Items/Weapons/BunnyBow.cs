@@ -11,7 +11,7 @@ namespace CookieMod.Items.Weapons
     {
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Bunny Bow");
+			DisplayName.SetDefault("Bun-Bow");
 			Tooltip.SetDefault("The string is where all the power comes from");
 		}		
         public override void SetDefaults()

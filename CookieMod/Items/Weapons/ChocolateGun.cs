@@ -7,7 +7,7 @@ namespace CookieMod.Items.Weapons
     {
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Chocolate Gun");
+			DisplayName.SetDefault("Chocolate Pea-Shooter");
 			Tooltip.SetDefault("");
 		}
         public override void SetDefaults()

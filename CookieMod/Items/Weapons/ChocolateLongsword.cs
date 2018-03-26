@@ -15,7 +15,7 @@ namespace CookieMod.Items.Weapons
 		}
         public override void SetDefaults()
         {         
-            item.damage = 26;                        
+            item.damage = 50;                        
             item.melee = true;                     //this make the item do magic 
             item.width = 28;
             item.height = 28;
@@ -25,6 +25,8 @@ namespace CookieMod.Items.Weapons
             item.knockBack = 3f;        
             item.rare = 5;            //mana use
             item.autoReuse = true;
+            item.shootSpeed = 16f;
+            item.shoot = mod.ProjectileType("ChocolateCyclone");   			
         }
 		public override void MeleeEffects(Player player, Rectangle hitbox)
 		{
