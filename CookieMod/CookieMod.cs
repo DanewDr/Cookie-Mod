@@ -37,14 +37,26 @@ namespace CookieMod
 				AutoloadBackgrounds = true
             };
         }
-	public override void AddRecipeGroups()
+		public override void AddRecipeGroups()
         {
-		RecipeGroup group = new RecipeGroup(() => Language.misc[37] + " Corrupted Bar", new int[] //Souls is the name of the RecipeGroup
+		RecipeGroup group = new RecipeGroup(() => Lang.misc[37] + " Corrupted Bar", new int[] //Souls is the name of the RecipeGroup
 		{
 			ItemID.DemoniteBar,
 			ItemID.CrimtaneBar,
 		});
-            RecipeGroup.RegisterGroup("CorruptBar", group);
-        }
+        RecipeGroup.RegisterGroup("CorruptBar", group);
+		group = new RecipeGroup(() => Lang.misc[37] + " Gilded Sieve", new int []
+		{
+			ItemType("GoldSieve"),
+			ItemType("PlatinumSieve"),
+		});
+		RecipeGroup.RegisterGroup("GildedSieve", group);
+		group = new RecipeGroup(() => Lang.misc[37] + " Evil Sieve", new int []
+		{
+			ItemType("DemoniteSieve"),
+			ItemType("CrimtaneSieve"),
+		});
+		RecipeGroup.RegisterGroup("EvilSieve", group);
+		}		
     }
 }

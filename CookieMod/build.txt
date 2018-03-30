@@ -1,5 +1,5 @@
 author = Danew Dr and CookieBiscuit
-version = 0.2.0
+version = 0.2.5
 displayName = Cookie Mod
 homepage = http://forums.terraria.org/index.php?threads/cookie-mod.49824/
 hideCode = false
