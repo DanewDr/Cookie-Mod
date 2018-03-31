@@ -38,7 +38,7 @@ namespace CookieMod.Buffs
 		public override void Update(NPC npc, ref int buffIndex)
 		{
 			npc.AddBuff(mod.BuffType("FoodPoisoning"), 1);
-		  	npc.statDefense -= 2;
+		  	npc.defense -= 2;
 		}		
     }
 }
