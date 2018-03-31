@@ -19,22 +19,22 @@ namespace CookieMod.Items.Food
 		{
 			item.width = 22;
 			item.height = 24;
-      			item.damage = 4;
-      			item.crit = 2;
-      			item.UseSound = SoundID.Item2;
+      		item.damage = 4;
+      		item.crit = 2;
+      		item.UseSound = SoundID.Item2;
 			item.maxStack = 30;
 			item.rare = 1;
 			item.consumable = true;
-      			item.value = 400;
+			item.value = 400;
 			item.shoot = mod.ProjectileType ("SauteedMushroom");
-			item.ammo = item.type;
+			item.ammo = mod.ItemType("Batter");
 		}
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(ItemID.Mushroom);
 			recipe.SetResult(this);
-      recipe.AddTile(TileID.Furnace);
+			recipe.AddTile(TileID.Furnaces);
 			recipe.AddRecipe();
 		}
 	}
