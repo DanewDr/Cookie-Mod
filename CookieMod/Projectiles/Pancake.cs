@@ -27,12 +27,6 @@ namespace CookieMod.Projectiles
 		}
         public override void AI()
         {            
-			projectile.ai[0] += 1f;
-			if (projectile.ai[0] >= 75f)
-			{
-				projectile.velocity.Y = projectile.velocity.Y + 0.05f;
-				projectile.velocity.X = projectile.velocity.X * 1f;
-			}
 			if (Main.rand.Next(2) == 0)
 			{
 				Dust.NewDust(projectile.position + projectile.velocity, projectile.width, projectile.height, mod.DustType("Pancake"), projectile.velocity.X * 0.5f, projectile.velocity.Y * 0.5f);
