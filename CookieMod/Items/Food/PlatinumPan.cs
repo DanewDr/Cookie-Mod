@@ -8,21 +8,21 @@ using Terraria.ModLoader;
 
 namespace CookieMod.Items.Food
 {
-    public class FryingPan : CookClass
+    public class PlatinumPan : CookClass
     {
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Frying Pan");
+			DisplayName.SetDefault("Gilded Frying Pan");
 			Tooltip.SetDefault("Fries food instantly");
 		}
         public override void SafeSetDefaults()
         {
-            item.damage = 13;
+            item.damage = 18;
             item.melee = true;
             item.width = 30;
             item.height = 30;
-            item.useTime = 45;
-            item.useAnimation = 45;     
+            item.useTime = 40;
+            item.useAnimation = 40;     
             item.useStyle = 1;
             item.knockBack = 0;
             item.rare = 2;
@@ -35,7 +35,7 @@ namespace CookieMod.Items.Food
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);      
-	   		recipe.AddRecipeGroup("IronBar", 8);
+	   		recipe.AddIngredient(ItemID.PlatinumBar, 8);
 			recipe.AddTile(TileID.Anvils);
             recipe.SetResult(this);
             recipe.AddRecipe();

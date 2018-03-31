@@ -8,26 +8,27 @@ using Terraria.ModLoader;
 
 namespace CookieMod.Items.Food
 {
-    public class FryingPan : CookClass
+    public class MetorPan : CookClass
     {
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Frying Pan");
+			DisplayName.SetDefault("Meteoric Frying Pan");
 			Tooltip.SetDefault("Fries food instantly");
 		}
         public override void SafeSetDefaults()
         {
-            item.damage = 13;
+            item.damage = 29;
             item.melee = true;
             item.width = 30;
             item.height = 30;
-            item.useTime = 45;
-            item.useAnimation = 45;     
+            item.useTime = 30;
+            item.useAnimation = 30;     
             item.useStyle = 1;
-            item.knockBack = 0;
+            item.knockBack = 1;
+			item.crit = 3;
             item.rare = 2;
             item.UseSound = SoundID.Item1;
-            item.autoReuse = false;
+            item.autoReuse = true;
             item.shoot = mod.ProjectileType ("Pancake");
 			item.shootSpeed = 9f;
 			item.useAmmo = mod.ItemType("Batter");			
@@ -35,7 +36,7 @@ namespace CookieMod.Items.Food
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);      
-	   		recipe.AddRecipeGroup("IronBar", 8);
+	   		recipe.AddIngredient(ItemID.MeteoriteBar, 8);
 			recipe.AddTile(TileID.Anvils);
             recipe.SetResult(this);
             recipe.AddRecipe();
