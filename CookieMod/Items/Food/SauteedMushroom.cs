@@ -13,7 +13,7 @@ namespace CookieMod.Items.Food
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Sauteed Mushroom");
-			Tooltip.SetDefault("<right> to eat!");
+			Tooltip.SetDefault("");
 		}
 		public override void SafeSetDefaults()
 		{
@@ -26,25 +26,8 @@ namespace CookieMod.Items.Food
 			item.rare = 1;
 			item.consumable = true;
       			item.value = 400;
-			item.shoot = mod.ProjectileType ("SauteedMushrooms");
+			item.shoot = mod.ProjectileType ("SauteedMushroom");
 			item.ammo = item.type;
-		}
-		public override bool CanRightClick()
-		{
-			return true;
-		}
-
-		public override void RightClick(Player player)
-		{
-      int health = player.statLife + 25
-			if (health > statLifeMax)
-      {
-        player.statLife == player.statLifeMax;
-      }
-      else
-      {
-      player.statLife == health;
-      }
 		}
 		public override void AddRecipes()
 		{
