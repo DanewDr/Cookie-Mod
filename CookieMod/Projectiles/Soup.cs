@@ -7,11 +7,11 @@ using Terraria.ModLoader;
  
 namespace CookieMod.Projectiles
 {
-    public class SharkSoup : ModProjectile
+    public class Soup : ModProjectile
     {
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Shark Soup");     //The English name of the projectile
+			DisplayName.SetDefault("Soup");     //The English name of the projectile
 		}		
         public override void SetDefaults()
         {
@@ -22,8 +22,8 @@ namespace CookieMod.Projectiles
             projectile.penetrate = -1;
             projectile.timeLeft = 125;
             projectile.extraUpdates = 3;
-        }
- 
+			projectile.alpha = 255;
+        } 
         public override void AI()
         {
             if (projectile.timeLeft > 125)
@@ -34,7 +34,7 @@ namespace CookieMod.Projectiles
             {
 			if (Main.rand.Next(1) == 0)
 			{
-				Dust.NewDust(projectile.position + projectile.velocity, projectile.width, projectile.height, mod.DustType("SharkSoup"), projectile.velocity.X * 0.5f, projectile.velocity.Y * 0.5f);
+				Dust.NewDust(projectile.position + projectile.velocity, projectile.width, projectile.height, mod.DustType("Soup"), projectile.velocity.X * 0.5f, projectile.velocity.Y * 0.5f);
 			}
             }
             else
@@ -42,7 +42,7 @@ namespace CookieMod.Projectiles
                 projectile.ai[0] += 1f;
             }
             return;
-        }
+        } 
         public override bool OnTileCollide(Vector2 oldVelocity)
         {
             projectile.Kill();
