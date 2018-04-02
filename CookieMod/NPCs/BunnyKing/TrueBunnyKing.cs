@@ -76,15 +76,21 @@ namespace CookieMod.NPCs.BunnyKing
             }
             npc.netUpdate = true;	
 			
+			if (npc.ai[0] % 300 ==3)
+			{
+				NPC.NewNPC((int)npc.position.X, (int)npc.position.Y, mod.NPCType("BunnyWarrior"));
+			}
 			if (npc.ai[0] % 600 ==3)
 			{
-				NPC.NewNPC((int)npc.position.X, (int)npc.position.Y, mod.NPCType("BunnyWarrior"), 2);
 				NPC.NewNPC((int)npc.position.X, (int)npc.position.Y, mod.NPCType("GoldenBunnyWarrior"));
+			}	
+			if (npc.ai[0] % 1200 ==3)
+			{
 				if (Main.expertMode)
 				{	
 					NPC.NewNPC((int)npc.position.X, (int)npc.position.Y, mod.NPCType("TheChariot"));					
 				}
-			}	
+			}			
 			npc.ai[1] += 0;	
 		}		
         public override void ScaleExpertStats(int numPlayers, float bossLifeScale)
