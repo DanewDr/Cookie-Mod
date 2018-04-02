@@ -20,7 +20,7 @@ namespace CookieMod.Items.Food
         {
             item.width = 26;
             item.height = 24;
-            item.damage = 12
+            item.damage = 12;
             item.value = 100;
             item.rare = 1;
             item.maxStack = 999;
@@ -31,7 +31,7 @@ namespace CookieMod.Items.Food
         {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(null, "DoughBall", 3);
-			      recipe.AddTile(TileID.Furnaces);
+	    recipe.AddTile(TileID.Furnaces);
             recipe.SetResult(this, 6);
             recipe.AddRecipe();
         }
