@@ -13,8 +13,8 @@ namespace CookieMod.Items
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault(“Cook Book”);
-			Tooltip.SetDefault(“7% increased culinary damage”);
+			DisplayName.SetDefault("Cook Book");
+			Tooltip.SetDefault("7% increased culinary damage");
 
 		public override void SetDefaults()
 		{
