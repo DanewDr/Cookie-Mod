@@ -15,7 +15,7 @@ namespace CookieMod.Items
 		{
 			DisplayName.SetDefault("Cook Book");
 			Tooltip.SetDefault("7% increased culinary damage");
-
+		}
 		public override void SetDefaults()
 		{
 			item.rare = 2;
@@ -26,7 +26,7 @@ namespace CookieMod.Items
 		public override void UpdateAccessory(Player player, bool hideVisual)
 		{
 			CookDamagePlayer modPlayer = CookDamagePlayer.ModPlayer(player);
-			modPlayer.CookDamage += 0.07f;
+			modPlayer.cookDamage += 0.07f;
 		}
 	}
 }
