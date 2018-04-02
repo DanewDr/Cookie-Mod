@@ -17,6 +17,18 @@ namespace CookieMod.Items
 				item.shoot = mod.ProjectileType ("Water");
 				item.ammo = mod.ItemType("BloodySoup");
 			}
+			if (item.type == ItemID.BottledHoney)
+			{
+				item.damage = 8;
+				item.shoot = mod.ProjectileType("HoneyStream");
+				item.ammo = mod.ItemType("BloodySoup");
+			}
+			if (item.type == ItemID.BowlofSoup)
+			{
+				item.damage = 6;
+				item.shoot = mod.ProjectileType("Soup");
+				item.ammo = mod.ItemType("BloodySoup");
+			}	
 		}
 	}
 }
