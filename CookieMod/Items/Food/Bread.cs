@@ -24,8 +24,9 @@ namespace CookieMod.Items.Food
             item.value = 100;
             item.rare = 1;
             item.maxStack = 999;
-			      item.consumable = true;
-			      item.ammo = item.type;
+	    item.consumable = true;
+	    item.shoot = mod.ProjectileType ("BreadLoaf");
+	    item.ammo = mod.ItemType("Cookie");
         }
         public override void AddRecipes()
         {
