@@ -39,25 +39,5 @@ namespace CookieMod.Items.Weapons
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}
-
-		public override bool AltFunctionUse(Player player)
-		{
-			return true;
-		}
-
-		public override bool CanUseItem(Player player)
-		{
-			if (player.altFunctionUse == 2)
-			{
-				item.shoot = ProjectileID.Bullet;
-        item.useAmmo = AmmoID.Bullet;
-			}
-			else
-			{
-        item.shoot = ProjectileID.WoodenArrowFriendly;
-        item.useAmmo = AmmoID.Arrow;
-			}
-			return base.CanUseItem(player);
-		}
 	}
 }
