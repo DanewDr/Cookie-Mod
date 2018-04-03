@@ -26,7 +26,7 @@ namespace CookieMod.Items.Food
 			item.rare = 2;
 			item.useTime = 21;
 			item.useAnimation = 21;
-			item.UseSound = SoundID.Item18;
+			item.UseSound = SoundID.Item34;
 			item.useStyle = 5;
 			item.noMelee = true;
 			item.autoReuse = false;
