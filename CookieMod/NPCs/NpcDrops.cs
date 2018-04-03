@@ -130,15 +130,6 @@ namespace CookieMod.NPCs
                         Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("Rot"), Main.rand.Next(3, 5));
                     }
                 }
-            }
-            if (Main.player[Main.myPlayer].ZoneCrimson)			
-            {
-                if (Main.rand.Next(6) == 0) 
-                {
-                    {
-                        Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("Rot"), Main.rand.Next(3, 5));
-                    }
-                }
             }			
         }
     }
