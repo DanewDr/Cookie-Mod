@@ -25,6 +25,7 @@ namespace CookieMod.Items.Weapons
             item.knockBack = 6f;        
             item.rare = 3;            
             item.autoReuse = true;
+            item.UseSound = SoundID.Item1;					
         }     
 	public override void AddRecipes()
 	{

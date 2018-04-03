@@ -27,7 +27,7 @@ namespace CookieMod.Items.Weapons
             item.value = 1000;
             item.rare = 2;
             item.mana = 27;
-            item.UseSound = SoundID.Item21;
+            item.UseSound = SoundID.Item20;
             item.autoReuse = true;
             item.shoot = mod.ProjectileType ("GoldBunnyBolt");
             item.shootSpeed = 10f;

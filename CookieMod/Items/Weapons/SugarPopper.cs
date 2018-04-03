@@ -15,7 +15,7 @@ namespace CookieMod.Items.Weapons
 		public override void SetDefaults()
 		{
 			item.damage = 20;
-			item.melee = true;
+			item.ranged = true;
 			item.width = 20;
 			item.height = 40;
 			item.useTime = 13;

@@ -26,7 +26,8 @@ namespace CookieMod.Items.Weapons
             item.rare = 5;            //mana use
             item.autoReuse = true;
             item.shootSpeed = 16f;
-            item.shoot = mod.ProjectileType("ChocolateCyclone");   			
+            item.shoot = mod.ProjectileType("ChocolateCyclone");
+            item.UseSound = SoundID.Item1;			   			
         }
 		public override void MeleeEffects(Player player, Rectangle hitbox)
 		{

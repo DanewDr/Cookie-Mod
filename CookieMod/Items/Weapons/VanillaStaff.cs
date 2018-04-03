@@ -28,7 +28,7 @@ namespace CookieMod.Items.Weapons
             item.value = 1000;
             item.rare = 2;
             item.mana = 4;             //mana use
-            item.UseSound = SoundID.Item21;            //this is the 
+            item.UseSound = SoundID.Item20;            //this is the 
             item.autoReuse = true;
             item.shoot = mod.ProjectileType ("MixedChocolate");  //this make the item shoot 
             item.shootSpeed = 9f;    //projectile speed when shoot

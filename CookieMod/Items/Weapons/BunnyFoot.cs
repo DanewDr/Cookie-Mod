@@ -26,7 +26,7 @@ namespace CookieMod.Items.Weapons
 			item.noMelee = true;
 			item.knockBack = 3f;
 			item.rare = 1;
-			item.UseSound = SoundID.Item20;
+			item.UseSound = SoundID.Item44;
 			item.shoot = mod.ProjectileType("Bunny");
 			item.shootSpeed = 6f;
             item.buffTime = 3600;

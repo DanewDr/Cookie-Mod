@@ -25,7 +25,7 @@ namespace CookieMod.Items.Weapons
             item.noMelee = true;        
             item.rare = 3;
             item.mana = 15;             //mana use
-            item.UseSound = SoundID.Item21;            //this is the 
+            item.UseSound = SoundID.Item20;            //this is the 
             item.autoReuse = true;
             item.shoot = mod.ProjectileType ("PopRockBeam");  //this make the item shoot 
             item.shootSpeed = 5f;    //projectile speed when shoot

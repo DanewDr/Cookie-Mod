@@ -25,6 +25,7 @@ namespace CookieMod.Items.Weapons
             item.knockBack = 1f;        
             item.rare = 2;            //mana use
             item.autoReuse = true;
+            item.UseSound = SoundID.Item1;			
         }
 		public override void MeleeEffects(Player player, Rectangle hitbox)
 		{
