@@ -14,12 +14,12 @@ namespace CookieMod.NPCs
 		}
         public override void SetDefaults()
         {
-            npc.width = 39;
-            npc.height = 34;
+            npc.width = 40;
+            npc.height = 32;
             npc.damage = 10;
             npc.defense = 10;
             npc.lifeMax = 200;
-            npc.HitSound = SoundID.NPCHit1;
+            npc.HitSound = SoundID.Item2;
             npc.DeathSound = SoundID.NPCDeath13;
             npc.value = 60f;
             npc.knockBackResist = 0.5f;
@@ -37,13 +37,6 @@ namespace CookieMod.NPCs
             npc.frame.Y = frame * frameHeight;
 
             npc.spriteDirection = npc.direction;
-        }
-        public override void NPCLoot()  //Npc drop
-        {
-            {
-                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("Cookie"), 2); //Item spawn
-            }
-
         }
     }
 }

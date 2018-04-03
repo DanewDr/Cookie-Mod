@@ -33,8 +33,8 @@ namespace CookieMod.NPCs.CorruptCookie1
             npc.lavaImmune = true;
             npc.noGravity = true;
             npc.noTileCollide = true;
-            npc.HitSound = mod.GetLegacySoundSlot(SoundType.Item, "Sounds/Custom/Crunch");
-            npc.DeathSound = mod.GetLegacySoundSlot(SoundType.Item, "Sounds/Custom/LongCrunch");
+            npc.HitSound = SoundID.Item2;
+            npc.DeathSound = SoundID.NPCDeath13;			
             npc.buffImmune[24] = true;
             music = mod.GetSoundSlot(SoundType.Music, "Sounds/Music/CorruptCookie");
             npc.netAlways = true;

@@ -1,4 +1,9 @@
+
+using System;
+using System.Collections.Generic;
+using System.IO;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -37,11 +42,14 @@ namespace CookieMod.NPCs
 				Gore.NewGore(npc.position, npc.velocity, mod.GetGoreSlot("Gores/Addict4"), 1f);
             }
         }
-		 public override float SpawnChance(NPCSpawnInfo spawnInfo)
-        {
-            return Main.dayTime && Main.tile[(spawnInfo.spawnTileX), (spawnInfo.spawnTileY)].type == mod.TileType("CookieDirtTile") ? 5.5f : 0f; //100f is the spown rate so If you want your NPC to be rarer just change that value less the 100f or something.
-			return !Main.dayTime && Main.tile[(spawnInfo.spawnTileX), (spawnInfo.spawnTileY)].type == mod.TileType("CookieDirtTile") ? 10.5f : 0f;
-		}      //Main.dayTime is day time, !Main.dayTime is night time   |||     Main.tile[(spawnInfo.spawnTileX), (spawnInfo.spawnTileY)].type == mod.TileType("CustomTileBlock") make the npc spawn only on this block/tile, make sure u add the tile that your using for the biome
+		public override float SpawnChance (NPCSpawnInfo spawnInfo)		
+		{
+			if (spawnInfo.player.GetModPlayer<MyPlayer>(mod).ZoneCookieBiome);
+			{			
+				return Main.dayTime && Main.tile[(spawnInfo.spawnTileX), (spawnInfo.spawnTileY)].type == mod.TileType("CookieDirtTile") ? 5.5f : 0f;
+				return !Main.dayTime && Main.tile[(spawnInfo.spawnTileX), (spawnInfo.spawnTileY)].type == mod.TileType("CookieDirtTile") ? 0.5f : 0f;
+			}	
+		}
         public override void NPCLoot()  //Npc drop
         {
             {

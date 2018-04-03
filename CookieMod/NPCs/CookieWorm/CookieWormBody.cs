@@ -26,7 +26,7 @@ namespace CookieMod.NPCs.CookieWorm
             npc.netAlways = true;
             npc.noGravity = true;
             npc.dontCountMe = true;
-            npc.HitSound = SoundID.NPCHit1;
+            npc.HitSound = SoundID.NPCHit2;
         }
  
         public override bool PreAI()

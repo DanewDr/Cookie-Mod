@@ -20,7 +20,7 @@ namespace CookieMod.NPCs
             npc.defense = 20;
             npc.lifeMax = 200;
             npc.HitSound = SoundID.NPCHit1;
-            npc.DeathSound = SoundID.NPCDeath13;
+            npc.DeathSound = SoundID.NPCDeath1;
             npc.value = 60f;
             npc.knockBackResist = 0.5f;
             npc.aiStyle = 26; 

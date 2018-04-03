@@ -31,9 +31,9 @@ namespace CookieMod.NPCs.CookieWorm
             npc.lavaImmune = true;       //this make the npc immune to lava
             npc.noGravity = true;           //this make the npc float
             npc.noTileCollide = true;        //this make the npc go tru walls
-            npc.HitSound = SoundID.NPCHit1;
             npc.behindTiles = true;
-            npc.DeathSound = SoundID.NPCDeath1;
+            npc.HitSound = SoundID.Item2;
+            npc.DeathSound = SoundID.NPCDeath13;	
             npc.value = Item.buyPrice(0, 0, 2, 10);
             npc.npcSlots = 1f;
             npc.netAlways = true;

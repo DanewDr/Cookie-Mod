@@ -30,8 +30,8 @@ namespace CookieMod.NPCs.BunnyKing
             npc.lavaImmune = false;
             npc.noGravity = false;
             npc.noTileCollide = false;
-            npc.HitSound = mod.GetLegacySoundSlot(SoundType.Item, "Sounds/Custom/Crunch");
-            npc.DeathSound = mod.GetLegacySoundSlot(SoundType.Item, "Sounds/Custom/LongCrunch");
+            npc.HitSound = SoundID.NPCHit1;
+            npc.DeathSound = SoundID.NPCDeath1;
             npc.buffImmune[24] = true;
             npc.netAlways = true;
         }		
