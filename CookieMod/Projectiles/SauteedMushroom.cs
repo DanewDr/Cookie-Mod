@@ -15,10 +15,17 @@ namespace CookieMod.Projectiles
 		}
 		public override void SetDefaults()
 		{
-			projectile.CloneDefaults(ProjectileID.MiniSharkron);
 			aiType = ProjectileID.MiniSharkron;
 			projectile.width = 10;
 			projectile.height = 12;
 		}
-        }
- }
+		public override void AI()
+		{
+            if (projectile.localAI[0] == 0f)
+            {
+				Main.PlaySound(SoundID.Item1, projectile.position);
+                projectile.localAI[0] = 1f;
+            }	
+		}			
+	}		
+}

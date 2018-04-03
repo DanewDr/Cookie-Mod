@@ -30,7 +30,7 @@ namespace CookieMod.Projectiles
             projectile.soundDelay--;
             if (projectile.soundDelay <= 0)//this is the proper sound delay for this type of weapon
             {
-                Main.PlaySound(2, (int)projectile.Center.X, (int)projectile.Center.Y, 15);    //this is the sound when the weapon is used
+                Main.PlaySound(2, (int)projectile.Center.X, (int)projectile.Center.Y, 1);    //this is the sound when the weapon is used
                 projectile.soundDelay = 45;    //this is the proper sound delay for this type of weapon
             }
             //-----------------------------------------------How the projectile works---------------------------------------------------------------------

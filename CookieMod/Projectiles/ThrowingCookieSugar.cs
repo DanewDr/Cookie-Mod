@@ -15,8 +15,8 @@ namespace CookieMod.Projectiles
 		}
 		public override void SetDefaults()
 		{
-			aiType = ProjectileID.MiniSharkron;
-			projectile.CloneDefaults(ProjectileID.MiniSharkron);
+			aiType = ProjectileID.WoodenArrowFriendly;
+            projectile.aiStyle = 1;			
 			projectile.friendly = true;
 			projectile.tileCollide = true;
 			projectile.ignoreWater = false;
@@ -27,16 +27,15 @@ namespace CookieMod.Projectiles
 		}
 		public override void AI()
 		{
+            if (projectile.localAI[0] == 0f)
+            {
+				Main.PlaySound(SoundID.Item1, projectile.position);
+                projectile.localAI[0] = 1f;
+            }			
 			if (Main.rand.Next(2) == 0)
 			{
 				Dust.NewDust(projectile.position + projectile.velocity, projectile.width, projectile.height, mod.DustType("SugarCrumbs"), projectile.velocity.X * 0.5f, projectile.velocity.Y * 0.5f);
 			}				
-            projectile.ai[0] += 1f;
-            if (projectile.ai[0] >= 50f)       //how much time the projectile can travel before landing
-          	{
-				projectile.velocity.Y = projectile.velocity.Y + 0.05f;    // projectile fall velocity
-                projectile.velocity.X = projectile.velocity.X * 1f;    // projectile velocity
-            }
         }
 		public override void Kill(int timeLeft)
 		{
@@ -44,6 +43,11 @@ namespace CookieMod.Projectiles
 			{
 				Dust.NewDust(projectile.position + projectile.velocity, projectile.width, projectile.height, mod.DustType("SugarCrumbs"), projectile.oldVelocity.X * 0f, projectile.oldVelocity.Y * 0f);
 			}
+		}
+		public override bool OnTileCollide(Vector2 oldVelocity)
+		{
+			Main.PlaySound(SoundID.Item10, projectile.position);
+			return true;
 		}		
 	}
 }

@@ -15,7 +15,6 @@ namespace CookieMod.Projectiles
 		}
 		public override void SetDefaults()
 		{
-			projectile.CloneDefaults(ProjectileID.MiniSharkron);
 			aiType = ProjectileID.MiniSharkron;
 			projectile.width = 16;
 			projectile.height = 16;
@@ -34,5 +33,10 @@ namespace CookieMod.Projectiles
 				Dust.NewDust(projectile.position + projectile.velocity, projectile.width, projectile.height, mod.DustType("GoldBunny"), projectile.oldVelocity.X * 0f, projectile.oldVelocity.Y * 0f);
 			}
 		}
+		public override bool OnTileCollide(Vector2 oldVelocity)
+		{
+			Main.PlaySound(SoundID.Item10, projectile.position);
+			return true;
+		}		
 	}
 }

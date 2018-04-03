@@ -40,6 +40,11 @@ namespace CookieMod.Projectiles
 			{
 				Dust.NewDust(projectile.position + projectile.velocity, projectile.width, projectile.height, mod.DustType("GingerCrumbs"), projectile.oldVelocity.X * 0f, projectile.oldVelocity.Y * 0f);
 			}
+		}
+		public override bool OnTileCollide(Vector2 oldVelocity)
+		{
+			Main.PlaySound(SoundID.Item10, projectile.position);
+			return true;
 		}		
     }
 }

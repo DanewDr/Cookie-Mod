@@ -15,8 +15,8 @@ namespace CookieMod.Projectiles
 		}
 		public override void SetDefaults()
 		{
-			aiType = ProjectileID.MiniSharkron;
-			projectile.CloneDefaults(ProjectileID.MiniSharkron);
+			aiType = ProjectileID.SnowBallFriendly;
+			projectile.CloneDefaults(ProjectileID.SnowBallFriendly);
 			projectile.friendly = true;
 			projectile.tileCollide = true;
 			projectile.ignoreWater = false;
@@ -44,6 +44,11 @@ namespace CookieMod.Projectiles
 			{
 				Dust.NewDust(projectile.position + projectile.velocity, projectile.width, projectile.height, mod.DustType("Sugar"), projectile.oldVelocity.X * 0f, projectile.oldVelocity.Y * 0f);
 			}
+		}
+		public override bool OnTileCollide(Vector2 oldVelocity)
+		{
+			Main.PlaySound(SoundID.Item10, projectile.position);
+			return true;
 		}		
 	}
 }

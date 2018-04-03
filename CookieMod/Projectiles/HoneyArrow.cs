@@ -47,6 +47,11 @@ namespace CookieMod.Projectiles
         public override void OnHitNPC(NPC target, int damage, float knockback, bool crit)
         {
 			target.AddBuff(mod.BuffType("Honeyed"),800);
-        }		
+        }
+		public override bool OnTileCollide(Vector2 oldVelocity)
+		{
+			Main.PlaySound(SoundID.Item10, projectile.position);
+			return true;
+		}		
     }
 }

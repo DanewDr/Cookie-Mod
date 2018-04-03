@@ -16,7 +16,7 @@ namespace CookieMod.Projectiles
 		public override void SetDefaults()
 		{
 			aiType = ProjectileID.MiniSharkron;
-			projectile.CloneDefaults(ProjectileID.MiniSharkron);
+            projectile.aiStyle = 1;			
 			projectile.friendly = true;
 			projectile.tileCollide = true;
 			projectile.ignoreWater = false;
@@ -26,7 +26,12 @@ namespace CookieMod.Projectiles
 			projectile.extraUpdates = 1;
 		}
         public override void AI()
-        {            
+        {
+            if (projectile.localAI[0] == 0f)
+            {
+				Main.PlaySound(SoundID.Item8, projectile.position);
+                projectile.localAI[0] = 1f;
+            }		            
 			projectile.ai[0] += 1f;
             if (projectile.ai[0] >= 75f)       //how much time the projectile can travel before landing
           	{
@@ -44,6 +49,11 @@ namespace CookieMod.Projectiles
 			{
 				Dust.NewDust(projectile.position + projectile.velocity, projectile.width, projectile.height, mod.DustType("HardSugar"), projectile.oldVelocity.X * 0f, projectile.oldVelocity.Y * 0f);
 			}
+		}
+		public override bool OnTileCollide(Vector2 oldVelocity)
+		{
+			Main.PlaySound(SoundID.Item10, projectile.position);
+			return true;
 		}		
 	}
 }

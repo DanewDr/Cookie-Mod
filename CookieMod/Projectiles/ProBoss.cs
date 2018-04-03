@@ -26,7 +26,7 @@ namespace CookieMod.Projectiles
         {
             if (projectile.localAI[0] == 0f)
             {
-                Main.PlaySound(2, (int)projectile.position.X, (int)projectile.position.Y, 20);
+				Main.PlaySound(SoundID.Item8, projectile.position);
                 projectile.localAI[0] = 1f;
             }
             int num666 = 8;
