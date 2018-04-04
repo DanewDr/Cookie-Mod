@@ -11,7 +11,7 @@ namespace CookieMod.Items.Weapons
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Ginger Tome");
-			Tooltip.SetDefault("Fires a ball of ginger crumbs");
+			Tooltip.SetDefault("Fires a controllable ball of ginger crumbs");
 		}
         public override void SetDefaults()
         {

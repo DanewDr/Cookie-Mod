@@ -17,8 +17,8 @@ namespace CookieMod.Items.Weapons
 		}
         public override void SetDefaults()
         {
-            item.width = 30;
-            item.height = 10;
+            item.width = 32;
+            item.height = 32;
             item.value = 2000;
             item.rare = 2;
 			item.noMelee = true; // Makes sure that the animation when using the item doesn't hurt NPCs.

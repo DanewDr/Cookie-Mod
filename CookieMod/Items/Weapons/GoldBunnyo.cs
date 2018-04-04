@@ -11,7 +11,7 @@ namespace CookieMod.Items.Weapons
     {
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("BunnYo");
+			DisplayName.SetDefault("Golden BunnYo");
 			Tooltip.SetDefault("Actually the silkiest yoyo in all the lands");
 		}
         public override void SetDefaults()

@@ -8,7 +8,7 @@ namespace CookieMod.Items.Weapons
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Ginger Bullet");
-			Tooltip.SetDefault("This is a modded bullet ammo.");
+			Tooltip.SetDefault("");
 		}
 		public override void SetDefaults()
 		{

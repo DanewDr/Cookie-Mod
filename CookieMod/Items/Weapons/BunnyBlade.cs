@@ -13,7 +13,7 @@ namespace CookieMod.Items.Weapons   //where is located
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Bunny Blade");
-			Tooltip.SetDefault("Despite being essentialy cloth, it's actually pretty effective");
+			Tooltip.SetDefault("Despite being essentially cloth, it's actually pretty effective");
 		}
         public override void SetDefaults()
         {
