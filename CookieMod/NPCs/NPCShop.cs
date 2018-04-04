@@ -15,6 +15,8 @@ namespace CookieMod.NPCs
                 {
                     shop.item[nextSlot].SetDefaults(mod.ItemType("Milk"));
                     nextSlot++;
+					shop.item[nextSlot].SetDefaults(mod.ItemType("CookBook"));
+					nextSlot++;
                 }    
                 break;
             }
