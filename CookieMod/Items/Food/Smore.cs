@@ -42,7 +42,7 @@ namespace CookieMod.Items.Food
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(null, "DoughBall", 2);
+            recipe.AddIngredient(null, "Wafer", 2);
             recipe.AddIngredient(ItemID.CookedMarshmallow);
             recipe.AddIngredient(null, "Chocolate", 4);
 	          recipe.AddTile(TileID.Campfire);
