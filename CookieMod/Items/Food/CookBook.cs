@@ -7,7 +7,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CookieMod.Items
+namespace CookieMod.Items.Food
 {
 	public class CookBook : ModItem
 	{
@@ -20,7 +20,7 @@ namespace CookieMod.Items
 		{
 			item.rare = 2;
 			item.accessory = true;
-			item.value = 100;
+			item.value = 10000;
 		}
 
 		public override void UpdateAccessory(Player player, bool hideVisual)

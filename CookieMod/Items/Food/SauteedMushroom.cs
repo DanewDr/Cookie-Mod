@@ -12,7 +12,7 @@ namespace CookieMod.Items.Food
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Sauteed Mushroom");
+			DisplayName.SetDefault("Sautéed Mushroom");
 			Tooltip.SetDefault("");
 		}
 		public override void SafeSetDefaults()

@@ -22,7 +22,7 @@ namespace CookieMod.Items.Food
             item.height = 24;
             item.damage = 17;
             item.value = 100;
-            item.rare = 1;
+            item.rare = 2;
             item.maxStack = 999;
 	          item.consumable = true;
 	          item.shoot = mod.ProjectileType ("GrilledCheese");
