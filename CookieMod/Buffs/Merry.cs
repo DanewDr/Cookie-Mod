@@ -18,10 +18,10 @@ namespace CookieMod.Buffs
         public override void Update(Player player, ref int buffIndex)
         {                                             //
             player.AddBuff(mod.BuffType("Merry"), 1); //this is an example of how to add your own buff
+	    player.AddBuff(BuffID.Confused, 1);
             player.statDefense -= 8;  //
       	    player.meleeDamage += .20f;
-	          player.meleeSpeed += .20f;
-            player.confused = true;
+	    player.meleeSpeed += .20f;
         }
     }
 }
