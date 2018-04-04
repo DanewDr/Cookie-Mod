@@ -9,7 +9,7 @@ using Terraria.ModLoader;
 
 namespace CookieMod.Items.Food
 {
-	public class CookBook : ModItem
+	public class CookBook : CookClass
 	{
 		public override void SetStaticDefaults()
 		{
