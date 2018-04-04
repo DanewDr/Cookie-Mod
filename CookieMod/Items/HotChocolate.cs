@@ -24,7 +24,7 @@ namespace CookieMod.Items
         item.width = 10;
         item.height = 10;
         item.buffType = mod.BuffType("WarmCozy");
-        item.buffTime = 7200;
+        item.buffTime = 1800;
 	item.consumable = true;
         item.value = 200;
         item.holdStyle = 1;
