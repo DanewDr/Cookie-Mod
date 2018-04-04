@@ -8,7 +8,7 @@ namespace CookieMod.Items.Placeable
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Crunch Dresser");
-			Tooltip.SetDefault("Change clothes and even store items!");
+			Tooltip.SetDefault("Allows you to change your clothes");
 		}
 		public override void SetDefaults()
 		{
