@@ -10,7 +10,7 @@ namespace CookieMod.Items
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Golden Bunny Fur");
-			Tooltip.SetDefault("Fur of the largest bunny in existance");
+			Tooltip.SetDefault("Fur from the largest bunny in existence");
 		}
 
         public override void SetDefaults()

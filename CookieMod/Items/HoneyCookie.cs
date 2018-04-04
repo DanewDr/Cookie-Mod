@@ -14,7 +14,7 @@ namespace CookieMod.Items
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Honey Cookie");
-			Tooltip.SetDefault("Possitively ravishing!");
+			Tooltip.SetDefault("Positively ravishing!");
 		}
         public override void SafeSetDefaults()
         {

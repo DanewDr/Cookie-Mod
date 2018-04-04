@@ -10,7 +10,7 @@ namespace CookieMod.Items     //We need this to basically indicate the folder wh
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Honey Shield");
-			Tooltip.SetDefault("Grants immunity to knckback\n8% summoner damage increase");
+			Tooltip.SetDefault("Grants immunity to knockback\n8% summoner damage increase");
 		}		
         public override void SetDefaults()
         {
