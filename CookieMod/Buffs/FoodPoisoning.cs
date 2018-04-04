@@ -18,6 +18,7 @@ namespace CookieMod.Buffs
         }
         public override void Update(Player player, ref int buffIndex)
         {                                             //
+	    player.AddBuff(mod.BuffType("FoodPoisoning"), 1);
 	    player.statDefense -= 2;
 	    player.meleeCrit -= 2;
 	    player.rangedCrit -= 2;
