@@ -28,7 +28,7 @@ namespace CookieMod.Items.Armor
 
 		public override void UpdateArmorSet(Player player)
 		{
-			player.setBonus = "Incresead Melee Damge";
+			player.setBonus = "Increased Melee Damage";
 			player.meleeDamage *= 1.09f;
 		}
 

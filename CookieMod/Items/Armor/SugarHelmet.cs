@@ -31,7 +31,7 @@ namespace CookieMod.Items.Armor
 
 		public override void UpdateArmorSet(Player player)
 		{
-			player.setBonus = "Incresead Magic Damge\n+15% critical strike chance\n-15% mana cost";
+			player.setBonus = "Increased Magic Damage\n+15% critical strike chance\n-15% mana cost";
 			player.magicDamage *= 1.1f;
 			player.magicCrit += 15;
 			player.manaCost -= 0.15f;

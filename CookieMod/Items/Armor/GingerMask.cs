@@ -31,7 +31,7 @@ namespace CookieMod.Items.Armor
 
 		public override void UpdateArmorSet(Player player)
 		{
-			player.setBonus = "Incresead Ranged Damge\n+20% increased critical srike chance";
+			player.setBonus = "Increased Ranged Damage\n+20% increased critical strike chance";
 			player.rangedDamage *= 1.1f;
 			player.rangedCrit += 20;
 		}

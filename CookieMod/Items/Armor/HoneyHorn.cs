@@ -31,7 +31,7 @@ namespace CookieMod.Items.Armor
 
 		public override void UpdateArmorSet(Player player)
 		{
-			player.setBonus = "Incresead Summon  Damage + max number of minions";
+			player.setBonus = "Increased Summon Damage + max number of minions";
 			player.minionDamage *= 1.1f;
 			player.maxMinions++;
 		}

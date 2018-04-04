@@ -31,7 +31,7 @@ namespace CookieMod.Items.Armor
 
 		public override void UpdateArmorSet(Player player)
 		{
-			player.setBonus = "Incresead Melee Damge\n+5% critical strike chance\n+15% melee speed";
+			player.setBonus = "Increased Melee Damage\n+5% critical strike chance\n+15% melee speed";
 			player.meleeDamage *= 1.1f;
 			player.meleeCrit += 5;
 			player.meleeSpeed += 0.15f;

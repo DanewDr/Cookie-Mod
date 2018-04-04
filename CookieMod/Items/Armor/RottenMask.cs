@@ -31,7 +31,7 @@ namespace CookieMod.Items.Armor
 
 		public override void UpdateArmorSet(Player player)
 		{
-			player.setBonus = "Incresead Throwing Damge\n+5% critical strike chance";
+			player.setBonus = "Increased Throwing Damage\n+5% critical strike chance";
 			player.thrownDamage *= 1.1f;
 			player.thrownCrit += 5;
 		}

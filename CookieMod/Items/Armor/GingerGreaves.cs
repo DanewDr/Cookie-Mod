@@ -10,7 +10,7 @@ namespace CookieMod.Items.Armor
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Ginger Greaves");
-			Tooltip.SetDefault("5% increased  ranged damage");
+			Tooltip.SetDefault("5% increased ranged damage");
 		}
 		public override void SetDefaults()
 		{

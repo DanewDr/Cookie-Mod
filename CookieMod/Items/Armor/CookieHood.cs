@@ -28,7 +28,7 @@ namespace CookieMod.Items.Armor
 
 		public override void UpdateArmorSet(Player player)
 		{
-			player.setBonus = "Incresead Throwing Damge";
+			player.setBonus = "Increased Throwing Damage";
 			player.thrownDamage *= 1.09f;
 		}
 

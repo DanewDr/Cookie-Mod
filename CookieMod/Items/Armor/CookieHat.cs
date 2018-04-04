@@ -28,7 +28,7 @@ namespace CookieMod.Items.Armor
 
 		public override void UpdateArmorSet(Player player)
 		{
-			player.setBonus = "Incresead Culinary Damge";
+			player.setBonus = "Increased Culinary Damage";
 			CookDamagePlayer modPlayer = CookDamagePlayer.ModPlayer(player);									
 			modPlayer.cookDamage *= 1.09f;
 		}

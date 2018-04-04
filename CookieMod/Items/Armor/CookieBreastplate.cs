@@ -10,7 +10,7 @@ namespace CookieMod.Items.Armor
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Cookie Breastplate");
-			Tooltip.SetDefault("Looks defferent on you than in your inventory");
+			Tooltip.SetDefault("Looks different on you than in your inventory");
 		}
 		public override void SetDefaults()
 		{

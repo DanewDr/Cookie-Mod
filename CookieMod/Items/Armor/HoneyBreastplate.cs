@@ -10,7 +10,7 @@ namespace CookieMod.Items.Armor
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Honey Breastplate");
-			Tooltip.SetDefault("5% increased summon damge");
+			Tooltip.SetDefault("5% increased summon damage");
 		}
 		public override void SetDefaults()
 		{
