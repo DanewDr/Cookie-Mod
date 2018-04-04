@@ -11,7 +11,7 @@ namespace CookieMod.Items
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Ginger Ale");
-			Tooltip.SetDefault("Increased melee abilities, lowered defense");
+			Tooltip.SetDefault("Increased melee abilities, slightly lowered defense");
 		}
         public override void SetDefaults()
         {
@@ -23,7 +23,7 @@ namespace CookieMod.Items
         item.maxStack = 30;
         item.width = 10;
         item.height = 10;
-        item.buffType = mod.BuffType("Merry");
+        item.buffType = mod.BuffType("Shaken");
         item.buffTime = 7200;
 	item.consumable = true;
         item.value = 200;
@@ -41,6 +41,7 @@ namespace CookieMod.Items
             recipe.AddIngredient(ItemID.Mug);
 	          recipe.AddIngredient(null, "GingerRoot");
             recipe.SetResult(this);
+	    recipe.AddTile(TileID.Kegs);
             recipe.AddRecipe();
         }
     }
