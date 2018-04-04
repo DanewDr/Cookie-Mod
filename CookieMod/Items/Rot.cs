@@ -10,7 +10,7 @@ namespace CookieMod.Items
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Rot");
-			Tooltip.SetDefault("A chunk of a hrrid creature");
+			Tooltip.SetDefault("A chunk of a horrid creature");
 		}
         public override void SetDefaults()
         {

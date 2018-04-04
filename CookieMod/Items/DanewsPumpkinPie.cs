@@ -9,7 +9,7 @@ namespace CookieMod.Items
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Danew's Pumpkin Pie");
-			Tooltip.SetDefault("The pumpkin pie of Danew Dr");
+			Tooltip.SetDefault("Developer Item");
 		}
         public override void SetDefaults()
         {
@@ -18,7 +18,7 @@ namespace CookieMod.Items
             item.useTurn = true;
             item.useAnimation = 17;
             item.useTime = 17;
-            item.maxStack = 30;                 //this is where you set the max stack of item
+            item.maxStack = 1;                 //this is where you set the max stack of item
             item.consumable = false;           //this make that the item is consumable when used
             item.width = 72;
             item.height = 50;

@@ -10,7 +10,7 @@ namespace CookieMod.Items     //We need this to basically indicate the folder wh
  		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Ginger Shield");
-			Tooltip.SetDefault("Grants imm to knockback\n8% ranged danage increase");
+			Tooltip.SetDefault("Grants immune to knockback\n8% ranged damage increase");
 		}
         public override void SetDefaults()
         {

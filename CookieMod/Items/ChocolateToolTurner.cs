@@ -9,7 +9,7 @@ namespace CookieMod.Items
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Chocolate Tool Turner");
-			Tooltip.SetDefault("Increases melee and pick spead");			
+			Tooltip.SetDefault("Increases melee and pick speed");			
 		}
 		public override void SetDefaults()
 		{
