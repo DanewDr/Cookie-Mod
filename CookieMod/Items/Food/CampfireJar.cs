@@ -18,7 +18,7 @@ namespace CookieMod.Items.Food
 		}
 		public override void SafeSetDefaults()  
 		{
-			item.damage = 32;
+			item.damage = 14;
 			item.crit = 6;
 			item.ranged = false;
 			item.noMelee = true;
