@@ -42,9 +42,8 @@ namespace CookieMod.Items.Food
 		{
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(ItemID.Bowl);
-			recipe.AddIngredient(ItemID.ViciousMushroom);
-     		recipe.AddIngredient(ItemID.Vertebrae);
-			recipe.AddIngredient(null, "Rot");
+			recipe.AddIngredient(ItemID.VileMushroom);
+     			recipe.AddIngredient(ItemID.RottenChunk);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}
