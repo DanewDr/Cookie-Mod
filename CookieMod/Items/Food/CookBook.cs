@@ -16,7 +16,7 @@ namespace CookieMod.Items.Food
 			DisplayName.SetDefault("Cook Book");
 			Tooltip.SetDefault("7% increased culinary damage");
 		}
-		public override void SetDefaults()
+		public override void SafeSetDefaults()
 		{
 			item.rare = 2;
 			item.accessory = true;
