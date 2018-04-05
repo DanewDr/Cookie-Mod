@@ -13,7 +13,7 @@ namespace CookieMod.Items.Food
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Bottle of Brain Food");
+			DisplayName.SetDefault("Potion of Creativity");
 			Tooltip.SetDefault("3% increased culinary damage and crit chance");
 		}
 		public override void SetDefaults()
