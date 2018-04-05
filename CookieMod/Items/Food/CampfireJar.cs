@@ -39,7 +39,7 @@ namespace CookieMod.Items.Food
 		public override void AddRecipes()         
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.Bottle;
+			recipe.AddIngredient(ItemID.Bottle);
 			recipe.AddIngredient(ItemID.HellstoneBar, 6);
 			recipe.SetResult(this);
 			recipe.AddTile(TileID.Hellforge);
