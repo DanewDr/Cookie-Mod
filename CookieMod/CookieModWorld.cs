@@ -48,7 +48,7 @@ namespace CookieMod
         {
             var downed = new List<string>();
             if (downedBunny) downed.Add("downedBunny");
-			if (downedCookieBoss) downed.Add("downedCookieBoss)");
+			if (downedCookieBoss) downed.Add("downedCookieBoss");
             return new TagCompound	{
                 {"downed", downed},
 			};				
